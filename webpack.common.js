@@ -99,7 +99,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/forms.html',
       filename: './forms.html',
-      chunks: ['index']
+      chunks: ['forms']
     }),
 
     // Partials
