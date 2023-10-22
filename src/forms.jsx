@@ -1,12 +1,12 @@
-import './page.css'
+import './forms.css'
 
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
-import ComponentExample1 from './javascript/ComponentExample1.jsx'
+import ComponentExample from './javascript/ComponentExample.jsx'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('reactComponentRoot2')
+  const container = document.getElementById('reactComponentRoot')
   const root = createRoot(container)
-  root.render(<ComponentExample1 />)
+  root.render(<ComponentExample />)
 })
