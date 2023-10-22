@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx'
+    page: './src/page.jsx',
+    forms: './src/forms.jsx'
   },
   output: {
     filename: '[name].js',
@@ -91,6 +92,14 @@ module.exports = {
       template: './src/pages/page.html',
       filename: './pages/page.html',
       chunks: ['page']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/forms.html',
+      filename: './forms.html',
+      chunks: ['index']
     }),
 
     // Partials
