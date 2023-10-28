@@ -13,48 +13,85 @@
     </section>
 
     <section class="svgs">
-      <div class="svgContainer">
-        <p class="svg-text">Инфосистема про историю Московского метро</p>
-        <img src="./images/images_forms/Card-dark.svg" ="svg-1" alt="" />
+      <div class="svgContainer container-1">
+        <p class="svg-text">
+          Инфосистема <br />
+          про историю Московского метро
+        </p>
+        <img
+          src="./images/images_forms/card-dark.svg"
+          class="svg svg-1"
+          alt=""
+        />
       </div>
-      <div class="svgContainer">
+      <div class="svgContainer container-2">
         <p class="svg-text">
           Узнайте о метро Москвы и развлекитесь по пути на работу
         </p>
-        <img src="./images/images_forms/Card-dark.svg" class="svg-1" alt="" />
+        <img
+          src="./images/images_forms/card-dark.svg"
+          class="svg svg-2"
+          alt=""
+        />
       </div>
-      <div class="svgContainer">
+      <div class="svgContainer container-3">
         <p class="svg-text">
           Сравните станции сейчас и в прошлом по фотографиям
         </p>
-        <img src="./images/images_forms/Card-dark.svg" class="svg-1" alt="" />
+        <img
+          src="./images/images_forms/card-dark.svg"
+          class="svg svg-3"
+          alt=""
+        />
       </div>
-      <div class="svgContainer">
+      <div class="svgContainer container-4">
         <p class="svg-text">Читайте интересные факты и смотрите мемы</p>
-        <img src="./images/images_forms/Card-dark.svg" class="svg-1" alt="" />
+        <img
+          src="./images/images_forms/card-dark.svg"
+          class="svg svg-4"
+          alt=""
+        />
       </div>
-      <div>
+      <div class="svgContainer container-5">
         <!-- Здесь должно быть изображение маска -->
-        <img src="./images/images_forms/Card-dark.svg" class="svg-1" alt="" />
+        <img
+          src="./images/images_forms/card-dark.svg"
+          class="svg svg-5"
+          alt=""
+        />
       </div>
     </section>
+
+    <section class="headline">
+      <img
+        src="./images/images_forms/station.svg"
+        class="headline-img"
+        alt=""
+      />
+      <p class="subheadline">О Московском метро</p>
+    </section>
+
     <form
       id="fs-frm"
       name="simple-contact-form"
       accept-charset="utf-8"
       action="https://formspree.io/f/xeqbnegj"
       method="post"
+      class="mainform"
     >
       <p>Оставьте свой телеграм, чтобы узнать о запуске проекта</p>
-      <fieldset id="fs-frm-inputs">
-        <input
-          type="text"
-          name="name"
-          id="full-name"
-          placeholder="Тегусик ваш"
-        />
-      </fieldset>
-      <input type="submit" value="Отправить" />
+      <div class="field-with-btn">
+        <fieldset id="fs-frm-inputs">
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="Тегусик ваш"
+            class="field"
+          />
+        </fieldset>
+        <input type="submit" class="btn" value="Отправить" />
+      </div>
     </form>
   </body>
 </html>
