@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/ZakharDay/static-site-boilerplate/issues"
   },
-  "homepage": "https://hseadc.github.io/B22DZ09-08/static-site-boilerplate",
+  "homepage": "https://hseadc.github.io/B22DZ09-08/",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
