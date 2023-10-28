@@ -1,12 +1,11 @@
-# Static Site Boilerplate
+# STATIONS
 
-## How to start
+Платформа для погружения в историю подземки
 
-Clone the repository, install packages, start
+### Страница с формой
 
-```
-git clone https://github.com/ZakharDay/static-site-boilerplate.git
-cd static-site-boilerplate
-yarn
-yarn start
-```
+https://hseadc.github.io/B22DZ09-08/forms.html
+
+### Страница о проекте
+
+https://hseadc.github.io/B22DZ09-08/about.html
