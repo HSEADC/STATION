@@ -9,7 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    promo: './src/about.js',
+    about: './src/about.js',
     forms: './src/forms.js'
   },
   output: {
