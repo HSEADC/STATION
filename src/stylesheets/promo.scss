@@ -34,7 +34,7 @@ body {
 
 .hero {
   width: 100%;
-  height: 100%;
+  height: 110%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +43,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 0 3vw;
+  padding: 0 0 5vw;
 
   .top-container {
     width: 70%;
@@ -71,5 +71,238 @@ body {
     width: 30%;
     align-self: flex-start;
     left: 6vw;
+  }
+}
+
+.intermediary {
+  width: 100%;
+
+  .intermediary-pars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 6vw;
+
+    .inter-first-par {
+      font-size: 2vw;
+      color: var(--bg-dark);
+    }
+
+    .inter-last-par {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      & > p {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.7vw;
+        text-align: end;
+        letter-spacing: -1px;
+        color: var(--bg-dark);
+      }
+    }
+  }
+}
+
+.section-cards {
+  padding: 6vw;
+  width: 100%;
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .card-par {
+    font-size: 2.3vw;
+    margin-bottom: 2.5vw;
+    color: var(--bg-dark);
+  }
+
+  .cards {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .card {
+      width: 31%;
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.chrono {
+  background-color: var(--brown);
+
+  .chrono-par {
+    font-size: 6vw;
+    font-weight: 800;
+    padding: 6vw 6vw 0;
+    color: var(--bg-dark);
+    text-transform: uppercase;
+  }
+
+  .big-card {
+    position: relative;
+    width: 100%;
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.mission {
+  width: 100%;
+  background-color: var(--brown);
+  padding: 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .mission-headline {
+    font-size: 2.3vw;
+    color: var(--bg-dark);
+    text-transform: uppercase;
+    margin-bottom: 6vw;
+  }
+
+  .mission-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & > p {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.1vw;
+      color: var(--bg-dark);
+      letter-spacing: -1px;
+    }
+  }
+}
+
+.page-form {
+  width: 100%;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  .forms-card {
+    position: relative;
+    top: 1.5vh;
+    left: -2.5vw;
+    width: 50%;
+    z-index: 10;
+
+    & > img {
+      width: 100%;
+    }
+  }
+  .mainform {
+    width: 40%;
+    align-self: center;
+    & > p {
+      font-size: 4vw;
+      color: var(--white);
+      margin-bottom: 2vw;
+    }
+
+    .field-with-btn {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field {
+      width: 100%;
+      height: 4vw;
+      background-color: var(--bg-light);
+      border: 2px var(--white) solid;
+      padding: auto;
+      margin-bottom: 1vw;
+
+      &::placeholder {
+        font-family: 'Austin Cyr', Helvetica, Arial, sans-serif;
+        font-size: 2vw;
+        color: var(--white);
+        opacity: 25%;
+      }
+    }
+
+    .btn {
+      width: 30%;
+      height: 4vw;
+      font-family: 'Austin Cyr', Helvetica, Arial, sans-serif;
+      font-size: 2vw;
+      color: var(--white);
+      background-color: var(--bg-light);
+      border: 2px var(--white) solid;
+      padding: auto;
+      align-self: flex-end;
+    }
+  }
+}
+
+.footer {
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 6vw;
+
+  .logo {
+    width: 20%;
+
+    & > img {
+      width: 70%;
+    }
+  }
+
+  .footer-text {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & > p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.2vw;
+      color: var(--white);
+      text-transform: uppercase;
+      line-height: 1.25;
+    }
+  }
+
+  .footer-avatars-hse {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .avatars {
+      width: 45%;
+      & > img {
+        width: 100%;
+      }
+    }
+
+    .hse-logo {
+      width: 45%;
+
+      & > img {
+        width: 100%;
+      }
+    }
   }
 }
