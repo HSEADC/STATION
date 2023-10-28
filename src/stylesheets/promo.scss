@@ -1,3 +1,75 @@
 body {
-  background-color: var(--bg-dark);
+  background-color: var(--white);
+}
+
+.menu {
+  width: 100%;
+  height: 54px;
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 6vw;
+  .pages,
+  .links {
+    width: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & > a {
+      font-size: 1vw;
+      color: var(--bg-dark);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  .links {
+    width: 12%;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(./images/images_about/hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 3vw;
+
+  .top-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > img {
+      width: 100%;
+    }
+
+    .hero-headline {
+      color: var(--bg-dark);
+      font-style: italic;
+      font-size: 5vw;
+      text-transform: uppercase;
+    }
+  }
+  .hero-par {
+    position: relative;
+    color: var(--bg-dark);
+    font-weight: 800;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    width: 30%;
+    align-self: flex-start;
+    left: 6vw;
+  }
 }

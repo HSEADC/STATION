@@ -9,8 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx',
-    forms: './src/forms.jsx'
+    promo: './src/promo.js',
+    forms: './src/forms.js'
   },
   output: {
     filename: '[name].js',
@@ -89,9 +89,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
+      template: './src/promo.html',
+      filename: './promo.html',
+      chunks: ['promo']
     }),
 
     new HtmlWebpackPlugin({
