@@ -83,3 +83,147 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-Regular.eot');
+  src: local('Stinger'), local('Stinger-Regular'),
+    url('fonts/Stinger-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-Regular.woff2') format('woff2'),
+    url('fonts/Stinger-Regular.woff') format('woff'),
+    url('fonts/Stinger-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-Light.eot');
+  src: local('Stinger Light'), local('Stinger-Light'),
+    url('fonts/Stinger-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-Light.woff2') format('woff2'),
+    url('fonts/Stinger-Light.woff') format('woff'),
+    url('fonts/Stinger-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stinger Variable';
+  src: url('fonts/StingerVariable.eot');
+  src: local('Stinger Variable'), local('StingerVariable'),
+    url('fonts/StingerVariable.eot?#iefix') format('embedded-opentype'),
+    url('fonts/StingerVariable.woff2') format('woff2'),
+    url('fonts/StingerVariable.woff') format('woff'),
+    url('fonts/StingerVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-LightItalic.eot');
+  src: local('Stinger Light Italic'), local('Stinger-LightItalic'),
+    url('fonts/Stinger-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-LightItalic.woff2') format('woff2'),
+    url('fonts/Stinger-LightItalic.woff') format('woff'),
+    url('fonts/Stinger-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-ThinItalic.eot');
+  src: local('Stinger Thin Italic'), local('Stinger-ThinItalic'),
+    url('fonts/Stinger-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-ThinItalic.woff2') format('woff2'),
+    url('fonts/Stinger-ThinItalic.woff') format('woff'),
+    url('fonts/Stinger-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-Thin.eot');
+  src: local('Stinger Thin'), local('Stinger-Thin'),
+    url('fonts/Stinger-Thin.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-Thin.woff2') format('woff2'),
+    url('fonts/Stinger-Thin.woff') format('woff'),
+    url('fonts/Stinger-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stinger Variable';
+  src: url('fonts/StingerVariableItalic.eot');
+  src: local('Stinger Variable Italic'), local('StingerVariableItalic'),
+    url('fonts/StingerVariableItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/StingerVariableItalic.woff2') format('woff2'),
+    url('fonts/StingerVariableItalic.woff') format('woff'),
+    url('fonts/StingerVariableItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-BoldItalic.eot');
+  src: local('Stinger Bold Italic'), local('Stinger-BoldItalic'),
+    url('fonts/Stinger-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-BoldItalic.woff2') format('woff2'),
+    url('fonts/Stinger-BoldItalic.woff') format('woff'),
+    url('fonts/Stinger-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-Italic.eot');
+  src: local('Stinger Italic'), local('Stinger-Italic'),
+    url('fonts/Stinger-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-Italic.woff2') format('woff2'),
+    url('fonts/Stinger-Italic.woff') format('woff'),
+    url('fonts/Stinger-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-HeavyItalic.eot');
+  src: local('Stinger Heavy Italic'), local('Stinger-HeavyItalic'),
+    url('fonts/Stinger-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-HeavyItalic.woff2') format('woff2'),
+    url('fonts/Stinger-HeavyItalic.woff') format('woff'),
+    url('fonts/Stinger-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-Heavy.eot');
+  src: local('Stinger Heavy'), local('Stinger-Heavy'),
+    url('fonts/Stinger-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-Heavy.woff2') format('woff2'),
+    url('fonts/Stinger-Heavy.woff') format('woff'),
+    url('fonts/Stinger-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('fonts/Stinger-Bold.eot');
+  src: local('Stinger Bold'), local('Stinger-Bold'),
+    url('fonts/Stinger-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Stinger-Bold.woff2') format('woff2'),
+    url('fonts/Stinger-Bold.woff') format('woff'),
+    url('fonts/Stinger-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
