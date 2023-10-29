@@ -1,12 +1,18 @@
 import './forms.css'
 
-// import React from 'react'
-// import { createRoot } from 'react-dom/client'
+let container_1 = document.getElementsByClassName('container-1')[0]
+let container_2 = document.getElementsByClassName('container-2')[0]
+let container_3 = document.getElementsByClassName('container-3')[0]
+let container_4 = document.getElementsByClassName('container-4')[0]
+let svg_text = document.getElementsByClassName('svg-text')
+let svg = document.getElementsByClassName('svg')
+let svgContainer = document.getElementsByClassName('svgContainer')
 
-// import ComponentExample from './javascript/ComponentExample.jsx'
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const container = document.getElementById('reactComponentRoot')
-//   const root = createRoot(container)
-//   root.render(<ComponentExample />)
-// })
+Array.from(svgContainer).forEach((container) => {
+  container.addEventListener('mouseover', () => {
+    container.childNodes[3].src = './images/card-dark-hover.svg'
+  })
+  container.addEventListener('mouseout', () => {
+    container.childNodes[3].src = './images/card-dark.svg'
+  })
+})

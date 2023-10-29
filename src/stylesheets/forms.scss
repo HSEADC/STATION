@@ -28,17 +28,27 @@ body.form {
   }
 }
 
+.svgs {
+  position: relative;
+  top: 7vw;
+  left: -5vw;
+}
+
 .svgContainer {
   width: min-content;
   position: absolute;
 
+  &:hover {
+    z-index: 100;
+  }
   .svg-text {
     font-family: 'Inter', sans-serif;
     inline-size: 85%;
     font-size: 2vw;
     color: var(--white);
-    position: relative;
-    top: 13vw;
+    position: absolute;
+    opacity: 0;
+    top: 9vw;
     left: 15%;
   }
 }
