@@ -54,7 +54,7 @@ body.form {
   position: absolute;
 
   .svg-text {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     inline-size: 85%;
     font-size: 2vw;
     color: var(--bg-dark);
@@ -159,7 +159,7 @@ body.form {
         padding: 2%;
 
         &::placeholder {
-          font-family: 'Inter', sans-serif;
+          font-family: 'Inter Tight', sans-serif;
           font-size: 1.5vw;
           color: var(--white);
           opacity: 25%;
@@ -170,7 +170,7 @@ body.form {
     .btn {
       width: 15%;
       height: 60px;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter Tight', sans-serif;
       font-size: 1.5vw;
       color: var(--white);
       background-color: var(--bg-dark);
