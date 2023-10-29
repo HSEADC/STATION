@@ -11,7 +11,7 @@ let svgContainer = document.getElementsByClassName('svgContainer')
 Array.from(svgContainer).forEach((container) => {
   container.addEventListener('mouseover', () => {
     container.childNodes[1].style.color = 'var(--bg-dark)'
-    container.childNodes[0].style.opacity = 1
+    // container.childNodes[0].style.opacity = 1
     console.log('In')
   })
 })
@@ -19,6 +19,6 @@ Array.from(svgContainer).forEach((container) => {
 Array.from(svgContainer).forEach((container) => {
   container.addEventListener('mouseout', () => {
     container.childNodes[1].style.color = 'var(--bg-light)'
-    container.childNodes[0].style.opacity = 0
+    // container.childNodes[0].style.opacity = 0
   })
 })
