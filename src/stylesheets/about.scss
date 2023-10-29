@@ -230,6 +230,8 @@ body {
       border: 2px var(--white) solid;
       padding: 0 2%;
       margin-bottom: 1vw;
+      color: var(--white);
+      font-size: 1.5vw;
 
       &::placeholder {
         font-family: 'Inter Tight', sans-serif;
