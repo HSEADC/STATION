@@ -53,14 +53,6 @@ body.form {
   width: min-content;
   position: absolute;
 
-  &:hover {
-    z-index: 100;
-
-    .svg-text {
-      opacity: 1;
-    }
-  }
-
   .svg-text {
     font-family: 'Inter', sans-serif;
     inline-size: 85%;
@@ -70,6 +62,16 @@ body.form {
     opacity: 0;
     top: 9vw;
     left: 15%;
+  }
+
+  &:hover {
+    z-index: 100;
+  }
+}
+
+.svgContainer:hover {
+  .svg-text {
+    opacity: 1;
   }
 }
 
