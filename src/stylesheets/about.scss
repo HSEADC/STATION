@@ -228,12 +228,12 @@ body {
       height: 4vw;
       background-color: var(--bg-light);
       border: 2px var(--white) solid;
-      padding: auto;
+      padding: 0 2%;
       margin-bottom: 1vw;
 
       &::placeholder {
-        font-family: 'Austin Cyr', Helvetica, Arial, sans-serif;
-        font-size: 2vw;
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 1.5vw;
         color: var(--white);
         opacity: 25%;
       }
@@ -243,7 +243,7 @@ body {
       width: 30%;
       height: 4vw;
       font-family: 'Inter Tight', sans-serif;
-      font-size: 2vw;
+      font-size: 1.5vw;
       color: var(--white);
       background-color: var(--bg-light);
       border: 2px var(--white) solid;
