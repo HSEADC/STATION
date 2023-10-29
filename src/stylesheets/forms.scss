@@ -55,13 +55,17 @@ body.form {
 
   &:hover {
     z-index: 100;
+
+    .svg-text {
+      opacity: 1;
+    }
   }
 
   .svg-text {
     font-family: 'Inter', sans-serif;
     inline-size: 85%;
     font-size: 2vw;
-    color: var(--white);
+    color: var(--bg-dark);
     position: absolute;
     opacity: 0;
     top: 9vw;

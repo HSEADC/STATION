@@ -11,15 +11,14 @@ var svg = document.getElementsByClassName('svg');
 var svgContainer = document.getElementsByClassName('svgContainer');
 Array.from(svgContainer).forEach(function (container) {
   container.addEventListener('mouseover', function () {
-    container.childNodes[1].style.color = 'var(--bg-dark)';
-    container.childNodes[0].style.opacity = 1;
+    container.childNodes[1].style.color = 'var(--bg-dark)'; // container.childNodes[0].style.opacity = 1
+
     console.log('In');
   });
 });
 Array.from(svgContainer).forEach(function (container) {
   container.addEventListener('mouseout', function () {
-    container.childNodes[1].style.color = 'var(--bg-light)';
-    container.childNodes[0].style.opacity = 0;
+    container.childNodes[1].style.color = 'var(--bg-light)'; // container.childNodes[0].style.opacity = 0
   });
 });
 /******/ })()
