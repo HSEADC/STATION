@@ -10,13 +10,14 @@ body.form {
 
 .svg {
   width: 30vw;
-
+  content: url('./images/card-dark.svg');
   &:hover {
     content: url('./images/card-dark-hover.svg');
   }
 }
 
 .svg-5 {
+  content: url('./images/ticket.svg');
   &:hover {
     content: url('./images/ticket-hover.svg');
   }
