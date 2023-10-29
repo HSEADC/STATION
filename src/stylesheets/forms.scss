@@ -35,7 +35,7 @@ body.form {
     color: var(--white);
     text-decoration: none;
     margin-left: 2vw;
-    font-size: 3vw;
+    font-size: 2vw;
 
     &:hover {
       opacity: 0.6;
@@ -159,8 +159,8 @@ body.form {
         padding: 2%;
 
         &::placeholder {
-          font-family: 'Austin Cyr', Helvetica, Arial, sans-serif;
-          font-size: 2vw;
+          font-family: 'Inter', sans-serif;
+          font-size: 1.5vw;
           color: var(--white);
           opacity: 25%;
         }
@@ -170,8 +170,8 @@ body.form {
     .btn {
       width: 15%;
       height: 60px;
-      font-family: 'Austin Cyr', Helvetica, Arial, sans-serif;
-      font-size: 2vw;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5vw;
       color: var(--white);
       background-color: var(--bg-dark);
       border: 2px var(--white) solid;

@@ -63,9 +63,10 @@ body {
     }
   }
   .hero-par {
+    font-family: 'Stinger', sans-serif;
     position: relative;
     color: var(--bg-dark);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2.5vw;
     text-transform: uppercase;
     width: 30%;
@@ -140,8 +141,9 @@ body {
   background-color: var(--brown);
 
   .chrono-par {
+    font-family: 'Stinger', sans-serif;
     font-size: 6vw;
-    font-weight: 800;
+    font-weight: 600;
     padding: 6vw 6vw 0;
     color: var(--bg-dark);
     text-transform: uppercase;
@@ -275,7 +277,7 @@ body {
     justify-content: space-between;
 
     & > p {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Stinger', sans-serif;
       font-size: 1.2vw;
       color: var(--white);
       text-transform: uppercase;
