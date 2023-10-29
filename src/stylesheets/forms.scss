@@ -1,6 +1,6 @@
 body.form {
   width: 90%;
-  height: 135%;
+  height: 150%;
 }
 
 body.form {
@@ -10,6 +10,16 @@ body.form {
 
 .svg {
   width: 30vw;
+
+  &:hover {
+    content: url('./images/card-dark-hover.svg');
+  }
+}
+
+.svg-5 {
+  &:hover {
+    content: url('./images/ticket-hover.svg');
+  }
 }
 
 .social-links {
@@ -25,6 +35,10 @@ body.form {
     text-decoration: none;
     margin-left: 2vw;
     font-size: 3vw;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -41,6 +55,7 @@ body.form {
   &:hover {
     z-index: 100;
   }
+
   .svg-text {
     font-family: 'Inter', sans-serif;
     inline-size: 85%;
@@ -56,38 +71,48 @@ body.form {
 .container-1 {
   rotate: 30deg;
   left: 60vw;
+  z-index: 3;
 }
 
 .container-2 {
-  left: 12vw;
+  left: 10vw;
   rotate: -30deg;
-  z-index: -20;
+  z-index: 1;
+  .svg-text {
+    left: 10%;
+  }
 }
 
 .container-3 {
   left: 35vw;
   rotate: -8deg;
-  z-index: -10;
+  z-index: 2;
+  .svg-text {
+    left: 10%;
+  }
 }
 
 .container-4 {
   left: 15vw;
   top: 17vw;
   rotate: 12deg;
-  z-index: 10;
+  z-index: 4;
+  .svg-text {
+    left: 10%;
+  }
 }
 
 .container-5 {
   left: 45vw;
   top: 20vw;
   rotate: 12deg;
-  z-index: -30;
+  z-index: 0;
 }
 
 .headline {
   width: 100%;
   position: relative;
-  top: 35vw;
+  top: 42vw;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -103,8 +128,7 @@ body.form {
 
 .mainform {
   position: relative;
-  top: 37vw;
-
+  top: 45vw;
   & > p {
     font-size: 2.8vw;
     color: var(--white);
@@ -122,8 +146,10 @@ body.form {
         width: 97%;
         height: 60px;
         background-color: var(--bg-dark);
+        color: var(--white);
+        font-size: 2vw;
         border: 2px var(--white) solid;
-        padding: auto;
+        padding: 2%;
 
         &::placeholder {
           font-family: 'Austin Cyr', Helvetica, Arial, sans-serif;

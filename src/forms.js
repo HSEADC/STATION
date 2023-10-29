@@ -10,9 +10,15 @@ let svgContainer = document.getElementsByClassName('svgContainer')
 
 Array.from(svgContainer).forEach((container) => {
   container.addEventListener('mouseover', () => {
-    container.childNodes[3].src = './images/card-dark-hover.svg'
+    container.childNodes[1].style.color = 'var(--bg-dark)'
+    container.childNodes[1].style.opacity = 1
+    console.log('In')
   })
+})
+
+Array.from(svgContainer).forEach((container) => {
   container.addEventListener('mouseout', () => {
-    container.childNodes[3].src = './images/card-dark.svg'
+    container.childNodes[1].style.color = 'var(--bg-light)'
+    container.childNodes[1].style.opacity = 0
   })
 })

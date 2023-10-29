@@ -1,12 +1,12 @@
-// import './forms.css'
+import './forms.css'
 
 // import React from 'react'
 // import { createRoot } from 'react-dom/client'
 
-// import ComponentExample from './javascript/ComponentExample.jsx'
+// import formsComponent from './javascript/formsComponent.jsx'
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   const container = document.getElementById('reactComponentRoot')
 //   const root = createRoot(container)
-//   root.render(<ComponentExample />)
+//   root.render(<formsComponent />)
 // })
