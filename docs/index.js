@@ -8,7 +8,8 @@ document.getElementById('button_1_main').addEventListener('mouseover', function 
   Array.from(document.getElementsByClassName('point')).forEach(function (element) {
     element.style.backgroundColor = 'var(--white)';
   });
-});
+}); //Rjvvtyns
+
 document.getElementById('button_1_main').addEventListener('mouseout', function () {
   document.getElementById('img_1_main').src = 'images/ae36f4cab3b4eb6b1da4.svg';
   document.getElementsByTagName('body')[0].style = 'background-color: var(--white)';
