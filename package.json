@@ -1,16 +1,16 @@
 {
-  "name": "static-site-boilerplate",
-  "version": "1.0.0",
-  "author": "Zakhar Day",
+  "name": "B22DZ09-08",
+  "version": "2.0.0",
+  "author": "Galieva Elvira",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https:///github.com/ZakharDay/static-site-boilerplate"
+    "url": "git+https:///github.com/HSEADC/B22DZ09-08"
   },
   "bugs": {
-    "url": "https://github.com/ZakharDay/static-site-boilerplate/issues"
+    "url": "https://github.com/HSEADC/B22DZ09-08/issues"
   },
-  "homepage": "https://hseadc.github.io/B22DZ09-08/static-site-boilerplate",
+  "homepage": "https://hseadc.github.io/B22DZ09-08/",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
