@@ -7,8 +7,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    tiser: './src/tiser.js'
+    index: './src/tiser.js',
+    tiser: './src/index.js'
   },
   output: {
     filename: '[name].js',
