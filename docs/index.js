@@ -585,13 +585,16 @@ function Station_card(_ref) {
 
 var menuRootInstance = react_dom.createRoot(document.getElementById('menu'));
 var button1RootInstance = react_dom.createRoot(document.getElementById('button_1'));
-var card1in2RootInstance = react_dom.createRoot(document.getElementById('2_card_1'));
 menuRootInstance.render( /*#__PURE__*/react.createElement(navigation, null));
 button1RootInstance.render( /*#__PURE__*/react.createElement(buttons, {
   text: 'читать'
 }));
-card1in2RootInstance.render( /*#__PURE__*/react.createElement(card, {
+react_dom.createRoot(document.getElementById('2_card_1')).render( /*#__PURE__*/react.createElement(card, {
   text: 'Павелецкая',
+  margin: 0
+}));
+react_dom.createRoot(document.getElementById('2_card_2')).render( /*#__PURE__*/react.createElement(card, {
+  text: 'Проспект мира',
   margin: 0
 }));
 })();
