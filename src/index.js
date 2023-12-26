@@ -11,10 +11,12 @@ const menuRootInstance = ReactDOM.createRoot(document.getElementById('menu'))
 const button1RootInstance = ReactDOM.createRoot(
   document.getElementById('button_1')
 )
-const card1in2RootInstance = ReactDOM.createRoot(
-  document.getElementById('2_card_1')
-)
 
 menuRootInstance.render(<Navigation />)
 button1RootInstance.render(<Main_button text={'читать'} />)
-card1in2RootInstance.render(<Station_card text={'Павелецкая'} margin={0} />)
+ReactDOM.createRoot(document.getElementById('2_card_1')).render(
+  <Station_card text={'Павелецкая'} margin={0} />
+)
+ReactDOM.createRoot(document.getElementById('2_card_2')).render(
+  <Station_card text={'Проспект мира'} margin={0} />
+)

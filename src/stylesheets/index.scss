@@ -52,6 +52,11 @@ body {
     div {
       border-radius: 20px;
       background-color: var(--black);
+      padding: 2vw;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      color: var(--white);
     }
     .card1 {
       grid-area: 1 / 1 / 3 / 3;
