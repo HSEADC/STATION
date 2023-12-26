@@ -1,12 +1,92 @@
 @font-face {
   font-family: 'Pragmatica';
-  src: url('fonts/Pragmatica-Book.woff') format('woff');
+  src: url('fonts/prg45.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Pragmatica';
-  src: url('fonts/Pragmatica-Medium.woff') format('woff');
+  src: url('fonts/prg55.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('fonts/prg46.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('fonts/prg56.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-family: 'Pragmatica';
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 115%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 4.4rem;
+  line-height: 113%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2.2rem;
+  line-height: 92%;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+h4 {
+  font-size: 2.2rem;
+  line-height: 92%;
+  font-weight: 400;
+}
+p {
+  font-size: 1rem;
+  line-height: 110%;
+  font-weight: 400;
+}
+p.big {
+  font-size: 1.3rem;
+  line-height: 110%;
+  font-weight: 400;
+}
+p.bold {
+  font-size: 1rem;
+  line-height: 110%;
+  font-weight: 500;
+}
+p.small {
+  font-size: 0.8rem;
+  line-height: 110%;
+  font-weight: 500;
+}
+
+button {
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+a {
+  font-size: 1rem;
+  line-height: 110%;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: var(--black);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--orange);
 }

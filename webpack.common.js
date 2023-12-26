@@ -90,17 +90,17 @@ module.exports = {
       template: './src/tiser.html',
       filename: './tiser.html',
       chunks: ['tiser']
-    }),
+    })
 
     // Partials
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/analytics.html'),
-        location: 'analytics',
-        template_filename: '*',
-        priority: 'replace'
-      }
-    ])
+    // new HtmlWebpackPartialsPlugin([
+    //   {
+    //     path: path.join(__dirname, './src/partials/analytics.html'),
+    //     location: 'analytics',
+    //     template_filename: '*',
+    //     priority: 'replace'
+    //   }
+    // ])
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

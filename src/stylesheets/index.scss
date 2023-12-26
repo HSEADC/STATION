@@ -1,0 +1,89 @@
+body {
+  background-color: var(--light_gray);
+  font-family: 'Pragmatica';
+  overflow-x: hidden;
+}
+.index {
+  height: 500%;
+  img {
+    border-radius: 20px;
+  }
+  .first {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 96vw;
+    .content {
+      margin-bottom: 0px;
+      width: 96vw;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        width: 96vw;
+        .card {
+          background-image: url(./images/tiser/first_card_bg.svg);
+          width: 28vw;
+          height: 24vh;
+          background-repeat: no-repeat;
+          background-size: contain;
+          padding: 3vh;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          gap: 2.5vw;
+          color: var(--white);
+          img {
+            margin-bottom: -1.5vw;
+            margin-left: -1.5vw;
+          }
+        }
+      }
+    }
+  }
+  .second {
+    margin-top: 10vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0.25vw;
+    grid-row-gap: 0.25vw;
+    div {
+      border-radius: 20px;
+      background-color: var(--black);
+    }
+    .card1 {
+      grid-area: 1 / 1 / 3 / 3;
+    }
+    .card2 {
+      grid-area: 1 / 3 / 3 / 5;
+    }
+    .card3 {
+      grid-area: 1 / 5 / 5 / 9;
+      background-color: var(--white);
+    }
+    .card4 {
+      grid-area: 3 / 1 / 5 / 3;
+    }
+    .card5 {
+      grid-area: 3 / 3 / 5 / 5;
+    }
+    .card6 {
+      grid-area: 5 / 1 / 7 / 5;
+    }
+    .card7 {
+      grid-area: 5 / 5 / 7 / 9;
+    }
+  }
+}
+// *
+
+/**
+ * Sticky navigation
+ */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}

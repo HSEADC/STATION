@@ -1,0 +1,32 @@
+.navigation {
+  background-color: var(--white);
+  margin: 0vh -2vw;
+  padding: 1vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 60px;
+
+  .menu {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8vw;
+  }
+}
+button {
+  background-color: var(--orange);
+  border: 0px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 8px 8px 36px;
+  gap: 16px;
+  color: var(--white);
+}
+button:hover {
+  background-color: var(--black);
+}
