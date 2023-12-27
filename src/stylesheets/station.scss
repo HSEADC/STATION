@@ -18,25 +18,7 @@
   .card {
     background-image: url(./images/stations/card_bg_1.png);
   }
-  .filters {
-    position: absolute;
-    width: 200vw;
-    margin-top: 10vh;
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: fit-content;
-      overflow-y: hidden;
-      gap: 2vw;
-    }
-    li {
-      padding: 0.7vw 1.4vw;
-      border-radius: 20px;
-      background-color: var(--black);
-      color: var(--white);
-    }
-  }
+
   .cards {
     display: grid;
     margin: 0 - 2vw;

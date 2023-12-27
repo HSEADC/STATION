@@ -34,7 +34,6 @@ html {
 body {
   font-family: 'Pragmatica';
 }
-
 h1 {
   font-size: 5.6rem;
   line-height: 115%;
@@ -44,6 +43,13 @@ h1 {
 h1.italic {
   font-family: 'CoFo_Robert';
   font-size: 5.9em;
+  line-height: 97%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+span {
+  font-family: 'CoFo_Robert';
+  font-size: 1em;
   line-height: 97%;
   font-weight: 500;
   text-transform: uppercase;

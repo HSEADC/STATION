@@ -13,7 +13,7 @@
   "homepage": "https://hseadc.github.io/B22DZ09-08/",
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dev_build",
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"

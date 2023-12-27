@@ -1,0 +1,46 @@
+.chrono {
+  height: 90vh;
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 6vw;
+    p {
+      width: 30%;
+    }
+  }
+  .cards_hard {
+    margin-left: 40vw;
+    margin-top: 10vh;
+  }
+  .card_chrono_long {
+    margin-top: 5vh;
+    border-radius: 20px;
+    width: 55vw;
+    height: 15vh;
+    padding: 1.5vw;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    h3 {
+      grid-area: 1 / 1 / 2 / 5;
+    }
+    p {
+      grid-area: 2 / 5 / 3 / 11;
+    }
+  }
+  .card_chrono_long:nth-child(1) {
+    background-image: url(./images/chrono/card_hard_bg01.jpg);
+  }
+  .card_chrono_long:nth-child(2) {
+    background-image: url(./images/chrono/card_hard_bg02.jpg);
+  }
+  .card_chrono_long:nth-child(3) {
+    background-image: url(./images/chrono/card_hard_bg03.jpg);
+  }
+}
