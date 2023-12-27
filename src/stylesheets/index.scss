@@ -185,18 +185,10 @@ body {
       margin-top: 4vh;
     }
   }
-  .sixth {
+  .cards {
     height: 100vh;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0.25vw;
-    grid-row-gap: 0.25vw;
-    margin: 0 -2vw;
-    div {
-      background-color: var(--black);
-      border-radius: 20px;
-    }
     .card1 {
       grid-area: 1 / 1 / 2 / 2;
     }

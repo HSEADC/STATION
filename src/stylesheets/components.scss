@@ -48,3 +48,24 @@ button {
 button:hover {
   background-color: var(--black);
 }
+.cards {
+  display: grid;
+  margin: 0 - 2vw;
+  grid-column-gap: 0.25vw;
+  grid-row-gap: 0.25vw;
+  height: 90vh;
+  margin-top: 20vh;
+  div {
+    background-color: var(--black);
+    border-radius: 20px;
+    color: var(--white);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+  }
+  div + img {
+    margin-bottom: 4vh;
+  }
+}

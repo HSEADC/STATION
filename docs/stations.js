@@ -577,39 +577,35 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
   return Navigation;
 }(react.Component);
 /* harmony default export */ const navigation = (Navigation);
-;// CONCATENATED MODULE: ./src/images/tiser/button_icon_white.svg
-const button_icon_white_namespaceObject = __webpack_require__.p + "images/2a6fce5a20da92da52f7.svg";
-;// CONCATENATED MODULE: ./src/javascript/card.jsx
+;// CONCATENATED MODULE: ./src/javascript/filter.jsx
+// main.jsx
 
-
-
-function Station_card(_ref) {
-  var text = _ref.text,
-    margin = _ref.margin;
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h3", null, text), /*#__PURE__*/react.createElement("img", {
-    style: {
-      marginTop: "".concat(margin, "px")
-    },
-    src: button_icon_white_namespaceObject,
-    alt: ""
-  }));
+function filterCards(filter) {
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(function (card) {
+    var filters = card.getAttribute('data-filters').split(' ');
+    if (filters.includes(filter) || filter === 'all') {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
 }
-/* harmony default export */ const card = (Station_card);
-;// CONCATENATED MODULE: ./src/index.js
+/* harmony default export */ const filter = (filterCards);
+;// CONCATENATED MODULE: ./src/station.js
 
 
 
 
 
 react_dom.createRoot(document.getElementById('menu')).render( /*#__PURE__*/react.createElement(navigation, null));
-react_dom.createRoot(document.getElementById('2_card_1')).render( /*#__PURE__*/react.createElement(card, {
-  text: 'Маяковская',
-  margin: 0
-}));
-react_dom.createRoot(document.getElementById('2_card_2')).render( /*#__PURE__*/react.createElement(card, {
-  text: 'Проспект мира',
-  margin: 0
-}));
+
+// Путь к вашему файлу
+
+// Ваш HTML
+document.getElementById('filter_1').onclick = function () {
+  filter('сокольническая');
+};
 })();
 
 /******/ })()
