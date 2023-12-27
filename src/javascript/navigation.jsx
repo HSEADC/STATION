@@ -6,9 +6,9 @@ function Navigation() {
   return (
     <div className="navigation">
       <div className="menu">
-        <a href="">Хронология</a>
-        <a href="">Станции</a>
-        <a href="">Статьи</a>
+        <a href="./category_chronology.html">Хронология</a>
+        <a href="./category_station.html">Станции</a>
+        <a href="'./category_articles.html'">Статьи</a>
       </div>
       <img src={Logo} alt="" />
     </div>

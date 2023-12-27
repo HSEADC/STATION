@@ -67,6 +67,13 @@ body {
     .card3 {
       grid-area: 1 / 5 / 5 / 9;
       background-color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        background-color: var(--white);
+        color: var(--black);
+      }
     }
     .card4 {
       grid-area: 3 / 1 / 5 / 3;
@@ -79,6 +86,8 @@ body {
     }
     .card7 {
       grid-area: 5 / 5 / 7 / 9;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 }
