@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 60px;
+  z-index: 1000;
 
   .menu {
     width: 60vw;
@@ -14,6 +15,23 @@
     justify-content: flex-start;
     align-items: center;
     gap: 8vw;
+  }
+}
+.card {
+  background-image: url(../images/tiser/first_card_bg.svg);
+  width: 28vw;
+  height: 24vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 3vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 2.5vw;
+  color: var(--white);
+  img {
+    margin-bottom: -1.5vw;
+    margin-left: -1.5vw;
   }
 }
 button {

@@ -495,10 +495,13 @@ if (true) {
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
+/******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -523,49 +526,32 @@ const logo_namespaceObject = __webpack_require__.p + "images/7e4b4e7f65186309760
 
 
 
-
 function Navigation() {
   return /*#__PURE__*/react.createElement("div", {
     className: "navigation"
   }, /*#__PURE__*/react.createElement("div", {
     className: "menu"
   }, /*#__PURE__*/react.createElement("a", {
-    href: ""
+    href: "./category_chronology.html"
   }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
-    href: ""
+    href: "./category_station.html"
   }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
+    href: "./category_articles.html"
   }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
     src: logo_namespaceObject,
     alt: ""
   }));
 }
-
 /* harmony default export */ const navigation = (Navigation);
 ;// CONCATENATED MODULE: ./src/images/tiser/button_icon_white.svg
 const button_icon_white_namespaceObject = __webpack_require__.p + "images/2a6fce5a20da92da52f7.svg";
-;// CONCATENATED MODULE: ./src/javascript/buttons.jsx
-
-
-
-
-function Main_button(_ref) {
-  var text = _ref.text;
-  return /*#__PURE__*/react.createElement("button", null, text, /*#__PURE__*/react.createElement("img", {
-    src: button_icon_white_namespaceObject,
-    alt: ""
-  }));
-}
-
-/* harmony default export */ const buttons = (Main_button);
 ;// CONCATENATED MODULE: ./src/javascript/card.jsx
-
 
 
 
 function Station_card(_ref) {
   var text = _ref.text,
-      margin = _ref.margin;
+    margin = _ref.margin;
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h3", null, text), /*#__PURE__*/react.createElement("img", {
     style: {
       marginTop: "".concat(margin, "px")
@@ -574,7 +560,6 @@ function Station_card(_ref) {
     alt: ""
   }));
 }
-
 /* harmony default export */ const card = (Station_card);
 ;// CONCATENATED MODULE: ./src/index.js
 
@@ -582,15 +567,9 @@ function Station_card(_ref) {
 
 
 
-
-var menuRootInstance = react_dom.createRoot(document.getElementById('menu'));
-var button1RootInstance = react_dom.createRoot(document.getElementById('button_1'));
-menuRootInstance.render( /*#__PURE__*/react.createElement(navigation, null));
-button1RootInstance.render( /*#__PURE__*/react.createElement(buttons, {
-  text: 'читать'
-}));
+react_dom.createRoot(document.getElementById('menu')).render( /*#__PURE__*/react.createElement(navigation, null));
 react_dom.createRoot(document.getElementById('2_card_1')).render( /*#__PURE__*/react.createElement(card, {
-  text: 'Павелецкая',
+  text: 'Маяковская',
   margin: 0
 }));
 react_dom.createRoot(document.getElementById('2_card_2')).render( /*#__PURE__*/react.createElement(card, {

@@ -7,7 +7,10 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    stations: './src/station.js',
+    chronology: './src/chrono.js',
+    articles: './src/articles.js'
   },
   output: {
     filename: '[name].js',
@@ -52,7 +55,7 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|webp| mp4)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
@@ -86,21 +89,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/category_articles.html',
+      template: './src/category_articles.html',
       filename: './category_articles.html',
       chunks: ['articles']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/category_chronology.html',
+      template: './src/category_chronology.html',
       filename: './category_chronology.html',
       chunks: ['chronology']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/category_station.html',
+      template: './src/category_station.html',
       filename: './category_station.html',
       chunks: ['stations']
     })

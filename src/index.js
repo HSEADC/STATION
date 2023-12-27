@@ -3,7 +3,6 @@ import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Navigation from './javascript/navigation.jsx'
-import Main_button from './javascript/buttons.jsx'
 import Station_card from './javascript/card.jsx'
 
 ReactDOM.createRoot(document.getElementById('menu')).render(<Navigation />)
