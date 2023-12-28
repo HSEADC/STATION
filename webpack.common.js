@@ -12,7 +12,8 @@ module.exports = {
     chronology: './src/chrono.js',
     articles: './src/articles.js',
     article_1: './src/articles.js',
-    station_1: './src/station.js'
+    station_1: './src/station.js',
+    styleguide: './src/index.js'
   },
   output: {
     filename: '[name].js',
@@ -115,6 +116,13 @@ module.exports = {
       template: './src/category_chronology.html',
       filename: './category_chronology.html',
       chunks: ['chronology']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/styleguide.html',
+      filename: './styleguide.html',
+      chunks: ['styleguide']
     }),
     new HtmlWebpackPlugin({
       hash: true,

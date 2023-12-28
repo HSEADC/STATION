@@ -1,5 +1,15 @@
+@media only screen and (min-width: 300px) and (max-width: 1200px) {
+  #menu {
+    .menu {
+      display: none;
+    }
+    #burger {
+      display: block;
+    }
+  }
+}
 .index {
-  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+  @media only screen and (min-width: 300px) and (max-width: 1200px) {
     .footer {
       padding: 8vw;
       .info {
@@ -146,6 +156,30 @@
       }
       .card11 {
         grid-area: 6 / 2 / 7 / 3;
+      }
+    }
+  }
+}
+.new_train {
+  @media only screen and (min-width: 300px) and (max-width: 865px) {
+    h1 {
+      font-size: 1.4rem;
+    }
+    p {
+      margin: 0;
+    }
+    .content {
+      width: 69vw;
+      margin-left: 0;
+      p {
+        width: 68vw;
+        margin-top: 10vh;
+      }
+      .gallery {
+        div {
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
     }
   }

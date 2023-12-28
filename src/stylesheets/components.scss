@@ -7,6 +7,9 @@
   justify-content: space-between;
   border-radius: 60px;
   z-index: 1000;
+  #burger {
+    display: none;
+  }
 
   .menu {
     width: 60vw;
@@ -17,6 +20,7 @@
     gap: 8vw;
   }
 }
+
 .card {
   width: 28vw;
   height: 24vh;

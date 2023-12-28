@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../images/tiser/logo.svg'
+import burg from '../images/tiser/burger_menu.svg'
 import '../stylesheets/components.scss'
 
 class Navigation extends React.Component {
@@ -10,6 +11,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className="navigation">
+        <img id="burger" src={burg} alt="" />
         <div className="menu">
           <a href="./category_chronology.html">Хронология</a>
           <a href="./category_station.html">Станции</a>
