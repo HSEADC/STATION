@@ -522,6 +522,8 @@ var react = __webpack_require__(294);
 var react_dom = __webpack_require__(935);
 ;// CONCATENATED MODULE: ./src/images/tiser/logo.svg
 const logo_namespaceObject = __webpack_require__.p + "images/7e4b4e7f651863097609.svg";
+;// CONCATENATED MODULE: ./src/images/tiser/burger_menu.svg
+const burger_menu_namespaceObject = __webpack_require__.p + "images/8c765fb17863d50d5e55.svg";
 ;// CONCATENATED MODULE: ./src/javascript/navigation.jsx
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -535,6 +537,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -558,7 +561,11 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react.createElement("div", {
         className: "navigation"
-      }, /*#__PURE__*/react.createElement("div", {
+      }, /*#__PURE__*/react.createElement("img", {
+        id: "burger",
+        src: burger_menu_namespaceObject,
+        alt: ""
+      }), /*#__PURE__*/react.createElement("div", {
         className: "menu"
       }, /*#__PURE__*/react.createElement("a", {
         href: "./category_chronology.html"
