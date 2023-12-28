@@ -10,7 +10,9 @@
   #burger {
     display: none;
   }
-
+  #logo {
+    cursor: pointer;
+  }
   .menu {
     width: 60vw;
     display: flex;
@@ -47,6 +49,7 @@ button {
   padding: 8px 8px 8px 36px;
   gap: 16px;
   color: var(--white);
+  cursor: pointer;
 }
 button:hover {
   background-color: var(--black);

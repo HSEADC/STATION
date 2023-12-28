@@ -700,17 +700,17 @@ react_dom.createRoot(document.getElementById('2_card_2')).render( /*#__PURE__*/r
   margin: 0
 }));
 react_dom.createRoot(document.getElementById('foot')).render( /*#__PURE__*/react.createElement(footer, null));
-// Находим элемент div по его идентификатору
-var myDiv = document.getElementById('2_card_1');
+// // Находим элемент div по его идентификатору
+// const myDiv = document.getElementById('2_card_1')
 
-// Добавляем обработчик события клика
-myDiv.addEventListener('click', redirectToPage);
+// // Добавляем обработчик события клика
+// myDiv.addEventListener('click', redirectToPage)
 
-// Функция перенаправления на другую страницу
-function redirectToPage() {
-  // Используем метод window.location для изменения адреса страницы
-  window.location.href = './mayakovskay.html';
-}
+// // Функция перенаправления на другую страницу
+// function redirectToPage() {
+//   // Используем метод window.location для изменения адреса страницы
+//   window.location.href = './mayakovskay.html'
+// }
 })();
 
 /******/ })()

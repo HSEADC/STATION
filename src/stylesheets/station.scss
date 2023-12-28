@@ -44,6 +44,9 @@
     .div1 {
       grid-area: 1 / 1 / 2 / 2;
     }
+    .div1:hover {
+      background-color: var;
+    }
     .div2 {
       grid-area: 1 / 2 / 2 / 3;
     }
@@ -85,6 +88,36 @@
     }
     .div11 {
       grid-area: 3 / 4 / 4 / 5;
+    }
+    .div1:hover {
+      background-color: var(--orange);
+    }
+    .div2:hover {
+      background-color: #c43031;
+    }
+    .div3:hover {
+      background-color: #59ad63;
+    }
+    .div4:hover {
+      background-color: #774735;
+    }
+    .div5:hover {
+      background-color: #59ad63;
+    }
+    .div6:hover {
+      background-color: #296aac;
+    }
+    .div8:hover {
+      background-color: #f6c150;
+    }
+    .div9:hover {
+      background-color: #74c0bf;
+    }
+    .div10:hover {
+      background-color: #774735;
+    }
+    .div11:hover {
+      background-color: #296aac;
     }
   }
 }

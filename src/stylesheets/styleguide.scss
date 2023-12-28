@@ -47,7 +47,17 @@
       grid-area: 6 / 5 / 8 / 7;
     }
   }
+  .line_sem {
+    margin-top: -15vh;
+    width: 100vw;
+    height: 65vh;
+    margin-left: -17vw;
+    background-image: url(./images/styleguide/lines.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .logotype {
+    margin-top: 30vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 1fr);
