@@ -10,6 +10,7 @@
 }
 .index {
   @media only screen and (min-width: 300px) and (max-width: 1200px) {
+    overflow-x: hidden;
     .footer {
       padding: 8vw;
       .info {
@@ -163,13 +164,13 @@
 .new_train {
   @media only screen and (min-width: 300px) and (max-width: 865px) {
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     p {
       margin: 0;
     }
     .content {
-      width: 69vw;
+      width: 90vw;
       margin-left: 0;
       p {
         width: 68vw;
