@@ -1,0 +1,33 @@
+.new_train {
+  .content {
+    width: 70vw;
+    margin-left: 26vw;
+    .image {
+      margin-top: 10vh;
+      width: auto;
+      border-radius: 20px;
+      height: 50vh;
+      background-position: right;
+    }
+    p {
+      width: 24vw;
+      margin-top: 10vh;
+    }
+    .gallery {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .image {
+        width: 48%;
+      }
+    }
+  }
+  .image:nth-child(1) {
+    background-image: url(./images/articles/train/g1_2.jpeg);
+  }
+  .image:nth-child(2) {
+    background-image: url(./images/articles/train/g1_1.jpeg);
+    background-position: center;
+    background-size: 140%;
+  }
+}

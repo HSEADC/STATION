@@ -10,7 +10,9 @@ module.exports = {
     index: './src/index.js',
     stations: './src/station.js',
     chronology: './src/chrono.js',
-    articles: './src/articles.js'
+    articles: './src/articles.js',
+    article_1: './src/articles.js',
+    station_1: './src/station.js'
   },
   output: {
     filename: '[name].js',
@@ -83,6 +85,20 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
       chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/new_trains.html',
+      filename: './new_trains.html',
+      chunks: ['article_1']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/mayakovskay.html',
+      filename: './mayakovskay.html',
+      chunks: ['station_1']
     }),
 
     // Internal pages
