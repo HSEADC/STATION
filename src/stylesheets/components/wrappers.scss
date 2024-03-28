@@ -184,6 +184,14 @@
 .W_ArticleImages {
   display: flex;
   gap: 1vw;
+  height: 30vh;
+  margin-left: -5vw;
+  img:nth-child(1) {
+    width: 20vw;
+  }
+  img:nth-child(2) {
+    width: 30vw;
+  }
 }
 .W_AlsoLook {
   margin-top: 5vh;
