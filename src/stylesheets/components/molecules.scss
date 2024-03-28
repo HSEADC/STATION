@@ -64,6 +64,10 @@
   }
   &.serpy:hover {
     background-color: var(--serpy);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
   }
   &.lubli:hover {
     background-color: var(--lubli);
@@ -80,6 +84,51 @@
   }
   &.nekra:hover {
     background-color: var(--nekra);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
+  }
+  &.arch:hover {
+    background-color: var(--MCC);
+  }
+  &.tech:hover {
+    background-color: var(--BKL);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
+  }
+  &.hist:hover {
+    background-color: var(--kalug);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
+  }
+  &.art:hover {
+    background-color: var(--serpy);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
+  }
+  &.info:hover {
+    background-color: var(--filev);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
+  }
+  &.event:hover {
+    background-color: var(--tagan);
+    color: white;
+    .A_Tags {
+      border-color: var(--white);
+    }
+  }
+  &.life:hover {
+    background-color: var(--sokol);
     color: white;
     .A_Tags {
       border-color: var(--white);

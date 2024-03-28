@@ -671,6 +671,22 @@ var Footer = /*#__PURE__*/function (_React$Component) {
 
 react_dom.createRoot(document.getElementById('menu')).render( /*#__PURE__*/react.createElement(navigation, null));
 react_dom.createRoot(document.getElementById('foot')).render( /*#__PURE__*/react.createElement(footer, null));
+var NewsElement = document.querySelector('.O_News');
+var ArtElement = document.querySelector('.O_Articles');
+var News = document.querySelector('#news');
+var Art = document.querySelector('#articles');
+document.querySelector('#news').addEventListener('click', function () {
+  NewsElement.style.display = 'block';
+  ArtElement.style.display = 'none';
+  News.classList.toggle('unactive');
+  Art.classList.toggle('unactive');
+});
+document.querySelector('#articles').addEventListener('click', function () {
+  NewsElement.style.display = 'none';
+  ArtElement.style.display = 'block';
+  News.classList.toggle('unactive');
+  Art.classList.toggle('unactive');
+});
 })();
 
 /******/ })()

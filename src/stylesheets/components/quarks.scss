@@ -120,6 +120,15 @@
     margin-left: 5px;
   }
 }
+.Q_Point {
+  width: 14px;
+  height: 14px;
+  background-color: var(--serpy);
+  border-radius: 100%;
+  :hover {
+    background-color: var(--black);
+  }
+}
 
 //* Images
 .Q_TitleImage {
