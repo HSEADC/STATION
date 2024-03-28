@@ -520,10 +520,6 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(935);
-;// CONCATENATED MODULE: ./src/images/tiser/logo.svg
-const logo_namespaceObject = __webpack_require__.p + "images/7e4b4e7f651863097609.svg";
-;// CONCATENATED MODULE: ./src/images/tiser/burger_menu.svg
-const burger_menu_namespaceObject = __webpack_require__.p + "images/8c765fb17863d50d5e55.svg";
 ;// CONCATENATED MODULE: ./src/javascript/navigation.jsx
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -537,8 +533,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
 
 
 var Navigation = /*#__PURE__*/function (_React$Component) {
@@ -560,32 +554,37 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react.createElement("div", {
-        className: "navigation"
+        className: "W_Menu"
       }, /*#__PURE__*/react.createElement("img", {
-        id: "burger",
-        src: burger_menu_namespaceObject,
-        alt: ""
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "menu"
-      }, /*#__PURE__*/react.createElement("a", {
-        href: "./category_chronology.html"
-      }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
-        href: "./category_station.html"
-      }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
-        href: "./category_articles.html"
-      }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
-        id: "logo",
-        src: logo_namespaceObject,
+        className: "Q_Logo",
+        id: "Q_Logo_Menu",
         alt: "",
         onClick: this.redirectToIndex
+      }), /*#__PURE__*/react.createElement("div", {
+        className: "M_MenuPoints"
+      }, /*#__PURE__*/react.createElement("a", {
+        href: "./category_chronology.html",
+        className: "A_Point"
+      }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
+        href: "./category_station.html",
+        className: "A_Point"
+      }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
+        href: "./category_articles.html",
+        className: "A_Point"
+      }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
+        className: "Q_Burger",
+        alt: ""
+      }), /*#__PURE__*/react.createElement("img", {
+        className: "Q_Search",
+        alt: ""
       }));
     }
   }]);
   return Navigation;
 }(react.Component);
 /* harmony default export */ const navigation = (Navigation);
-;// CONCATENATED MODULE: ./src/images/tiser/logo_white.svg
-const logo_white_namespaceObject = __webpack_require__.p + "images/d28b349c71eaf32b1bc1.svg";
+;// CONCATENATED MODULE: ./src/images/components/quarks/Q_Logo_white.svg
+const Q_Logo_white_namespaceObject = __webpack_require__.p + "images/38c01bd31378009b397c.svg";
 ;// CONCATENATED MODULE: ./src/images/tiser/icon_dzen.svg
 const icon_dzen_namespaceObject = __webpack_require__.p + "images/b56b01a4f3d07f44a379.svg";
 ;// CONCATENATED MODULE: ./src/images/tiser/icon_vk.svg
@@ -630,24 +629,24 @@ var Footer = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react.createElement("div", {
-        className: "footer"
+        className: "O_Footer"
       }, /*#__PURE__*/react.createElement("div", {
-        className: "info"
+        className: "ProjectLinks"
       }, /*#__PURE__*/react.createElement("div", {
-        className: "content"
+        className: "Content"
       }, /*#__PURE__*/react.createElement("img", {
         id: "logo",
-        src: logo_white_namespaceObject,
+        src: Q_Logo_white_namespaceObject,
         alt: "",
         onClick: this.redirectToIndex
       }), /*#__PURE__*/react.createElement("p", {
         className: "big"
       }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
         className: "big"
-      }, " \u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("p", null, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438"), /*#__PURE__*/react.createElement("p", null, "\u041B\u0430\u0439\u0444\u0445\u0430\u043A\u0438"), /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u0434\u0431\u043E\u0440\u043A\u0438")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
+      }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438 "), /*#__PURE__*/react.createElement("p", null, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
         className: "big"
-      }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("p", null, "\u041C\u0430\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("p", null, "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430"))), /*#__PURE__*/react.createElement("div", {
-        className: "icons"
+      }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("p", null, "\u0421\u043F\u0438\u0441\u043A\u043E\u043C"), /*#__PURE__*/react.createElement("p", null, "\u041A\u0430\u0440\u0442\u043E\u0439"))), /*#__PURE__*/react.createElement("div", {
+        className: "Icons"
       }, /*#__PURE__*/react.createElement("img", {
         src: icon_tg_namespaceObject,
         alt: ""
@@ -658,7 +657,7 @@ var Footer = /*#__PURE__*/function (_React$Component) {
         src: icon_vk_namespaceObject,
         alt: ""
       }))), /*#__PURE__*/react.createElement("div", {
-        className: "names"
+        className: "UniversityInfo"
       }, /*#__PURE__*/react.createElement("p", null, "HSE ADC"), /*#__PURE__*/react.createElement("p", null, "\u0410\u0442\u043B\u0430\u0441\u043E\u0432\u0430 \u041D\u0430\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u0413\u0430\u043B\u0438\u0435\u0432\u0430 \u042D\u043B\u044C\u0432\u0438\u0440\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u043E\u043C\u043A\u043E\u0432\u0430 \u0410\u043D\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u0430\u0435\u043C \u0421\u043E\u0444\u044C\u044F")));
     }
   }]);
