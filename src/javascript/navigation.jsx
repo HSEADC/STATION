@@ -1,5 +1,4 @@
 import React from 'react'
-import '../stylesheets/components.scss'
 
 class Navigation extends React.Component {
   redirectToIndex = () => {

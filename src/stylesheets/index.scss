@@ -2,6 +2,11 @@
   .W_ChronoCardImage {
     background-image: url(./images/main_page/ChronoCardBg.png);
   }
+
+  #Article {
+    background-image: url(./images/main_page/W_ArticleCard_articles.png);
+    color: var(--white);
+  }
   .fourth {
     position: relative;
     margin: 30vh -6vw;

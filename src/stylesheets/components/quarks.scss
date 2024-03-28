@@ -127,6 +127,7 @@
   height: 450px;
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
   background-size: cover;
   border-radius: 20px;
 }
@@ -136,12 +137,14 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 .Q_ImageArticleAdditional {
   border-radius: 20px;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   &.two_col {
     width: 7vw;
     height: 7vw;
