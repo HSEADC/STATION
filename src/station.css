@@ -4,3 +4,8 @@
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/station.scss';
 @import 'stylesheets/station_1.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/wrappers.scss';
+@import 'stylesheets/components/organism.scss';

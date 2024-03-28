@@ -3,6 +3,8 @@ import './station.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Navigation from './javascript/navigation.jsx'
-import filterCards from './javascript/filter.jsx'
+import Footer from './javascript/footer.jsx'
 
 ReactDOM.createRoot(document.getElementById('menu')).render(<Navigation />)
+
+ReactDOM.createRoot(document.getElementById('foot')).render(<Footer />)

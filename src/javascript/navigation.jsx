@@ -1,6 +1,4 @@
 import React from 'react'
-import Logo from '../images/tiser/logo.svg'
-import burg from '../images/tiser/burger_menu.svg'
 import '../stylesheets/components.scss'
 
 class Navigation extends React.Component {
@@ -10,14 +8,26 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <div className="navigation">
-        <img id="burger" src={burg} alt="" />
-        <div className="menu">
-          <a href="./category_chronology.html">Хронология</a>
-          <a href="./category_station.html">Станции</a>
-          <a href="./category_articles.html">Статьи</a>
+      <div className="W_Menu">
+        <img
+          className="Q_Logo"
+          id="Q_Logo_Menu"
+          alt=""
+          onClick={this.redirectToIndex}
+        />
+        <div className="M_MenuPoints">
+          <a href="./category_chronology.html" className="A_Point">
+            Хронология
+          </a>
+          <a href="./category_station.html" className="A_Point">
+            Станции
+          </a>
+          <a href="./category_articles.html" className="A_Point">
+            Статьи
+          </a>
         </div>
-        <img id="logo" src={Logo} alt="" onClick={this.redirectToIndex} />
+        <img className="Q_Burger" alt="" />
+        <img className="Q_Search" alt="" />
       </div>
     )
   }

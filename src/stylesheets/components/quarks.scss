@@ -1,0 +1,153 @@
+.Q_Arrow {
+  width: 39px;
+  height: 39px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  &.up {
+    background-image: url(./images/components/quarks/Q_Arrow_up_white.svg);
+    &.orange {
+      background-image: url(./images/components/quarks/Q_Arrow_up_orange.svg);
+    }
+    &.orange_white {
+      background-image: url(./images/components/quarks/Q_Arrow_up_orange_white.svg);
+    }
+  }
+  &.right {
+    background-image: url(./images/components/quarks/Q_Arrow_right_white.svg);
+    &.orange {
+      background-image: url(./images/components/quarks/Q_Arrow_right_orange.svg);
+    }
+  }
+  &.down {
+    background-image: url(./images/components/quarks/Q_Arrow_down_white.svg);
+    &.orange {
+      background-image: url(./images/components/quarks/Q_Arrow_down_orange.svg);
+    }
+  }
+  &.back {
+    background-image: url(./images/components/quarks/Q_Arrow_back_white.svg);
+    &.orange {
+      background-image: url(./images/components/quarks/Q_Arrow_back_orange.svg);
+    }
+  }
+}
+
+.Q_Logo {
+  width: 140px;
+  height: 28px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url(./images/components/quarks/Q_Logo.svg);
+  &.active {
+    cursor: pointer;
+  }
+  &.icon {
+    width: 25px;
+    background-image: url(./images/components/quarks/Q_Logo_icon.svg);
+  }
+  &.text {
+    width: 115px;
+    background-image: url(./images/components/quarks/Q_Logo_text.svg);
+  }
+}
+.Q_HSELogo {
+  width: 150px;
+  height: 39px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./images/components/quarks/Q_HSELogo.svg);
+}
+.Q_SocialMedia {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.dzen {
+    background-image: url(./images/components/quarks/Q_SocialMedia_dzen.svg);
+  }
+  &.vk {
+    background-image: url(./images/components/quarks/Q_SocialMedia_vk.svg);
+  }
+  &.tg {
+    background-image: url(./images/components/quarks/Q_SocialMedia_tg.svg);
+  }
+}
+.Q_Burger {
+  display: none;
+  width: 2vw;
+  height: 1.75vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url(./images/components/quarks/Q_BurgerMenu_black.svg);
+  &.white {
+    background-image: url(./images/components/quarks/Q_BurgerMenu_white.svg);
+  }
+}
+.Q_Search {
+  width: 2vw;
+  height: 2vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url(./images/components/quarks/Q_SearchIcon_black.svg);
+  & .white {
+    background-image: url(./images/components/quarks/Q_SearchIcon_white.svg);
+  }
+}
+.Q_Line {
+  height: 3px;
+  width: 145px;
+  background-color: var(--black);
+  border-radius: 3px;
+  margin-bottom: 6px;
+  &.long {
+    width: 300px;
+    background-color: var(--serpy);
+    + h3 {
+      color: var(--serpy);
+    }
+  }
+  + h3 {
+    margin-left: 5px;
+  }
+}
+
+//* Images
+.Q_TitleImage {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.Q_ImageArticleCover {
+  width: 96%;
+  border-radius: 20px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Q_ImageArticleAdditional {
+  border-radius: 20px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.two_col {
+    width: 7vw;
+    height: 7vw;
+  }
+  &.six_col {
+    width: 23vw;
+    height: 7vw;
+  }
+}

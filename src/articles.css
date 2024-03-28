@@ -6,3 +6,8 @@
 @import 'stylesheets/new_trains.scss';
 @import 'stylesheets/components.scss';
 @import 'stylesheets/adaptive.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/wrappers.scss';
+@import 'stylesheets/components/organism.scss';

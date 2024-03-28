@@ -1,0 +1,69 @@
+.A_MainButton {
+  display: flex;
+  background-color: var(--kalug);
+  padding: 14px;
+  padding-left: 32px;
+  gap: 12px;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100px;
+  height: fit-content;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.A_Tags {
+  border: 1.5px solid var(--black);
+  border-radius: 30px;
+  padding: 8px 24px;
+  height: fit-content;
+  width: fit-content;
+  &.white {
+    border: 1.5px solid var(--white);
+    color: white;
+  }
+}
+.A_Point {
+  padding: 1.5vh 3vw;
+  color: var(--black);
+  border-radius: 100px;
+  & .active {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}
+.A_Point:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.A_SectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &.unactive {
+    h1 {
+      font-size: 66px;
+      color: var(--serpy);
+      span {
+        font-size: 66px;
+        color: var(--serpy);
+      }
+    }
+  }
+}
+.A_SectionDescribe + .W_CardsArticleCollection {
+  margin-top: 32px;
+}
+.A_SectionHeading + .W_CardsArticleCollection {
+  margin-top: 32px;
+}
+.A_ArticleBody {
+  display: flex;
+  gap: 3vw;
+  p:nth-child(1) {
+    width: 15vw;
+  }
+  p:nth-child(2) {
+    width: 22vw;
+  }
+}

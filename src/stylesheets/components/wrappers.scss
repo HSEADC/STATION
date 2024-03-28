@@ -1,0 +1,137 @@
+.W_ArticleCard {
+  position: relative;
+  width: 43vw;
+  height: 21vw;
+  padding: 2.5vw 2vw;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  h2 {
+    width: 100%;
+    padding-right: 30%;
+  }
+  .A_MainButton {
+    position: absolute;
+    right: 2.5vw;
+    bottom: 2vw;
+  }
+  &.large {
+    width: 100%;
+    height: 30vw;
+    padding: 5vw;
+    .A_MainButton {
+      right: 5vw;
+      bottom: 5vw;
+    }
+  }
+}
+
+.W_CardsArticleCollection {
+  display: flex;
+  justify-content: space-between;
+}
+.W_CardsCollection {
+  display: flex;
+  justify-content: space-between;
+}
+.W_TagsCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.W_AdditionalArticleTag {
+  display: flex;
+  align-items: flex-end;
+}
+.W_Menu {
+  border-radius: 100px;
+  border: 2px solid var(--black);
+  background-color: var(--light-gray);
+  display: flex;
+  width: 87vw;
+  justify-content: space-between;
+  padding: 0px 3vw;
+  align-items: center;
+  position: fixed;
+  top: 1vw;
+  z-index: 10000;
+}
+.W_ImageArticleBlock {
+  p {
+    width: 15%;
+    position: absolute;
+  }
+  margin-top: 3vh;
+}
+.W_AdditionalGallery {
+  display: flex;
+  gap: 1vw;
+}
+.W_InfoAfticleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32vh;
+}
+.W_CardsChronoCollection {
+  margin-top: 4vh;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  .Q_ImageArticleCover {
+    width: 45vw;
+    height: 33vh;
+  }
+}
+.W_ChronoCard {
+  border-radius: 20px;
+  padding: 3vw;
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/components/wrapped/ChronoCardBg.png);
+  width: 45vw;
+  height: 33vh;
+  .Q_Arrow {
+    position: absolute;
+    right: 0;
+    top: 0vw;
+    width: 50px;
+    height: 50px;
+  }
+  h3 {
+    width: 32vw;
+  }
+  .W_ChronoCardImage {
+    position: relative;
+    margin-top: 3vw;
+    width: 100%;
+    height: 15vh;
+    padding: 1vw;
+    border-radius: 10px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .A_Tags {
+      position: absolute;
+      bottom: 1vw;
+    }
+  }
+}
+.W_PageTitleName {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  align-items: flex-end;
+}
+.W_PageTitle {
+  margin-top: 16vh;
+}
+.W_CardCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}

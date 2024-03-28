@@ -1,0 +1,71 @@
+.O_Section_StationCards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+.O_FullArticleSection {
+  display: flex;
+  margin-bottom: 10vh;
+}
+.O_SectionNews {
+  margin-bottom: 10vh;
+  .W_ArticleCard {
+    margin-top: 5vw;
+  }
+}
+.O_SectionChrono {
+  margin-bottom: 10vh;
+}
+.O_Footer {
+  width: 100vw;
+  margin-left: -4vw;
+  background-color: var(--kalug);
+  color: var(--white);
+  height: 40vh;
+  margin: 0 -6vw;
+  padding: 6vh 7vw;
+  margin-top: 10vh;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .UniversityInfo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    p {
+      width: 10.5vw;
+    }
+  }
+  .ProjectLinks {
+    display: flex;
+    justify-content: space-between;
+    .Icons img:nth-child(1) {
+      margin-right: 1vw;
+    }
+    .Icons img:nth-child(2) {
+      margin-right: 1vw;
+    }
+    .Content {
+      width: 50vw;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      img {
+        margin-right: 6vw;
+      }
+      p {
+        width: 10vw;
+      }
+      div {
+        width: 10vw;
+      }
+    }
+  }
+}
+.O_CatalogeCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}

@@ -8,8 +8,8 @@ body {
 }
 
 body {
-  margin: 3vh 2vw;
-  .second {
-    margin: 0vh -2vw;
-  }
+  background-color: var(--light-gray);
+  font-family: 'Pragmatica';
+  overflow-x: hidden;
+  padding: 2vh 6vw;
 }
