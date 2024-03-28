@@ -27,7 +27,7 @@
     }
   }
   &.back {
-    background-image: url(./images/components/quarks/Q_Arrow_back_white.svg);
+    background-image: url(./images/components/quarks/Q_Arrow_back_black.svg);
     &.orange {
       background-image: url(./images/components/quarks/Q_Arrow_back_orange.svg);
     }
@@ -121,13 +121,13 @@
   }
 }
 .Q_Point {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   background-color: var(--serpy);
   border-radius: 100%;
-  :hover {
-    background-color: var(--black);
-  }
+}
+.Q_Point:hover {
+  background-color: var(--black);
 }
 
 //* Images

@@ -135,6 +135,9 @@
 }
 .W_PageTitle {
   margin-top: 16vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .W_CardCollection {
   display: flex;
@@ -143,9 +146,48 @@
 }
 .W_ChronoLine {
   p {
-    margin-right: 2vw;
+    width: 5vw;
   }
   display: flex;
   flex-direction: row;
   gap: 4px;
+  &.century {
+    margin-left: -5.3vw;
+  }
+}
+
+.W_OneLinePoints {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+}
+.W_ChronoPointsCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin-left: 6vw;
+}
+.W_ChronoContentTitle {
+  display: flex;
+  gap: 4vw;
+  margin-top: 3vh;
+}
+.W_ChronoContent {
+  .A_ArticleBody {
+    margin-left: 8.75vw;
+    margin-top: 2vh;
+    p {
+      width: 22vw;
+    }
+  }
+}
+.W_ArticleImages {
+  display: flex;
+  gap: 1vw;
+}
+.W_AlsoLook {
+  margin-top: 5vh;
+  h2 {
+    margin-bottom: 2vh;
+  }
 }

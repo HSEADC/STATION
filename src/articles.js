@@ -27,3 +27,14 @@ document.querySelector('#articles').addEventListener('click', function () {
   News.classList.toggle('unactive')
   Art.classList.toggle('unactive')
 })
+
+document
+  .querySelector('.A_MainButton')
+  .addEventListener('mouseover', function () {
+    document.querySelector('.Q_Arrow').classList.remove('orange_white')
+  })
+document
+  .querySelector('.A_MainButton')
+  .addEventListener('mouseout', function () {
+    document.querySelector('.Q_Arrow').classList.add('orange_white')
+  })

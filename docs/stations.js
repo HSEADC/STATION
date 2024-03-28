@@ -671,6 +671,16 @@ var Footer = /*#__PURE__*/function (_React$Component) {
 
 react_dom.createRoot(document.getElementById('menu')).render( /*#__PURE__*/react.createElement(navigation, null));
 react_dom.createRoot(document.getElementById('foot')).render( /*#__PURE__*/react.createElement(footer, null));
+var station_button = document.querySelectorAll('.A_MainButton');
+var arrow = document.querySelectorAll('.Q_Arrow');
+for (var i = 0; i < station_button.length; i++) {
+  station_button.addEventListener('mouseover', function () {
+    arrow.classList.remove('orange_white');
+  });
+  station_button.addEventListener('mouseout', function () {
+    arrow.classList.add('orange_white');
+  });
+}
 })();
 
 /******/ })()

@@ -671,6 +671,25 @@ var Footer = /*#__PURE__*/function (_React$Component) {
 
 react_dom.createRoot(document.getElementById('menu')).render( /*#__PURE__*/react.createElement(navigation, null));
 react_dom.createRoot(document.getElementById('foot')).render( /*#__PURE__*/react.createElement(footer, null));
+var buttons = document.querySelectorAll('.A_MainButton');
+var arrows = document.querySelectorAll('.Q_Arrow');
+var _loop = function _loop(i) {
+  buttons[i].addEventListener('mouseover', function () {
+    handleMouseover(i);
+  });
+  buttons[i].addEventListener('mouseout', function () {
+    handleMouseout(i);
+  });
+};
+for (var i = 0; i < buttons.length + 2; i++) {
+  _loop(i);
+}
+function handleMouseover(index) {
+  arrows[index].classList.remove('orange_white');
+}
+function handleMouseout(index) {
+  arrows[index].classList.add('orange_white');
+}
 })();
 
 /******/ })()

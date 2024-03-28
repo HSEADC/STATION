@@ -10,6 +10,19 @@
   height: fit-content;
   color: var(--white);
   cursor: pointer;
+  &.secondary {
+    background-color: var(--light-gray);
+    flex-direction: row-reverse;
+    color: var(--black);
+    padding-right: 32px;
+    padding-left: 10px;
+  }
+}
+.A_MainButton:hover {
+  background-color: var(--black);
+}
+.secondary:hover {
+  color: var(--white);
 }
 
 .A_Tags {
@@ -65,5 +78,8 @@
   }
   p:nth-child(2) {
     width: 22vw;
+  }
+  &.column {
+    flex-direction: column;
   }
 }
