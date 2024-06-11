@@ -4,16 +4,7 @@
 
 html,
 body {
+  padding: 4vh 3vw;
   height: 100%;
-}
-
-body {
   background-color: var(--light-gray);
-  font-family: 'Pragmatica';
-  overflow-x: hidden;
-  padding: 2vh 6vw;
-}
-#Pychtino {
-  background-image: url(./images/main_page/W_ArticleCardPykchtino.png);
-  color: var(--white);
 }

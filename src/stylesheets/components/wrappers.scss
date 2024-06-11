@@ -1,6 +1,6 @@
 .W_ArticleCard {
   position: relative;
-  width: 43vw;
+  width: 43.25vw;
   height: 21vw;
   padding: 2.5vw 2vw;
   background-color: var(--white);
@@ -11,7 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  align-items: flex-end;
   h2 {
     width: 100%;
     padding-right: 30%;
@@ -37,10 +37,14 @@
 .W_CardsArticleCollection {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2.5vh;
 }
 .W_CardsCollection {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 2.5vh;
 }
 .W_TagsCollection {
   display: flex;
@@ -50,15 +54,16 @@
 .W_AdditionalArticleTag {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 .W_Menu {
   border-radius: 100px;
   border: 2px solid var(--black);
   background-color: var(--light-gray);
   display: flex;
-  width: 87vw;
+  width: 88vw;
   justify-content: space-between;
-  padding: 0px 3vw;
+  padding: 0px 0vw;
   align-items: center;
   position: fixed;
   top: 1vw;
@@ -74,6 +79,7 @@
 .W_AdditionalGallery {
   display: flex;
   gap: 1vw;
+  margin-top: 1vh;
 }
 .W_InfoAfticleSection {
   display: flex;
@@ -98,7 +104,6 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./images/components/wrapped/ChronoCardBg.png);
   width: 45vw;
   height: 33vh;
   .Q_Arrow {
@@ -127,6 +132,11 @@
     }
   }
 }
+// .W_ChronoCard:hover {
+//   .Q_Arrow {
+//     background-image: url(../../images/components/quarks/Q_Arrow_up_black.svg);
+//   }
+// }
 .W_PageTitleName {
   display: flex;
   flex-direction: row;
@@ -159,12 +169,12 @@
 .W_OneLinePoints {
   display: flex;
   flex-direction: row;
-  gap: 1vh;
+  gap: 0.5vh;
 }
 .W_ChronoPointsCollection {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 1.5vh;
   margin-left: 6vw;
 }
 .W_ChronoContentTitle {
@@ -198,4 +208,16 @@
   h2 {
     margin-bottom: 2vh;
   }
+}
+
+.W_ImageRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2vw;
+}
+.W_TextArticleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: 3vh;
 }

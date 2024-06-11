@@ -1,19 +1,19 @@
 {
-  "name": "B22DZ09-08",
-  "version": "2.0.0",
+  "name": "static-site-boilerplate",
+  "version": "4.0.1",
   "author": "Galieva Elvira",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https:///github.com/HSEADC/B22DZ09-08"
+    "url": "git+https:///github.com/HSEADC/STATION"
   },
   "bugs": {
-    "url": "https://github.com/HSEADC/B22DZ09-08/issues"
+    "url": "https://github.com/HSEADC/STATION/issues"
   },
-  "homepage": "https://hseadc.github.io/B22DZ09-08/",
+  "homepage": "https://hseadc.github.io/STATION/",
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dev_build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
@@ -45,7 +45,8 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
   }
 }

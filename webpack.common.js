@@ -6,14 +6,14 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
+  //!JS файлы
   entry: {
     index: './src/index.js',
-    stations: './src/station.js',
-    chronology: './src/chrono.js',
-    articles: './src/articles.js',
-    article_1: './src/articles.js',
-    station_1: './src/station.js',
-    styleguide: './src/index.js'
+    stations: './src/javascript/pages/stations.js',
+    chronology: './src/javascript/pages/chrono.js',
+    articles: './src/javascript/pages/articles.js'
+    // styleguide: './src/javascript/pages/styleguide.js',
+    // aboutus: './src/javascript/pages/aboutus.js'
   },
   output: {
     filename: '[name].js',
@@ -58,7 +58,7 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|webp| mp4)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|mp4)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
@@ -87,60 +87,43 @@ module.exports = {
       filename: './index.html',
       chunks: ['index']
     }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/articles/new_trains.html',
-      filename: './new_trains.html',
-      chunks: ['article_1']
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/stations/mayakovskay.html',
-      filename: './mayakovskay.html',
-      chunks: ['station_1']
-    }),
-
+    //!Страницы
     // Internal pages
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/category_articles.html',
-      filename: './category_articles.html',
+      template: './src/pages/СategoryStations.html',
+      filename: './СategoryStations.html',
+      chunks: ['stations']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/CategoryArticles.html',
+      filename: './CategoryArticles.html',
       chunks: ['articles']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/category_chronology.html',
-      filename: './category_chronology.html',
+      template: './src/pages/CategoryChrono.html',
+      filename: './CategoryChrono.html',
       chunks: ['chronology']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/styleguide.html',
-      filename: './styleguide.html',
-      chunks: ['styleguide']
+      template: './src/pages/AboutUs.html',
+      filename: './AboutUs.html',
+      chunks: ['about']
     }),
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/category_station.html',
-      filename: './category_station.html',
-      chunks: ['stations']
+      template: './src/pages/Styleguide.html',
+      filename: './Styleguide.html',
+      chunks: ['styleguide']
     })
-
-    // Partials
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/analytics.html'),
-    //     location: 'analytics',
-    //     template_filename: '*',
-    //     priority: 'replace'
-    //   }
-    // ])
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

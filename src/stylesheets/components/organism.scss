@@ -34,17 +34,16 @@
     align-items: flex-end;
     justify-content: space-between;
     p {
-      width: 10.5vw;
+      width: max-content;
     }
   }
   .ProjectLinks {
     display: flex;
     justify-content: space-between;
-    .Icons img:nth-child(1) {
-      margin-right: 1vw;
-    }
-    .Icons img:nth-child(2) {
-      margin-right: 1vw;
+    .Icons {
+      display: flex;
+      gap: 1vw;
+      padding-top: 1vh;
     }
     .Content {
       width: 50vw;
@@ -55,11 +54,21 @@
       img {
         margin-right: 6vw;
       }
-      p {
-        width: 10vw;
+      .big {
+        margin-bottom: 0.5vh;
+      }
+      a {
+        color: var(--white);
+        font-size: 18px;
+        line-height: 110%;
+        font-weight: 400;
+        text-transform: none;
       }
       div {
         width: 10vw;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1vh;
       }
     }
   }

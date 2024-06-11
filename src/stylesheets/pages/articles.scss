@@ -1,0 +1,14 @@
+.CategoryArticles {
+  .O_Articles {
+    .W_ArticleCard {
+      // background-image: url(./images/articles/ArticleCard_Bg.jpg);
+    }
+  }
+  .O_News {
+    display: none;
+    .W_ArticleCard {
+      // background-image: url(./images/articles/NewsCard_Bg.png);
+      // color: var(--white);
+    }
+  }
+}
