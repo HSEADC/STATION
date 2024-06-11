@@ -490,39 +490,6 @@ if (true) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
@@ -531,165 +498,6 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(745);
-;// CONCATENATED MODULE: ./src/javascript/particles/button.jsx
-
-
-
-
-function Button(_ref) {
-  var text = _ref.text,
-      arrow = _ref.arrow,
-      linking = _ref.linking;
-  var actual_arrow = "Q_Arrow ".concat(arrow);
-  var linkLong = linking;
-
-  var handleClick = function handleClick() {
-    window.location.href = linkLong;
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "A_Button",
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "button"
-  }, text), /*#__PURE__*/react.createElement("div", {
-    className: actual_arrow
-  })));
-}
-
-/* harmony default export */ const particles_button = (Button);
-;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
-
-
-
-
-
-
-function Menu(_ref) {
-  var state = _ref.state;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "W_Menu"
-  }, /*#__PURE__*/react.createElement("a", {
-    className: "A_MenuPoint",
-    href: "/index.html"
-  }, /*#__PURE__*/react.createElement("img", {
-    className: "Q_Logo menu",
-    id: "Q_Logo_Menu",
-    alt: ""
-  })), /*#__PURE__*/react.createElement("div", {
-    className: "M_MenuPoints"
-  }, /*#__PURE__*/react.createElement("a", {
-    href: "./CategoryChrono.html",
-    className: "A_Point"
-  }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
-    href: "./\u0421ategoryStations.html",
-    className: "A_Point"
-  }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: "./CategoryArticles.html",
-    className: "A_Point"
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
-    className: "Q_Burger",
-    alt: ""
-  }), /*#__PURE__*/react.createElement("a", {
-    className: "A_MenuPoint"
-  }, /*#__PURE__*/react.createElement("img", {
-    className: "Q_Search",
-    alt: ""
-  })));
-}
-
-/* harmony default export */ const menu = (Menu);
-;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
-const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
-;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
-
-
-
-
-
-
-
-
-function StationCard(_ref) {
-  var station = _ref.station,
-      color = _ref.color,
-      tag_1_text = _ref.tag_1_text,
-      tag_2_text = _ref.tag_2_text,
-      tag_3_text = _ref.tag_3_text,
-      Station_link = _ref.Station_link;
-  var classForDiv = 'M_Card ' + color;
-
-  var handleClick = function handleClick() {
-    window.location.href = "".concat(Station_link);
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: classForDiv,
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("h3", null, station), /*#__PURE__*/react.createElement("div", {
-    className: "W_TagsCollection"
-  }, tag_1_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_1_text)), tag_2_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_2_text)), tag_3_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_3_text)))));
-}
-function ArticleCard(_ref2) {
-  var text = _ref2.text,
-      bg_image = _ref2.bg_image,
-      linking = _ref2.linking,
-      size = _ref2.size;
-  var linkLong = linking;
-  var Card_size = "W_ArticleCard ".concat(size);
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: Card_size,
-    style: {
-      backgroundImage: "url(".concat(bg_image, ")")
-    }
-  }, /*#__PURE__*/react.createElement("h2", null, text), /*#__PURE__*/react.createElement(particles_button, {
-    text: 'читать',
-    arrow: 'up',
-    linking: linkLong
-  })));
-}
-function ChronoCard(_ref3) {
-  var text = _ref3.text,
-      year = _ref3.year,
-      image_URL = _ref3.image_URL,
-      isWhite = _ref3.isWhite;
-  var actual_tag_class = "A_Tags ".concat(isWhite);
-  return /*#__PURE__*/react.createElement("div", {
-    className: "W_ChronoCard",
-    style: {
-      backgroundImage: "url(".concat(ChronoCardBg_namespaceObject, ")")
-    }
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Arrow orange"
-  }), /*#__PURE__*/react.createElement("h3", null, text), /*#__PURE__*/react.createElement("div", {
-    className: "W_ChronoCardImage",
-    style: {
-      backgroundImage: "url(".concat(image_URL, ")")
-    }
-  }, /*#__PURE__*/react.createElement("div", {
-    className: actual_tag_class
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, year))));
-}
-function StOfTheDay(_ref4) {
-  var station = _ref4.station;
-  return /*#__PURE__*/React.createElement("div", {
-    "class": "M_CardStationOfTheDay"
-  }, /*#__PURE__*/React.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
-}
 ;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
 var stations = [{
   id: 0,
@@ -786,7 +594,7 @@ var articles = [{
   link: '/',
   type: 'news'
 }];
-var data_chronology = [{
+var chronology = [{
   id: 0,
   date: '1935',
   heading: 'Эскалаторы',
@@ -815,80 +623,6 @@ var data_chronology = [{
   text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
   text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
 }];
-;// CONCATENATED MODULE: ./src/javascript/particles/chrono.jsx
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-function TextChangingComponent() {
-  var _useState = useState('Текст по умолчанию'),
-      _useState2 = _slicedToArray(_useState, 2),
-      displayDate = _useState2[0],
-      setDisplayDate = _useState2[1];
-
-  var _useState3 = useState('Текст по умолчанию'),
-      _useState4 = _slicedToArray(_useState3, 2),
-      displayHeading = _useState4[0],
-      setDisplayHeading = _useState4[1];
-
-  var _useState5 = useState('Текст по умолчанию'),
-      _useState6 = _slicedToArray(_useState5, 2),
-      displayText1 = _useState6[0],
-      setDisplayText1 = _useState6[1];
-
-  var _useState7 = useState('Текст по умолчанию'),
-      _useState8 = _slicedToArray(_useState7, 2),
-      displayText2 = _useState8[0],
-      setDisplayText2 = _useState8[1];
-
-  var _useState9 = useState('Текст по умолчанию'),
-      _useState10 = _slicedToArray(_useState9, 2),
-      displayText3 = _useState10[0],
-      setDisplayText3 = _useState10[1];
-
-  var handleDivMouseEnter = function handleDivMouseEnter(number) {
-    setDisplayDate(chronology[number].date);
-    setDisplayHeading(chronology[number].heading);
-    setDisplayText1(chronology[number].text_1);
-    setDisplayText2(chronology[number].text_2);
-    setDisplayText3(chronology[number].text_3);
-  };
-
-  var handleMouseLeave = function handleMouseLeave() {
-    setDisplayText1('Текст по умолчанию');
-  };
-
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(0);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u041F\u0435\u0440\u0432\u044B\u0439 div"), /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(1);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u0412\u0442\u043E\u0440\u043E\u0439 div"), /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(2);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u0422\u0440\u0435\u0442\u0438\u0439 div"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, displayDate), /*#__PURE__*/React.createElement("p", null, displayHeading), /*#__PURE__*/React.createElement("p", null, displayText1), /*#__PURE__*/React.createElement("p", null, displayText2), /*#__PURE__*/React.createElement("p", null, displayText3)));
-}
-
-/* harmony default export */ const chrono = ((/* unused pure expression or super */ null && (TextChangingComponent)));
 ;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
 
 
@@ -913,147 +647,59 @@ function SectionHeading(_ref) {
     "class": "A_SectionDescribe"
   }, /*#__PURE__*/react.createElement("p", null, description)));
 }
-;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
-
-
-function Q_Image(_ref) {
-  var width = _ref.width,
-      height = _ref.height,
-      margin = _ref.margin,
-      url = _ref.url;
-  var full_column = 4.7;
-  var gap = 1.2;
-  var width_I = width * full_column - gap;
-  var margin_I = margin * full_column;
-  return /*#__PURE__*/react.createElement("img", {
-    className: "Q_Image",
-    src: "".concat(url),
-    style: {
-      width: "".concat(width_I, "vw"),
-      height: "".concat(height, "px"),
-      marginLeft: "".concat(margin_I, "vw")
-    }
-  });
-}
-function W_ImagesRow(_ref2) {
-  var width_1 = _ref2.width_1,
-      width_2 = _ref2.width_2,
-      width_3 = _ref2.width_3,
-      height = _ref2.height,
-      url_1 = _ref2.url_1,
-      url_2 = _ref2.url_2,
-      url_3 = _ref2.url_3;
-  var margin_actual;
-
-  if (!width_3) {
-    margin_actual = 2;
-  } else {
-    margin_actual = 0;
-  }
-
-  return /*#__PURE__*/React.createElement("div", {
-    className: "W_ImageRow"
-  }, width_1 && /*#__PURE__*/React.createElement(Q_Image, {
-    width: width_1,
-    height: height,
-    url: url_1,
-    margin: margin_actual
-  }), width_2 && /*#__PURE__*/React.createElement(Q_Image, {
-    width: width_2,
-    height: height,
-    url: url_2
-  }), width_3 && /*#__PURE__*/React.createElement(Q_Image, {
-    width: width_3,
-    height: height,
-    url: url_3
-  }));
-}
-;// CONCATENATED MODULE: ./src/javascript/particles/footer.jsx
- // import Logo from '../images/components/quarks/Q_Logo_white.svg'
-// import Dzen from '../images/tiser/icon_dzen.svg'
-// import VK from '../images/tiser/icon_vk.svg'
-// import TG from '../images/tiser/icon_tg.svg'
+;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
 
 
 
 
 
 
-
-function Footer() {
+function Menu(_ref) {
+  var state = _ref.state;
   return /*#__PURE__*/react.createElement("div", {
-    className: "O_Footer"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "ProjectLinks"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Content"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Logo white"
-  }), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
+    className: "W_Menu"
+  }, /*#__PURE__*/react.createElement("a", {
+    className: "A_MenuPoint",
+    href: "/index.html"
+  }, /*#__PURE__*/react.createElement("img", {
+    className: "Q_Logo menu",
+    id: "Q_Logo_Menu",
+    alt: ""
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "M_MenuPoints"
+  }, /*#__PURE__*/react.createElement("a", {
+    href: "./CategoryChrono.html",
+    className: "A_Point"
   }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0425\u0440\u043E\u043D\u043E")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
+    href: "./\u0421ategoryStations.html",
+    className: "A_Point"
   }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0421\u043F\u0438\u0441\u043E\u043A"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u041A\u0430\u0440\u0442\u0430"))), /*#__PURE__*/react.createElement("div", {
-    className: "Icons"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia tg"
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia vk"
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia dzen"
-  }))), /*#__PURE__*/react.createElement("div", {
-    className: "UniversityInfo"
-  }, /*#__PURE__*/react.createElement("p", {
-    style: {
-      fontSize: '24px'
-    }
-  }, "HSE ADC"), /*#__PURE__*/react.createElement("p", null, "\u0410\u0442\u043B\u0430\u0441\u043E\u0432\u0430 \u041D\u0430\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u0413\u0430\u043B\u0438\u0435\u0432\u0430 \u042D\u043B\u044C\u0432\u0438\u0440\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u043E\u043C\u043A\u043E\u0432\u0430 \u0410\u043D\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u0430\u0435\u043C \u0421\u043E\u0444\u044C\u044F")));
+    href: "./CategoryArticles.html",
+    className: "A_Point"
+  }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
+    className: "Q_Burger",
+    alt: ""
+  }), /*#__PURE__*/react.createElement("a", {
+    className: "A_MenuPoint"
+  }, /*#__PURE__*/react.createElement("img", {
+    className: "Q_Search",
+    alt: ""
+  })));
 }
 
-/* harmony default export */ const footer = (Footer);
-;// CONCATENATED MODULE: ./src/images/main_page/Station1.png
-const Station1_namespaceObject = __webpack_require__.p + "images/9b9e9f6221e11c6ddb58.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Article1.png
-const Article1_namespaceObject = __webpack_require__.p + "images/e8d76827aa81ac1f27ef.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Article2.jpeg
-const Article2_namespaceObject = __webpack_require__.p + "images/69b0bda47b675f9e41e8.jpeg";
-;// CONCATENATED MODULE: ./src/images/main_page/Article3.jpeg
-const Article3_namespaceObject = __webpack_require__.p + "images/6eaee1d16b3fc161bbf7.jpeg";
-;// CONCATENATED MODULE: ./src/images/main_page/Article4.png
-const Article4_namespaceObject = __webpack_require__.p + "images/b525a6b5655d0bb012e9.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Chrono1.png
-const Chrono1_namespaceObject = __webpack_require__.p + "images/166118fad64ce1ebd9a4.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Chrono2.png
-const Chrono2_namespaceObject = __webpack_require__.p + "images/b97f5c6779d54c49324c.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Article5.png
-const Article5_namespaceObject = __webpack_require__.p + "images/a837c08f1260c6d4e9c1.png";
-;// CONCATENATED MODULE: ./src/images/main_page/RunningLine.mp4
-const RunningLine_namespaceObject = __webpack_require__.p + "images/4d69fdf54e1fbdc2bbe5.mp4";
-;// CONCATENATED MODULE: ./src/index.js
+/* harmony default export */ const menu = (Menu);
+;// CONCATENATED MODULE: ./src/javascript/pages/chrono.js
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-
-
-
-
-
- //* Импорт картинок
-
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -1065,100 +711,422 @@ const RunningLine_namespaceObject = __webpack_require__.p + "images/4d69fdf54e1f
 
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, null), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
-  heading: 'станции',
-  description: 'Полный сборник истории всех станций Московского метро поможет изучить каждую линию по отдельности, чтобы собрать целую карту в едино'
-}), /*#__PURE__*/react.createElement("div", {
-  className: "W_CardsArticleCollection"
-}, /*#__PURE__*/react.createElement(StationCard, {
-  station: 'Маяковская',
-  color: 'zamos',
-  tag_1_text: 'Замоскворецкая',
-  Station_link: '/'
-}), /*#__PURE__*/react.createElement(StationCard, {
-  station: 'Римская',
-  color: 'lubli',
-  tag_1_text: 'Люблинско-Дмитровская',
-  Station_link: '/'
-}), /*#__PURE__*/react.createElement(ArticleCard, {
-  text: 'Пыхтино – метро в аэропорт',
-  size: 'medium',
-  bg_image: Station1_namespaceObject
-}))), /*#__PURE__*/react.createElement("div", {
-  "class": "O_FullArticleSection"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "W_ImageArticleBlock"
-}, /*#__PURE__*/react.createElement("p", {
-  "class": "button"
-}, "\u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0442\u0430\u043D\u0446\u0438\u044F"), /*#__PURE__*/react.createElement("img", {
-  src: Article1_namespaceObject,
-  alt: "",
-  "class": "Q_ImageArticleCover"
-})), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-  "class": "W_AdditionalInfoArticle"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "W_AdditionalArticleTag"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "Q_Line"
-}), /*#__PURE__*/react.createElement("h3", null, "1958"), /*#__PURE__*/react.createElement("div", {
-  "class": "Q_Line long"
-}), /*#__PURE__*/react.createElement("h3", null, "47")), /*#__PURE__*/react.createElement("div", {
-  "class": "W_AdditionalGallery"
-}, /*#__PURE__*/react.createElement("img", {
-  "class": "Q_ImageArticleAdditional two_col",
-  src: Article2_namespaceObject,
-  alt: ""
-}), /*#__PURE__*/react.createElement("img", {
-  "class": "Q_ImageArticleAdditional two_col",
-  src: Article3_namespaceObject,
-  alt: ""
-}), /*#__PURE__*/react.createElement("img", {
-  "class": "Q_ImageArticleAdditional six_col",
-  src: Article4_namespaceObject,
-  alt: ""
-}))), /*#__PURE__*/react.createElement("div", {
-  "class": "W_InfoAfticleSection"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "W_TextArticleSection"
-}, /*#__PURE__*/react.createElement("h1", null, "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430"), /*#__PURE__*/react.createElement("div", {
-  "class": "A_ArticleBody"
-}, /*#__PURE__*/react.createElement("p", null, "C\u0442\u0430\u043D\u0446\u0438\u044F \u043F\u0435\u0440\u0432\u043E\u0439 \u043E\u0447\u0435\u0440\u0435\u0434\u0438 \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u0430\u044F 15 \u043C\u0430\u044F 1935 \u0433\u043E\u0434\u0443."), /*#__PURE__*/react.createElement("p", null, "\u041E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043F\u043E\u0441\u0432\u044F\u0449\u0435\u043D\u043E \u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430 ( \u043D\u044B\u043D\u044F\u0448\u043D\u044F\u044F \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0430\u044F \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430)."))), /*#__PURE__*/react.createElement(particles_button, {
-  text: 'читать',
-  arrow: 'up',
-  linking: ''
-})))), /*#__PURE__*/react.createElement("div", {
-  "class": "Q_RunningLine"
-}, /*#__PURE__*/react.createElement("video", {
-  autoPlay: true,
-  loop: true,
-  muted: true,
-  playsinline: true
-}, /*#__PURE__*/react.createElement("source", {
-  src: RunningLine_namespaceObject,
-  type: "video/mp4"
-}))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
-  heading: "\u043F\u0440\u043E\u0448\u043B\u043E\u043C \u0438\xA0\u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u043C",
-  description: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0430\u044F \u0438\u0441\u0442\u043E\u0440\u0438\u044F \u043C\u0435\u0442\u0440\u043E \u0433\u043E\u0434 \u0437\u0430 \u0433\u043E\u0434\u043E\u043C, \u043D\u043E\xA0\u0431\u0435\u0437 \u043D\u0443\u0434\u043D\u043E\u0441\u0442\u0435\u0439 \u0438 \u0441\u043A\u0443\u0447\u043D\u044B\u0445 \u0434\u0430\u0442"
-}), /*#__PURE__*/react.createElement("div", {
-  className: "W_CardsChronoCollection"
-}, /*#__PURE__*/react.createElement(Q_Image, {
-  width: 10,
-  height: 300,
-  margin: 0,
-  url: Chrono1_namespaceObject
-}), /*#__PURE__*/react.createElement(ChronoCard, {
-  text: 'Когда в метро заработали первые эскалаторы?',
-  year: '1932',
-  image_URL: Chrono2_namespaceObject,
-  isWhite: 'white'
-}))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
-  heading: 'Статьи',
-  description: "\u0423 \u043D\u0430\u0441 \u043D\u0435\u0434\u0430\u0432\u043D\u043E \u0432\u044B\u0448\u043B\u0438 \u0441\u0432\u0435\u0436\u0438\u0435 \u0441\u0442\u0430\u0442\u044C\u0438, \u0438\xA0\u0441\xA0\u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E \u0441\u043E\u0432\u0435\u0442\u0443\u0435\u043C \u0432\u0430\u043C \u0438\u0445\xA0\u0438\u0437\u0443\u0447\u0438\u0442\u044C \u2014 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0432\u0430\u043C \u0443\u0434\u0430\u0441\u0442\u0441\u044F \u043E\u0442\u044B\u0441\u043A\u0430\u0442\u044C \u0432 \u043D\u0438\u0445 \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E \u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438!"
-}), /*#__PURE__*/react.createElement(ArticleCard, {
-  text: 'Тройка — просто пластиковая карта или что-то поинтереснее? ',
-  size: 'large',
-  bg_image: Article5_namespaceObject
-})), /*#__PURE__*/react.createElement(footer, null)));
+
+function Page() {
+  var _useState = (0,react.useState)('2023'),
+      _useState2 = _slicedToArray(_useState, 2),
+      displayDate = _useState2[0],
+      setDisplayDate = _useState2[1];
+
+  var _useState3 = (0,react.useState)('Метро Москвы'),
+      _useState4 = _slicedToArray(_useState3, 2),
+      displayHeading = _useState4[0],
+      setDisplayHeading = _useState4[1];
+
+  var _useState5 = (0,react.useState)('Текст по умолчанию'),
+      _useState6 = _slicedToArray(_useState5, 2),
+      displayText1 = _useState6[0],
+      setDisplayText1 = _useState6[1];
+
+  var _useState7 = (0,react.useState)('Текст по умолчанию'),
+      _useState8 = _slicedToArray(_useState7, 2),
+      displayText2 = _useState8[0],
+      setDisplayText2 = _useState8[1];
+
+  var _useState9 = (0,react.useState)('Текст по умолчанию'),
+      _useState10 = _slicedToArray(_useState9, 2),
+      displayText3 = _useState10[0],
+      setDisplayText3 = _useState10[1];
+
+  var handleDivMouseEnter = function handleDivMouseEnter(number) {
+    setDisplayDate(chronology[number].date);
+    setDisplayHeading(chronology[number].heading);
+    setDisplayText1(chronology[number].text_1);
+    setDisplayText2(chronology[number].text_2);
+    setDisplayText3(chronology[number].text_3);
+  };
+
+  var handleMouseLeave = function handleMouseLeave() {
+    setDisplayDate('2023');
+    setDisplayHeading('Метро Москвы');
+    setDisplayText1('Текст по умолчанию');
+    setDisplayText2('Текст по умолчанию');
+    setDisplayText3('Текст по умолчанию');
+  };
+
+  return /*#__PURE__*/react.createElement("div", {
+    "class": "O_Chrono"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoPointsCollection"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine century"
+  }, /*#__PURE__*/react.createElement("p", null, "20 \u0432\u0435\u043A"), /*#__PURE__*/react.createElement("p", null, "31-40"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point",
+    onMouseEnter: function onMouseEnter() {
+      return handleDivMouseEnter(0);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return handleMouseLeave();
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point",
+    onMouseEnter: function onMouseEnter() {
+      return handleDivMouseEnter(1);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return handleMouseLeave();
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point",
+    onMouseEnter: function onMouseEnter() {
+      return handleDivMouseEnter(2);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return handleMouseLeave();
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "41-50"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "51-60"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "61-70"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "71-80"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "81-90"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "91-00"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine century"
+  }, /*#__PURE__*/react.createElement("p", null, "21 \u0432\u0435\u043A"), /*#__PURE__*/react.createElement("p", null, "01-10"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "11-20"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoLine"
+  }, /*#__PURE__*/react.createElement("p", null, "21-24"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_OneLinePoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  }), /*#__PURE__*/react.createElement("div", {
+    "class": "Q_Point"
+  })))), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoContent"
+  }, /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435, \u0447\u0442\u043E \u0431\u044B\u043B\u043E \u0432 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0439 \u0433\u043E\u0434"), /*#__PURE__*/react.createElement("div", {
+    "class": "W_ChronoContentTitle"
+  }, /*#__PURE__*/react.createElement("h3", {
+    id: "ChronoYear"
+  }, displayDate), /*#__PURE__*/react.createElement("h3", {
+    id: "ChronoTitle"
+  }, displayHeading)), /*#__PURE__*/react.createElement("div", {
+    "class": "A_ArticleBody column"
+  }, /*#__PURE__*/react.createElement("p", null, displayText1), /*#__PURE__*/react.createElement("p", null, displayText2), /*#__PURE__*/react.createElement("p", null, displayText3))));
+}
+
+root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, null), /*#__PURE__*/react.createElement(SectionHeading, {
+  heading: 'Хронология',
+  id: "Station"
+}), /*#__PURE__*/react.createElement(Page, null)));
 })();
 
 /******/ })()

@@ -531,33 +531,6 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(745);
-;// CONCATENATED MODULE: ./src/javascript/particles/button.jsx
-
-
-
-
-function Button(_ref) {
-  var text = _ref.text,
-      arrow = _ref.arrow,
-      linking = _ref.linking;
-  var actual_arrow = "Q_Arrow ".concat(arrow);
-  var linkLong = linking;
-
-  var handleClick = function handleClick() {
-    window.location.href = linkLong;
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "A_Button",
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "button"
-  }, text), /*#__PURE__*/react.createElement("div", {
-    className: actual_arrow
-  })));
-}
-
-/* harmony default export */ const particles_button = (Button);
 ;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
 
 
@@ -599,6 +572,33 @@ function Menu(_ref) {
 }
 
 /* harmony default export */ const menu = (Menu);
+;// CONCATENATED MODULE: ./src/javascript/particles/button.jsx
+
+
+
+
+function Button(_ref) {
+  var text = _ref.text,
+      arrow = _ref.arrow,
+      linking = _ref.linking;
+  var actual_arrow = "Q_Arrow ".concat(arrow);
+  var linkLong = linking;
+
+  var handleClick = function handleClick() {
+    window.location.href = linkLong;
+  };
+
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: "A_Button",
+    onClick: handleClick
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "button"
+  }, text), /*#__PURE__*/react.createElement("div", {
+    className: actual_arrow
+  })));
+}
+
+/* harmony default export */ const particles_button = (Button);
 ;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
 const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
 ;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
@@ -666,229 +666,30 @@ function ChronoCard(_ref3) {
       image_URL = _ref3.image_URL,
       isWhite = _ref3.isWhite;
   var actual_tag_class = "A_Tags ".concat(isWhite);
-  return /*#__PURE__*/react.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: "W_ChronoCard",
     style: {
-      backgroundImage: "url(".concat(ChronoCardBg_namespaceObject, ")")
+      backgroundImage: "url(".concat(BgChrono, ")")
     }
-  }, /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "Q_Arrow orange"
-  }), /*#__PURE__*/react.createElement("h3", null, text), /*#__PURE__*/react.createElement("div", {
+  }), /*#__PURE__*/React.createElement("h3", null, text), /*#__PURE__*/React.createElement("div", {
     className: "W_ChronoCardImage",
     style: {
       backgroundImage: "url(".concat(image_URL, ")")
     }
-  }, /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: actual_tag_class
-  }, /*#__PURE__*/react.createElement("p", {
+  }, /*#__PURE__*/React.createElement("p", {
     className: "mini"
   }, year))));
 }
 function StOfTheDay(_ref4) {
   var station = _ref4.station;
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/react.createElement("div", {
     "class": "M_CardStationOfTheDay"
-  }, /*#__PURE__*/React.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
+  }, /*#__PURE__*/react.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
 }
-;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
-var stations = [{
-  id: 0,
-  name: 'Библиотека им.Ленина',
-  line_1: 'Сокольническая',
-  line_2: '',
-  line_3: '',
-  color: 'sokol',
-  link: '/'
-}, {
-  id: 1,
-  name: 'Маяковская',
-  line_1: 'Замоскворецкая',
-  line_2: '',
-  line_3: '',
-  color: 'zamos',
-  link: '/'
-}, {
-  id: 2,
-  name: 'Римская',
-  line_1: 'Люблинско-дмитровская',
-  line_2: '',
-  line_3: '',
-  color: 'lubli',
-  link: '/'
-}, {
-  id: 3,
-  name: 'Площадь Революции',
-  line_1: 'Арбатско-покровская',
-  line_2: '',
-  line_3: '',
-  color: 'arbat',
-  link: '/'
-}, {
-  id: 4,
-  name: 'Третьяковская',
-  line_1: 'Калужско-Рижская',
-  line_2: 'Калининская',
-  line_3: '',
-  color: 'kalug',
-  link: '/'
-}, {
-  id: 5,
-  name: 'Павелецкая',
-  line_1: 'Кольцевая',
-  line_2: 'Замоскворецкая',
-  line_3: '',
-  color: 'kolic',
-  link: '/'
-}];
-var articles = [{
-  id: 0,
-  name: 'Некрасовка и рыбки',
-  line_1: 'Искусство',
-  line_2: '',
-  line_3: '',
-  color: 'art',
-  link: '/',
-  type: 'article'
-}, {
-  id: 1,
-  name: 'Просто Тройка или что-то поинтереснее?',
-  line_1: 'Технологии',
-  line_2: '',
-  line_3: '',
-  color: 'tech',
-  link: '/',
-  type: 'article'
-}, {
-  id: 2,
-  name: 'Древние находки в метро',
-  line_1: 'Архитектура',
-  line_2: 'История',
-  line_3: '',
-  color: 'arch',
-  link: '/',
-  type: 'article'
-}, {
-  id: 3,
-  name: 'Метро в кино',
-  line_1: 'Искусство',
-  line_2: '',
-  line_3: '',
-  color: 'art',
-  link: '/',
-  type: 'article'
-}, {
-  id: 4,
-  name: 'Новые поезда Замоскворецкой',
-  line_1: 'Инфоструктура',
-  line_2: '',
-  line_3: '',
-  color: 'info',
-  link: '/',
-  type: 'news'
-}];
-var data_chronology = [{
-  id: 0,
-  date: '1935',
-  heading: 'Эскалаторы',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор. ',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
-}, {
-  id: 1,
-  date: '1935',
-  heading: 'Первый айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
-}, {
-  id: 2,
-  date: '1935',
-  heading: 'Второй айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
-}, {
-  id: 3,
-  date: '1935',
-  heading: 'Третий айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
-}];
-;// CONCATENATED MODULE: ./src/javascript/particles/chrono.jsx
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-function TextChangingComponent() {
-  var _useState = useState('Текст по умолчанию'),
-      _useState2 = _slicedToArray(_useState, 2),
-      displayDate = _useState2[0],
-      setDisplayDate = _useState2[1];
-
-  var _useState3 = useState('Текст по умолчанию'),
-      _useState4 = _slicedToArray(_useState3, 2),
-      displayHeading = _useState4[0],
-      setDisplayHeading = _useState4[1];
-
-  var _useState5 = useState('Текст по умолчанию'),
-      _useState6 = _slicedToArray(_useState5, 2),
-      displayText1 = _useState6[0],
-      setDisplayText1 = _useState6[1];
-
-  var _useState7 = useState('Текст по умолчанию'),
-      _useState8 = _slicedToArray(_useState7, 2),
-      displayText2 = _useState8[0],
-      setDisplayText2 = _useState8[1];
-
-  var _useState9 = useState('Текст по умолчанию'),
-      _useState10 = _slicedToArray(_useState9, 2),
-      displayText3 = _useState10[0],
-      setDisplayText3 = _useState10[1];
-
-  var handleDivMouseEnter = function handleDivMouseEnter(number) {
-    setDisplayDate(chronology[number].date);
-    setDisplayHeading(chronology[number].heading);
-    setDisplayText1(chronology[number].text_1);
-    setDisplayText2(chronology[number].text_2);
-    setDisplayText3(chronology[number].text_3);
-  };
-
-  var handleMouseLeave = function handleMouseLeave() {
-    setDisplayText1('Текст по умолчанию');
-  };
-
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(0);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u041F\u0435\u0440\u0432\u044B\u0439 div"), /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(1);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u0412\u0442\u043E\u0440\u043E\u0439 div"), /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(2);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u0422\u0440\u0435\u0442\u0438\u0439 div"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, displayDate), /*#__PURE__*/React.createElement("p", null, displayHeading), /*#__PURE__*/React.createElement("p", null, displayText1), /*#__PURE__*/React.createElement("p", null, displayText2), /*#__PURE__*/React.createElement("p", null, displayText3)));
-}
-
-/* harmony default export */ const chrono = ((/* unused pure expression or super */ null && (TextChangingComponent)));
 ;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
 
 
@@ -925,7 +726,7 @@ function Q_Image(_ref) {
   var gap = 1.2;
   var width_I = width * full_column - gap;
   var margin_I = margin * full_column;
-  return /*#__PURE__*/react.createElement("img", {
+  return /*#__PURE__*/React.createElement("img", {
     className: "Q_Image",
     src: "".concat(url),
     style: {
@@ -1023,25 +824,187 @@ function Footer() {
 }
 
 /* harmony default export */ const footer = (Footer);
-;// CONCATENATED MODULE: ./src/images/main_page/Station1.png
-const Station1_namespaceObject = __webpack_require__.p + "images/9b9e9f6221e11c6ddb58.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Article1.png
-const Article1_namespaceObject = __webpack_require__.p + "images/e8d76827aa81ac1f27ef.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Article2.jpeg
-const Article2_namespaceObject = __webpack_require__.p + "images/69b0bda47b675f9e41e8.jpeg";
-;// CONCATENATED MODULE: ./src/images/main_page/Article3.jpeg
-const Article3_namespaceObject = __webpack_require__.p + "images/6eaee1d16b3fc161bbf7.jpeg";
-;// CONCATENATED MODULE: ./src/images/main_page/Article4.png
-const Article4_namespaceObject = __webpack_require__.p + "images/b525a6b5655d0bb012e9.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Chrono1.png
-const Chrono1_namespaceObject = __webpack_require__.p + "images/166118fad64ce1ebd9a4.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Chrono2.png
-const Chrono2_namespaceObject = __webpack_require__.p + "images/b97f5c6779d54c49324c.png";
-;// CONCATENATED MODULE: ./src/images/main_page/Article5.png
-const Article5_namespaceObject = __webpack_require__.p + "images/a837c08f1260c6d4e9c1.png";
-;// CONCATENATED MODULE: ./src/images/main_page/RunningLine.mp4
-const RunningLine_namespaceObject = __webpack_require__.p + "images/4d69fdf54e1fbdc2bbe5.mp4";
-;// CONCATENATED MODULE: ./src/index.js
+;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
+var stations = [{
+  id: 0,
+  name: 'Библиотека им.Ленина',
+  line_1: 'Сокольническая',
+  line_2: '',
+  line_3: '',
+  color: 'sokol',
+  link: '/'
+}, {
+  id: 1,
+  name: 'Маяковская',
+  line_1: 'Замоскворецкая',
+  line_2: '',
+  line_3: '',
+  color: 'zamos',
+  link: '/'
+}, {
+  id: 2,
+  name: 'Римская',
+  line_1: 'Люблинско-дмитровская',
+  line_2: '',
+  line_3: '',
+  color: 'lubli',
+  link: '/'
+}, {
+  id: 3,
+  name: 'Площадь Революции',
+  line_1: 'Арбатско-покровская',
+  line_2: '',
+  line_3: '',
+  color: 'arbat',
+  link: '/'
+}, {
+  id: 4,
+  name: 'Третьяковская',
+  line_1: 'Калужско-Рижская',
+  line_2: 'Калининская',
+  line_3: '',
+  color: 'kalug',
+  link: '/'
+}, {
+  id: 5,
+  name: 'Павелецкая',
+  line_1: 'Кольцевая',
+  line_2: 'Замоскворецкая',
+  line_3: '',
+  color: 'kolic',
+  link: '/'
+}];
+var articles = [{
+  id: 0,
+  name: 'Некрасовка и рыбки',
+  line_1: 'Искусство',
+  line_2: '',
+  line_3: '',
+  color: 'art',
+  link: '/',
+  type: 'article'
+}, {
+  id: 1,
+  name: 'Просто Тройка или что-то поинтереснее?',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/',
+  type: 'article'
+}, {
+  id: 2,
+  name: 'Древние находки в метро',
+  line_1: 'Архитектура',
+  line_2: 'История',
+  line_3: '',
+  color: 'arch',
+  link: '/',
+  type: 'article'
+}, {
+  id: 3,
+  name: 'Метро в кино',
+  line_1: 'Искусство',
+  line_2: '',
+  line_3: '',
+  color: 'art',
+  link: '/',
+  type: 'article'
+}, {
+  id: 4,
+  name: 'Новые поезда Замоскворецкой',
+  line_1: 'Инфоструктура',
+  line_2: '',
+  line_3: '',
+  color: 'info',
+  link: '/',
+  type: 'news'
+}];
+var chronology = [{
+  id: 0,
+  date: '1935',
+  heading: 'Эскалаторы',
+  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
+  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор. ',
+  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+}, {
+  id: 1,
+  date: '1935',
+  heading: 'Первый айди',
+  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
+  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
+  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+}, {
+  id: 2,
+  date: '1935',
+  heading: 'Второй айди',
+  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
+  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
+  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Третий айди',
+  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
+  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
+  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+}];
+;// CONCATENATED MODULE: ./src/javascript/particles/StationsCataloge.jsx
+
+
+
+
+function StationList(_ref) {
+  var ArticleCard_text = _ref.ArticleCard_text,
+      ArticleCard_link = _ref.ArticleCard_link;
+  var listItems = stations.filter(function (station) {
+    return station.id >= 2;
+  }).map(function (station) {
+    return /*#__PURE__*/react.createElement(StationCard, {
+      station: station.name,
+      color: station.color,
+      tag_1_text: station.line_1,
+      tag_2_text: station.line_2,
+      tag_3_text: station.line_3,
+      Station_link: station.link
+    });
+  });
+  return /*#__PURE__*/react.createElement("div", {
+    className: "W_CardsCollection"
+  }, /*#__PURE__*/react.createElement(StationCard, {
+    station: Object.values(stations)[0].name,
+    color: Object.values(stations)[0].color,
+    tag_1_text: Object.values(stations)[0].line_1,
+    tag_2_text: Object.values(stations)[0].line_2,
+    tag_3_text: Object.values(stations)[0].line_3,
+    Station_link: Object.values(stations)[0].link
+  }), /*#__PURE__*/react.createElement(StationCard, {
+    station: Object.values(stations)[1].name,
+    color: Object.values(stations)[1].color,
+    tag_1_text: Object.values(stations)[1].line_1,
+    tag_2_text: Object.values(stations)[1].line_2,
+    tag_3_text: Object.values(stations)[1].line_3,
+    Station_link: Object.values(stations)[1].link
+  }), /*#__PURE__*/react.createElement(ArticleCard, {
+    text: ArticleCard_text,
+    size: 'medium',
+    linking: ArticleCard_link
+  }), listItems);
+}
+
+/* harmony default export */ const StationsCataloge = (StationList);
+;// CONCATENATED MODULE: ./src/javascript/pages/stations.js
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -1052,113 +1015,62 @@ const RunningLine_namespaceObject = __webpack_require__.p + "images/4d69fdf54e1f
 
 
 
- //* Импорт картинок
 
 
 
+function FullPage() {
+  var _useState = (0,react.useState)(true),
+      _useState2 = _slicedToArray(_useState, 2),
+      showStations = _useState2[0],
+      setShowStations = _useState2[1];
 
+  function handleCatStationsClick() {
+    setShowStations(false);
+  }
 
+  function handleCatMapClick() {
+    setShowStations(true);
+  }
 
-
-
-
+  return /*#__PURE__*/react.createElement("div", null, showStations && /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: "W_PageTitleName"
+  }, /*#__PURE__*/react.createElement(SectionHeading, {
+    heading: 'Станции',
+    id: "Station"
+  }), /*#__PURE__*/react.createElement(SectionHeading, {
+    heading: 'карта',
+    unactive: 1,
+    id: "Map",
+    onClick: function onClick() {
+      return handleCatStationsClick();
+    }
+  })), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    "class": "M_Filters",
+    id: "category_filter_scroll"
+  }, /*#__PURE__*/react.createElement("ul", null, /*#__PURE__*/react.createElement("li", {
+    "class": "active"
+  }, "\u0432\u0441\u0435"), /*#__PURE__*/react.createElement("li", null, "\u0441\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0437\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0430\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u043F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0444\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043A\u0430\u043B\u0443\u0436\u0441\u043A\u043E-\u0440\u0438\u0436\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0442\u0430\u0433\u0430\u043D\u0441\u043A\u043E-\u043A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043A\u0430\u043B\u0438\u043D\u0438\u043D\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0441\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0441\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u043E-\u0442\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u043E-\u0434\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0431\u0443\u0442\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F"))), /*#__PURE__*/react.createElement(StOfTheDay, {
+    station: 'Люблино'
+  }), /*#__PURE__*/react.createElement(StationsCataloge, {
+    ArticleCard_text: 'Пыхтино — метро в аэропорт'
+  }))), !showStations && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+    className: "W_PageTitleName"
+  }, /*#__PURE__*/react.createElement(SectionHeading, {
+    heading: 'Станции',
+    id: "Station",
+    onClick: function onClick() {
+      return handleCatMapClick();
+    },
+    unactive: 1
+  }), /*#__PURE__*/react.createElement(SectionHeading, {
+    heading: 'карта',
+    id: "Map"
+  })), "ehf ehf", ' '));
+}
 
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, null), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
-  heading: 'станции',
-  description: 'Полный сборник истории всех станций Московского метро поможет изучить каждую линию по отдельности, чтобы собрать целую карту в едино'
-}), /*#__PURE__*/react.createElement("div", {
-  className: "W_CardsArticleCollection"
-}, /*#__PURE__*/react.createElement(StationCard, {
-  station: 'Маяковская',
-  color: 'zamos',
-  tag_1_text: 'Замоскворецкая',
-  Station_link: '/'
-}), /*#__PURE__*/react.createElement(StationCard, {
-  station: 'Римская',
-  color: 'lubli',
-  tag_1_text: 'Люблинско-Дмитровская',
-  Station_link: '/'
-}), /*#__PURE__*/react.createElement(ArticleCard, {
-  text: 'Пыхтино – метро в аэропорт',
-  size: 'medium',
-  bg_image: Station1_namespaceObject
-}))), /*#__PURE__*/react.createElement("div", {
-  "class": "O_FullArticleSection"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "W_ImageArticleBlock"
-}, /*#__PURE__*/react.createElement("p", {
-  "class": "button"
-}, "\u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0442\u0430\u043D\u0446\u0438\u044F"), /*#__PURE__*/react.createElement("img", {
-  src: Article1_namespaceObject,
-  alt: "",
-  "class": "Q_ImageArticleCover"
-})), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-  "class": "W_AdditionalInfoArticle"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "W_AdditionalArticleTag"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "Q_Line"
-}), /*#__PURE__*/react.createElement("h3", null, "1958"), /*#__PURE__*/react.createElement("div", {
-  "class": "Q_Line long"
-}), /*#__PURE__*/react.createElement("h3", null, "47")), /*#__PURE__*/react.createElement("div", {
-  "class": "W_AdditionalGallery"
-}, /*#__PURE__*/react.createElement("img", {
-  "class": "Q_ImageArticleAdditional two_col",
-  src: Article2_namespaceObject,
-  alt: ""
-}), /*#__PURE__*/react.createElement("img", {
-  "class": "Q_ImageArticleAdditional two_col",
-  src: Article3_namespaceObject,
-  alt: ""
-}), /*#__PURE__*/react.createElement("img", {
-  "class": "Q_ImageArticleAdditional six_col",
-  src: Article4_namespaceObject,
-  alt: ""
-}))), /*#__PURE__*/react.createElement("div", {
-  "class": "W_InfoAfticleSection"
-}, /*#__PURE__*/react.createElement("div", {
-  "class": "W_TextArticleSection"
-}, /*#__PURE__*/react.createElement("h1", null, "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430"), /*#__PURE__*/react.createElement("div", {
-  "class": "A_ArticleBody"
-}, /*#__PURE__*/react.createElement("p", null, "C\u0442\u0430\u043D\u0446\u0438\u044F \u043F\u0435\u0440\u0432\u043E\u0439 \u043E\u0447\u0435\u0440\u0435\u0434\u0438 \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u0430\u044F 15 \u043C\u0430\u044F 1935 \u0433\u043E\u0434\u0443."), /*#__PURE__*/react.createElement("p", null, "\u041E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043F\u043E\u0441\u0432\u044F\u0449\u0435\u043D\u043E \u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430 ( \u043D\u044B\u043D\u044F\u0448\u043D\u044F\u044F \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0430\u044F \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430)."))), /*#__PURE__*/react.createElement(particles_button, {
-  text: 'читать',
-  arrow: 'up',
-  linking: ''
-})))), /*#__PURE__*/react.createElement("div", {
-  "class": "Q_RunningLine"
-}, /*#__PURE__*/react.createElement("video", {
-  autoPlay: true,
-  loop: true,
-  muted: true,
-  playsinline: true
-}, /*#__PURE__*/react.createElement("source", {
-  src: RunningLine_namespaceObject,
-  type: "video/mp4"
-}))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
-  heading: "\u043F\u0440\u043E\u0448\u043B\u043E\u043C \u0438\xA0\u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u043C",
-  description: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0430\u044F \u0438\u0441\u0442\u043E\u0440\u0438\u044F \u043C\u0435\u0442\u0440\u043E \u0433\u043E\u0434 \u0437\u0430 \u0433\u043E\u0434\u043E\u043C, \u043D\u043E\xA0\u0431\u0435\u0437 \u043D\u0443\u0434\u043D\u043E\u0441\u0442\u0435\u0439 \u0438 \u0441\u043A\u0443\u0447\u043D\u044B\u0445 \u0434\u0430\u0442"
-}), /*#__PURE__*/react.createElement("div", {
-  className: "W_CardsChronoCollection"
-}, /*#__PURE__*/react.createElement(Q_Image, {
-  width: 10,
-  height: 300,
-  margin: 0,
-  url: Chrono1_namespaceObject
-}), /*#__PURE__*/react.createElement(ChronoCard, {
-  text: 'Когда в метро заработали первые эскалаторы?',
-  year: '1932',
-  image_URL: Chrono2_namespaceObject,
-  isWhite: 'white'
-}))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
-  heading: 'Статьи',
-  description: "\u0423 \u043D\u0430\u0441 \u043D\u0435\u0434\u0430\u0432\u043D\u043E \u0432\u044B\u0448\u043B\u0438 \u0441\u0432\u0435\u0436\u0438\u0435 \u0441\u0442\u0430\u0442\u044C\u0438, \u0438\xA0\u0441\xA0\u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E \u0441\u043E\u0432\u0435\u0442\u0443\u0435\u043C \u0432\u0430\u043C \u0438\u0445\xA0\u0438\u0437\u0443\u0447\u0438\u0442\u044C \u2014 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0432\u0430\u043C \u0443\u0434\u0430\u0441\u0442\u0441\u044F \u043E\u0442\u044B\u0441\u043A\u0430\u0442\u044C \u0432 \u043D\u0438\u0445 \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E \u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438!"
-}), /*#__PURE__*/react.createElement(ArticleCard, {
-  text: 'Тройка — просто пластиковая карта или что-то поинтереснее? ',
-  size: 'large',
-  bg_image: Article5_namespaceObject
-})), /*#__PURE__*/react.createElement(footer, null)));
+root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, null), /*#__PURE__*/react.createElement(FullPage, null), /*#__PURE__*/react.createElement(footer, null)));
 })();
 
 /******/ })()
