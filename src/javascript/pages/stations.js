@@ -29,51 +29,77 @@ function FullPage() {
         <>
           <div className="W_PageTitleName">
             <SectionHeading heading={'Станции'} id="Station" />
-            <SectionHeading
-              heading={'карта'}
-              unactive={1}
-              id="Map"
-              onClick={() => handleCatStationsClick()}
-            />
           </div>
           <div>
-            <div class="M_Filters" id="category_filter_scroll">
-              <ul>
-                <li class="active">все</li>
-                <li>сокольническая</li>
-                <li>замоскворецкая</li>
-                <li>арбатско-покровская</li>
-                <li>филевская</li>
-                <li>кольцевая</li>
-                <li>калужско-рижская</li>
-                <li>таганско-краснопресненская</li>
-                <li>калининская</li>
-                <li>солнцевская</li>
-                <li>серпуховско-тимирязевская</li>
-                <li>люблинско-дмитровская</li>
-                <li>большая кольцевая</li>
-                <li>бутовская</li>
-                <li>некрасовская</li>
-              </ul>
+            <div class="M_FiltersPoints">
+              <div class="M_FiltersPoints_inside" id="category_filter_scroll">
+                <p className="active">все</p>
+                <div
+                  className="Q_FilterPoint active"
+                  style={{ backgroundColor: 'var(--sokol)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--zamos)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--arbat)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--filev)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--kolic)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--kalug)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--tagan)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--solnc)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--serpy)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--lubli)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--BKL)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--butov)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--nekra)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--birul)' }}
+                ></div>
+                <div
+                  className="Q_FilterPoint"
+                  style={{ backgroundColor: 'var(--troick)' }}
+                ></div>
+              </div>
             </div>
             <StOfTheDay station={'Люблино'} />
             <StationList ArticleCard_text={'Пыхтино — метро в аэропорт'} />
           </div>
         </>
-      )}
-      {!showStations && (
-        <div>
-          <div className="W_PageTitleName">
-            <SectionHeading
-              heading={'Станции'}
-              id="Station"
-              onClick={() => handleCatMapClick()}
-              unactive={1}
-            />
-            <SectionHeading heading={'карта'} id="Map" />
-          </div>
-          ehf ehf{' '}
-        </div>
       )}
     </div>
   )
@@ -82,7 +108,7 @@ const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 root.render(
   <StrictMode>
-    <Menu />
+    <Menu activeTag1={''} activeTag2={'Active'} activeTag3={''} />
     <FullPage />
     <Footer />
   </StrictMode>

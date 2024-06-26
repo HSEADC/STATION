@@ -8,3 +8,28 @@
 @import '../components/molecules.scss';
 @import '../components/wrappers.scss';
 @import '../components/organism.scss';
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../../fonts/prg45.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../../fonts/prg55.woff2') format('woff2');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../../fonts/prg46.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Pragmatica';
+  src: url('../../fonts/prg56.woff2') format('woff2');
+  font-weight: bolder;
+  font-style: italic;
+}

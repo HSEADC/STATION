@@ -31,7 +31,7 @@ const root = createRoot(rootElement)
 
 root.render(
   <StrictMode>
-    <Menu />
+    <Menu activeTag1={''} activeTag2={''} activeTag3={''} />
     <div>
       <SectionHeading
         heading={'станции'}
@@ -56,6 +56,7 @@ root.render(
           text={'Пыхтино – метро в аэропорт'}
           size={'medium'}
           bg_image={Image_Station1}
+          text_color={'white'}
         />
       </div>
     </div>
@@ -141,6 +142,7 @@ root.render(
         text={'Тройка — просто пластиковая карта или что-то поинтереснее? '}
         size={'large'}
         bg_image={Image_BigArticle1}
+        text_color={'white'}
       />
     </div>
     <Footer />

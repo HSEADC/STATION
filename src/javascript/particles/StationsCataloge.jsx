@@ -13,6 +13,7 @@ function StationList({ ArticleCard_text, ArticleCard_link }) {
         tag_2_text={station.line_2}
         tag_3_text={station.line_3}
         Station_link={station.link}
+        key={station.id}
       />
     ))
 

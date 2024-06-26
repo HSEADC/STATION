@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { chronology } from './data.jsx'
 
 function TextChangingComponent() {
-  const [displayDate, setDisplayDate] = useState('Текст по умолчанию')
+  const [displayDate, setDisplayDate] = useState('Текст по умолчанию....')
   const [displayHeading, setDisplayHeading] = useState('Текст по умолчанию')
   const [displayText1, setDisplayText1] = useState('Текст по умолчанию')
   const [displayText2, setDisplayText2] = useState('Текст по умолчанию')
@@ -19,9 +19,9 @@ function TextChangingComponent() {
     setDisplayText3(chronology[number].text_3)
   }
 
-  const handleMouseLeave = () => {
-    setDisplayText1('Текст по умолчанию')
-  }
+  // const handleMouseLeave = () => {
+  //   setDisplayText1('Текст по умолчанию')
+  // }
 
   return (
     <div>

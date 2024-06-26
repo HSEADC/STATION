@@ -69,6 +69,9 @@
   top: 1vw;
   z-index: 10000;
 }
+.W_Menu + * {
+  margin-top: 5vh;
+}
 .W_ImageArticleBlock {
   p {
     width: 15%;
@@ -85,7 +88,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 32vh;
+  gap: 20vh;
 }
 .W_CardsChronoCollection {
   margin-top: 4vh;

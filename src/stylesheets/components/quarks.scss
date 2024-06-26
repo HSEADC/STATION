@@ -61,6 +61,12 @@
     background-image: url(../../images/components/quarks/Q_Logo_white.svg);
   }
 }
+.A_MenuPoint:hover .Q_Logo {
+  background-image: url(../../images/components/quarks/Q_Logo_white.svg);
+}
+.A_MenuPoint:hover .Q_Search {
+  background-image: url(../../images/components/quarks/Q_SearchIcon_white.svg);
+}
 
 .Q_HSELogo {
   width: 150px;
@@ -133,6 +139,7 @@
   height: 1.5vw;
   background-color: var(--serpy);
   border-radius: 100%;
+  transition: all ease 0.3s;
 }
 .Q_Point:hover {
   background-color: var(--black);
@@ -180,7 +187,7 @@
 }
 .Q_RunningLine {
   position: relative;
-  margin: 0vh -6vw;
+  margin: 0vh -6vw 5vh;
   width: 100vw;
   height: 40vh;
   overflow: hidden;
@@ -192,4 +199,17 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.Q_FilterPoint {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 2vw;
+  opacity: 0.5;
+  &.active {
+    opacity: 1;
+  }
+}
+.Q_FilterPoint:hover {
+  opacity: 1;
 }

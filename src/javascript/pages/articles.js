@@ -9,6 +9,7 @@ import Menu from '../particles/menu.jsx'
 import { ArticlesList } from '../particles/ArticlesCataloge.jsx'
 import { SectionHeading } from '../particles/text.jsx'
 import { ArticleCard } from '../particles/card.jsx'
+import Footer from '../particles/footer.jsx'
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
@@ -93,7 +94,8 @@ function FullPage() {
 
 root.render(
   <StrictMode>
-    <Menu />
+    <Menu activeTag1={''} activeTag2={''} activeTag3={'Active'} />
     <FullPage />
+    <Footer />
   </StrictMode>
 )

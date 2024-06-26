@@ -85,6 +85,7 @@
   display: flex;
   gap: 5px;
 }
+
 .M_Title {
   display: flex;
   gap: 16px;
@@ -95,26 +96,20 @@
 .M_Filters {
   margin: 4vh;
   margin-left: -6vw;
-  overflow: auto;
-  width: 100vw;
+  overflow-x: hidden;
+  width: calc(100% + 12vw);
+  border-bottom: 2px solid white;
   ul {
     display: flex;
     gap: 3vw;
-    width: 200vw;
+    justify-content: space-between;
+    margin-right: 7vw;
     padding-left: 6vw;
   }
   li {
     padding-bottom: 8px;
     &.active {
       font-weight: 500;
-    }
-  }
-  &.stations {
-    ul {
-      width: 100%;
-      justify-content: space-between;
-      border-bottom: 2px solid white;
-      padding-right: 6vw;
     }
   }
 }
@@ -131,4 +126,26 @@
   height: 350px;
   background-color: var(--white);
   border-radius: 20px;
+}
+
+.M_FiltersPoints {
+  margin: 4vh;
+  margin-left: -6vw;
+  overflow-x: hidden;
+
+  border-bottom: 2px solid white;
+}
+.M_FiltersPoints_inside {
+  display: flex;
+  gap: 3.5vw;
+  margin-left: 7vw;
+  p {
+    width: fit-content;
+  }
+  p:hover {
+    font-weight: bolder;
+  }
+  p.active {
+    font-weight: bolder;
+  }
 }

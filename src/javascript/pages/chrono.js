@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { chronology } from '../particles/data.jsx'
 import { SectionHeading } from '../particles/text.jsx'
 import Menu from '../particles/menu.jsx'
+import Footer from '../particles/footer.jsx'
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
@@ -25,13 +26,6 @@ function Page() {
     setDisplayText3(chronology[number].text_3)
   }
 
-  const handleMouseLeave = () => {
-    setDisplayDate('2023')
-    setDisplayHeading('Метро Москвы')
-    setDisplayText1('Текст по умолчанию')
-    setDisplayText2('Текст по умолчанию')
-    setDisplayText3('Текст по умолчанию')
-  }
   return (
     <div class="O_Chrono">
       <div class="W_ChronoPointsCollection">
@@ -265,8 +259,9 @@ function Page() {
 
 root.render(
   <StrictMode>
-    <Menu />
+    <Menu activeTag1={'Active'} activeTag2={''} activeTag3={''} />
     <SectionHeading heading={'Хронология'} id="Station" />
     <Page />
+    <Footer />
   </StrictMode>
 )

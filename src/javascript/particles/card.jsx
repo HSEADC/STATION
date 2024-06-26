@@ -45,7 +45,7 @@ export function StationCard({
     </>
   )
 }
-export function ArticleCard({ text, bg_image, linking, size }) {
+export function ArticleCard({ text, bg_image, linking, size, text_color }) {
   const linkLong = linking
   const Card_size = `W_ArticleCard ${size}`
   return (
@@ -54,8 +54,7 @@ export function ArticleCard({ text, bg_image, linking, size }) {
         className={Card_size}
         style={{ backgroundImage: `url(${bg_image})` }}
       >
-        {/* Добавить белый текст! */}
-        <h2>{text}</h2>
+        <h2 style={{ color: `var(--${text_color})` }}>{text}</h2>
         <Button text={'читать'} arrow={'up'} linking={linkLong} />
       </div>
     </>

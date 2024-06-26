@@ -1,8 +1,4 @@
 import React from 'react'
-// import Logo from '../images/components/quarks/Q_Logo_white.svg'
-// import Dzen from '../images/tiser/icon_dzen.svg'
-// import VK from '../images/tiser/icon_vk.svg'
-// import TG from '../images/tiser/icon_tg.svg'
 import '../../stylesheets/components/organism.scss'
 import '../../stylesheets/components/quarks.scss'
 import '../../stylesheets/components/atoms.scss'
@@ -14,7 +10,6 @@ function Footer() {
     <div className="O_Footer">
       <div className="ProjectLinks">
         <div className="Content">
-          {/* <img id="logo" src={'/'} alt="" /> */}
           <div className="Q_Logo white"></div>
           <div>
             <p className="big">Хронология</p>

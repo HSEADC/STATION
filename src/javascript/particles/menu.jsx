@@ -5,27 +5,27 @@ import '../../stylesheets/components/atoms.scss'
 import '../../stylesheets/components/molecules.scss'
 import '../../stylesheets/components/wrappers.scss'
 
-function Menu({ state }) {
+function Menu({ state, activeTag1, activeTag2, activeTag3 }) {
   return (
     <div className="W_Menu">
       <a className="A_MenuPoint" href="/index.html">
-        <img className="Q_Logo menu" id="Q_Logo_Menu" alt="" />
+        <div className="Q_Logo menu" id="Q_Logo_Menu" alt=""></div>
       </a>
 
       <div className="M_MenuPoints">
-        <a href="./CategoryChrono.html" className="A_Point">
-          Хронология
+        <a href="./CategoryChrono.html" className={`A_Point${activeTag1}`}>
+          <p>Хронология</p>
         </a>
-        <a href="./СategoryStations.html" className="A_Point">
-          Станции
+        <a href="./СategoryStations.html" className={`A_Point${activeTag2}`}>
+          <p>Станции</p>
         </a>
-        <a href="./CategoryArticles.html" className="A_Point">
-          Статьи
+        <a href="./CategoryArticles.html" className={`A_Point${activeTag3}`}>
+          <p>Статьи</p>
         </a>
       </div>
-      <img className="Q_Burger" alt="" />
+      <div className="Q_Burger" alt=""></div>
       <a className="A_MenuPoint">
-        <img className="Q_Search" alt="" />
+        <div className="Q_Search" alt=""></div>
       </a>
     </div>
   )
