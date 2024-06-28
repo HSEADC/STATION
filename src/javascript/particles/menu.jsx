@@ -6,7 +6,7 @@ import '../../stylesheets/components/molecules.scss'
 import '../../stylesheets/components/wrappers.scss'
 
 function Menu({ state, activeTag1, activeTag2, activeTag3 }) {
-  const mainpage = './'
+  const mainpage = 'https://hseadc.github.io/STATION/'
   return (
     <div className="W_Menu">
       <a className="A_MenuPoint" href={mainpage}>
