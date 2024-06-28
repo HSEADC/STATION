@@ -7,7 +7,7 @@
 @import 'stylesheets/components/molecules.scss';
 @import 'stylesheets/components/wrappers.scss';
 @import 'stylesheets/components/organism.scss';
-
+@import 'stylesheets/adaptives/adaptive.scss';
 @font-face {
   font-family: 'Pragmatica';
   src: url('./fonts/prg45.woff2') format('woff2');

@@ -4,7 +4,7 @@ import '../../stylesheets/components/quarks.scss'
 import '../../stylesheets/components/atoms.scss'
 import '../../stylesheets/components/molecules.scss'
 import '../../stylesheets/components/wrappers.scss'
-
+import '../../stylesheets/adaptives/adaptive.scss'
 function Footer() {
   return (
     <div className="O_Footer">

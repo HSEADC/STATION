@@ -33,3 +33,4 @@
 @import '../components/molecules.scss';
 @import '../components/wrappers.scss';
 @import '../components/organism.scss';
+@import '../adaptives/adaptive.scss';

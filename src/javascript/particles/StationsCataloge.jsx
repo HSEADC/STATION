@@ -1,7 +1,7 @@
 import React from 'react'
 import { stations } from './data.jsx'
 import { ArticleCard, StationCard } from './card.jsx'
-
+import '../../stylesheets/adaptives/adaptive.scss'
 function StationList({
   ArticleCard_text,
   ArticleCard_link,

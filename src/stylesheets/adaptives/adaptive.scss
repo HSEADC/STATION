@@ -1,187 +1,263 @@
-@media only screen and (min-width: 300px) and (max-width: 1200px) {
-  #menu {
-    .menu {
-      display: none;
-    }
-    #burger {
-      display: block;
-    }
+@media screen and (min-device-width: 1024px) {
+  .W_ChronoCard {
+    height: 33vh;
   }
 }
-.index {
-  @media only screen and (min-width: 300px) and (max-width: 1200px) {
-    overflow-x: hidden;
-    .footer {
-      padding: 8vw;
-      .info {
-        flex-direction: column;
-        .content {
-          width: 80vw;
-        }
-      }
-    }
-    .first {
-      .content {
-        margin-bottom: -8vh;
-      }
-      height: 23vh;
-      .text {
-        display: flex;
-        flex-direction: column;
-        h1 {
-          padding: 0 0 5vh 0;
-        }
-      }
-      .card {
-        width: 43vw;
-        height: 8vh;
-        padding: 0.7vh;
-        scale: 1.5;
-        margin-left: 40vw;
-      }
-    }
-    .second {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+@media only screen and (max-device-width: 1024px) {
+  h1 {
+    font-weight: normal;
+  }
 
-      .card1 {
-        grid-area: 2 / 1 / 3 / 2;
-      }
-      .card2 {
-        grid-area: 2 / 2 / 3 / 3;
-      }
-      .card3 {
-        grid-area: 1 / 1 / 2 / 3;
-      }
-      .card4 {
-        grid-area: 3 / 1 / 4 / 2;
-      }
-      .card5 {
-        grid-area: 3 / 2 / 4 / 3;
-      }
-      .card6 {
-        grid-area: 4 / 1 / 5 / 3;
-      }
-      .card7 {
-        grid-area: 5 / 1 / 6 / 3;
-      }
-    }
-    .third {
-      height: 70vh;
-      #data_number {
-        width: 100%;
-      }
-      div:nth-child(2) {
-        width: 100%;
-        height: 53vh;
-        flex-direction: column;
-        align-items: flex-start;
-        .main_image {
-          display: none;
-        }
-        .content {
-          width: 94vw;
-          div {
-            width: 65vw;
-          }
-          .gallery {
-            width: 100%;
-            img:nth-child(1) {
-              width: 30vw;
-            }
-            img:nth-child(2) {
-              width: 25vw;
-            }
-            img:nth-child(2) {
-              width: 40vw;
-            }
-          }
-        }
-      }
-    }
-    .fourth {
-      height: 20vh;
+  span {
+    font-weight: normal;
+  }
 
-      margin: 10vh -2vw;
-    }
-    .fifth {
-      .header {
-        width: 805vw;
-        margin: 2vw;
-      }
-    }
-    .cards {
-      height: 125vh;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-
-      .card1 {
-        grid-area: 1 / 1 / 2 / 2;
-      }
-      .card2 {
-        grid-area: 1 / 2 / 2 / 3;
-      }
-      .card3 {
-        grid-area: 3 / 1 / 4 / 2;
-      }
-      .card4 {
-        grid-area: 3 / 2 / 4 / 3;
-      }
-      .card5 {
-        grid-area: 4 / 1 / 5 / 2;
-      }
-      .card6 {
-        grid-area: 2 / 1 / 3 / 3;
-        flex-direction: row;
-        div {
-          flex-direction: column;
-        }
-      }
-      .card7 {
-        grid-area: 4 / 2 / 5 / 3;
-      }
-      .card8 {
-        grid-area: 5 / 1 / 6 / 2;
-      }
-      .card9 {
-        grid-area: 5 / 2 / 6 / 3;
-      }
-      .card10 {
-        grid-area: 6 / 1 / 7 / 2;
-      }
-      .card11 {
-        grid-area: 6 / 2 / 7 / 3;
-      }
+  h2 {
+    font-weight: normal;
+    &.light {
+      font-weight: normal;
     }
   }
-}
-.new_train {
-  @media only screen and (min-width: 300px) and (max-width: 865px) {
-    h1 {
-      font-size: 1.5rem;
+
+  h3 {
+    font-weight: normal;
+  }
+
+  p {
+    font-weight: normal;
+    &.big {
+      font-weight: normal;
     }
+    &.mini {
+      font-weight: normal;
+    }
+
+    &.button {
+      font-weight: normal;
+    }
+  }
+
+  a {
+    font-weight: normal;
     p {
-      margin: 0;
+      font-weight: normal;
     }
-    .content {
-      width: 90vw;
-      margin-left: 0;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    padding: 7vh 3vw;
+  }
+  .A_MenuPoint {
+    height: 5vh !important;
+  }
+  .A_Point {
+    height: 5vh !important;
+  }
+  .A_PointActive {
+    height: 5vh !important;
+  }
+  p {
+    font-size: 1.5vh;
+    line-height: 1.55vh;
+    width: 43vw;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  span {
+    font-size: 7vw;
+  }
+  a p {
+    font-size: 1.5vh;
+  }
+  p {
+    &.mini {
+      font-size: 1.75vw;
+    }
+    &.button {
+      font-size: 2.5vw;
+    }
+  }
+
+  .Q_TitleImage {
+    height: 50vh;
+  }
+  .W_Menu {
+    top: 4vh !important;
+  }
+  .M_Card {
+    width: 43vw !important;
+    height: 40vw !important;
+    padding: 4.5vw 4vw !important;
+  }
+  .W_CardsArticleCollection {
+    flex-wrap: wrap;
+    row-gap: 2vh;
+  }
+  .W_ArticleCard {
+    width: 87.5vw !important;
+    height: 30vh !important;
+    padding: 4.5vw 4vw !important;
+  }
+  .W_ImageArticleBlock p {
+    font-size: 3vw;
+    line-height: 3.2vw;
+  }
+  .O_FullArticleSection {
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .Q_ImageArticleCover {
+    width: 100%;
+    height: 20vh;
+  }
+  .Q_ImageArticleAdditional {
+    &.two_col {
+      width: 15vw;
+      height: 15vw;
+    }
+    &.six_col {
+      width: 56vw;
+      height: 15vw;
+    }
+  }
+  .Q_Line {
+    width: 23vw;
+    &.long {
+      width: 50vw;
+    }
+  }
+  .A_ArticleBody {
+    margin-top: 2vh;
+    p:nth-child(1) {
+      width: 30vw;
+    }
+    p:nth-child(2) {
+      width: 40vw;
+    }
+  }
+  .A_Button {
+    padding: 20px;
+    padding-left: 40px;
+    .Q_Arrow {
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+  .W_InfoAfticleSection {
+    gap: 10vh !important;
+  }
+  .Q_RunningLine {
+    height: 30vh;
+    margin-top: -13vh;
+    margin-bottom: -5vh;
+  }
+  .W_CardsChronoCollection {
+    flex-direction: column;
+    img {
+      width: 100% !important;
+    }
+  }
+  .W_ChronoCard {
+    h3 {
+      width: 50vw !important;
+    }
+    .W_ChronoCardImage {
+      margin-top: 3vh !important;
+    }
+    width: 100% !important;
+    margin-top: 3vh;
+    .Q_Arrow {
+      width: 5vw !important;
+      height: 5vw !important;
+    }
+  }
+  .O_Footer {
+    margin-top: 0vh !important;
+    height: 30vh !important;
+    .Q_Logo {
+      width: 15vw !important;
+      height: 3vh !important;
+    }
+    .Content {
+      width: 60vw !important;
+    }
+    .Content div:nth-child(1) {
+      margin-right: 4vw;
+    }
+  }
+  .O_Footer .ProjectLinks .Content a {
+    font-size: 1.5vw !important;
+  }
+  .M_CardStationOfTheDay {
+    height: 30vh;
+    h2 {
+      width: 50vw;
+    }
+  }
+  .M_FiltersPoints_inside {
+    gap: 0;
+    width: 87vw;
+    justify-content: space-between;
+  }
+  .Q_FilterPoint {
+    width: 4vw;
+    height: 4vw;
+  }
+  .W_CardsCollection {
+    margin-bottom: 10vh;
+  }
+  .M_Filters li {
+    font-size: 1.75vw !important;
+  }
+  .Q_Point {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  .W_ChronoPointsCollection {
+    &.century {
       p {
-        width: 68vw;
-        margin-top: 10vh;
+        width: 10vw;
       }
-      .gallery {
-        div {
-          background-repeat: no-repeat;
-          background-size: cover;
+    }
+  }
+  .W_ChronoLine {
+    align-items: center;
+  }
+  .W_ChronoLine p {
+    width: 6.5vw;
+  }
+  .W_ChronoLine.century {
+    margin-left: -7vw;
+  }
+  .O_Chrono {
+    flex-direction: column;
+    height: 85vh !important;
+  }
+  .W_ChronoContent {
+    .A_ArticleBody {
+      margin-left: 10.75vw;
+      &.column {
+        p {
+          width: 60vw !important;
         }
       }
     }
+  }
+  .Q_Logo {
+    width: 12vw;
+    height: 3vw;
+  }
+  .Q_Search {
+    width: 3vw;
+    height: 3vw;
   }
 }

@@ -69,10 +69,12 @@
   &.unactive {
     cursor: pointer;
     h1 {
-      font-size: 66px;
+      font-size: 4vw;
+      line-height: 4.2vw;
       color: var(--serpy);
       span {
-        font-size: 66px;
+        font-size: 4vw;
+        line-height: 4.2vw;
         color: var(--serpy);
       }
     }

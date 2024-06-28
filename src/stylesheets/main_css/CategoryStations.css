@@ -32,3 +32,4 @@
   font-weight: bolder;
   font-style: italic;
 }
+@import '../adaptives/adaptive.scss';

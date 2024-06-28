@@ -2,6 +2,7 @@ import React from 'react'
 
 import '../../stylesheets/components/quarks.scss'
 import '../../stylesheets/components/atoms.scss'
+import '../../stylesheets/adaptives/adaptive.scss'
 
 export function Button({ text, arrow, linking }) {
   let actual_arrow = `Q_Arrow ${arrow}`

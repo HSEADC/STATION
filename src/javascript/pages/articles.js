@@ -3,7 +3,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import '../../stylesheets/main_css/CategoryArticles.css'
-
+import '../../stylesheets/adaptives/adaptive.scss'
 import Menu from '../particles/menu.jsx'
 import { ArticlesList } from '../particles/ArticlesCataloge.jsx'
 import { SectionHeading } from '../particles/text.jsx'

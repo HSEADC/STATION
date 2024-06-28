@@ -7,7 +7,7 @@ import { chronology } from '../particles/data.jsx'
 import { SectionHeading } from '../particles/text.jsx'
 import Menu from '../particles/menu.jsx'
 import Footer from '../particles/footer.jsx'
-
+import '../../stylesheets/adaptives/adaptive.scss'
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 

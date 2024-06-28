@@ -14,7 +14,7 @@ import Footer from '../particles/footer.jsx'
 import StationList from '../particles/StationsCataloge.jsx'
 import StOfTheDay_BG from './../../images/stations/StationOfTheDay_bg.png'
 import ArticleCard_BG from './../../images/stations/bg_big_card.jpg'
-
+import '../../stylesheets/adaptives/adaptive.scss'
 function FullPage() {
   const [typeOfFilter, setTypeOfFilter] = useState(undefined)
   const [activeFilter, setActiveFilter] = useState('')

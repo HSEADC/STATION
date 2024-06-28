@@ -8,6 +8,7 @@ import '../../stylesheets/vars.scss'
 import { articles, stations } from './data.jsx'
 import { Button, BackButton } from './button.jsx'
 import BgChrono from '../../images/components/wrapped/ChronoCardBg.png'
+import '../../stylesheets/adaptives/adaptive.scss'
 
 export function StationCard({
   station,

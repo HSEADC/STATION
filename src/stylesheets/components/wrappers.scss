@@ -78,7 +78,7 @@
 }
 .W_ImageArticleBlock {
   p {
-    width: 15%;
+    width: 12vw;
     position: absolute;
   }
   margin-top: 3vh;
@@ -108,11 +108,11 @@
   border-radius: 20px;
   padding: 3vw;
   position: relative;
-  background-position: top;
+  background-position-x: right;
+  background-position-y: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 45vw;
-  height: 33vh;
   .Q_Arrow {
     position: absolute;
     right: 0;
@@ -245,3 +245,17 @@
   gap: 3vw;
   margin-top: 3vh;
 }
+//! Адаптивы
+
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+//   .W_CardsChronoCollection .Q_Image {
+//     height: 14vh;
+//   }
+//   .W_ChronoCard {
+//     height: 28vh;
+//     padding: 2vw;
+//     .W_ChronoCardImage {
+//       height: 14vh;
+//     }
+//   }
+// }

@@ -24,7 +24,7 @@ import Image_Chrono1 from './images/main_page/Chrono1.png'
 import Image_Chrono2 from './images/main_page/Chrono2.png'
 import Image_BigArticle1 from './images/main_page/Article5.png'
 import Video_RunningLine from './images/main_page/RunningLine.mp4'
-
+import './stylesheets/adaptives/adaptive.scss'
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 
@@ -70,7 +70,10 @@ root.render(
     <div class="O_FullArticleSection">
       <div class="W_ImageArticleBlock">
         <p class="button">добавлена станция</p>
-        <img src={Image_Article1} alt="" class="Q_ImageArticleCover" />
+        <div
+          style={{ backgroundImage: `url(${Image_Article1})` }}
+          class="Q_ImageArticleCover"
+        ></div>
       </div>
       <div>
         <div class="W_AdditionalInfoArticle">

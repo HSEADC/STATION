@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../stylesheets/components/quarks.scss'
-
+import '../../stylesheets/adaptives/adaptive.scss'
 export function Q_Image({ width, height, margin, url }) {
   const full_column = 4.7
   const gap = 1.2
