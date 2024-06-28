@@ -10,7 +10,6 @@ import {
   ArticleCard,
   ChronoCard
 } from './javascript/particles/card.jsx'
-import TextChangingComponent from './javascript/particles/chrono.jsx'
 
 import { SectionHeading } from './javascript/particles/text.jsx'
 import { Q_Image, W_ImagesRow } from './javascript/particles/image.jsx'
@@ -130,7 +129,7 @@ root.render(
         }
       />
       <div className="W_CardsChronoCollection">
-        <Q_Image width={10} height={270} margin={0} url={Image_Chrono1} />
+        <Q_Image width={10} height={33} margin={0} url={Image_Chrono1} />
         <ChronoCard
           text={'Когда в метро заработали первые эскалаторы?'}
           year={'1932'}

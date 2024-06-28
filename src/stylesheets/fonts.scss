@@ -5,65 +5,81 @@ body {
   font-family: 'Pragmatica';
 }
 h1 {
-  font-size: 76px;
-  line-height: 115%;
+  font-size: 5vw;
+  line-height: 5.5vw;
   font-weight: normal;
   text-transform: uppercase;
 }
 span {
   font-family: 'Pragmatica';
-  font-size: 76px;
-  line-height: 97%;
+  font-size: 5vw;
+  line-height: 5vw;
   font-weight: normal;
   text-transform: uppercase;
   font-style: italic;
 }
 h2 {
-  font-size: 47px;
+  font-size: 3vw;
   line-height: 103%;
-  font-weight: 500;
+  font-weight: bolder;
+  &.light {
+    font-weight: normal;
+  }
 }
 h3 {
-  font-size: 30px;
+  font-size: 2.25vw;
   line-height: 100%;
   font-weight: bolder;
   + .Q_Line {
     margin-left: 16px;
   }
+  &.article {
+    margin-left: 24vw;
+  }
+}
+img + h3 {
+  margin-top: 5vh;
+}
+div + h3 {
+  margin-top: 5vh;
+  width: 27vw;
 }
 p {
-  font-size: 18px;
-  line-height: 110%;
+  font-size: 1.25vw;
+  line-height: 1.4vw;
   font-weight: 400;
   width: 30vw;
   &.big {
-    font-size: 18px;
+    font-size: 1.5vw;
     line-height: 110%;
     font-weight: bolder;
   }
   &.mini {
-    font-size: 14px;
+    font-size: 1vw;
     line-height: 110%;
     font-weight: 400;
     width: fit-content;
   }
   &.button {
-    font-size: 24px;
+    font-size: 1.5vw;
     line-height: 31px;
     font-weight: bold;
     text-transform: lowercase;
     width: fit-content;
+    &.white {
+      color: var(--white);
+    }
   }
 }
+
 a {
-  font-size: 1rem;
   line-height: 110%;
   font-weight: 500;
   text-transform: lowercase;
   color: var(--black);
   text-decoration: none;
   p {
-    font-size: 2vh;
+    font-size: 1.25vw;
     line-height: 110%;
     font-weight: 500;
     text-transform: lowercase;

@@ -5,7 +5,7 @@ import '../../stylesheets/components/atoms.scss'
 import '../../stylesheets/components/molecules.scss'
 import '../../stylesheets/components/wrappers.scss'
 import '../../stylesheets/vars.scss'
-import { stations } from './data.jsx'
+import { articles, stations } from './data.jsx'
 import { Button, BackButton } from './button.jsx'
 import BgChrono from '../../images/components/wrapped/ChronoCardBg.png'
 
@@ -90,15 +90,48 @@ export function StationHeading({ station, BGUrl, line }) {
         className="W_StationHeadingImage"
         style={{ backgroundImage: `url(${BGUrl})` }}
       >
-        <BackButton text={'назад'} />
+        <BackButton text={'назад'} color={'white'} />
       </div>
       <h1 style={{ color: `var(--white)` }}>{station}</h1>
       <div className="A_Tags white">{line}</div>
     </div>
   )
 }
+export function ArticleHeading({ station, BGUrl, description }) {
+  return (
+    <div className="O_ArticleHeading">
+      <div
+        className="W_StationHeadingImage"
+        style={{ backgroundImage: `url(${BGUrl})` }}
+      >
+        <BackButton text={'назад'} color={'black'} />
+      </div>
+      <h2 style={{ color: `var(--black)` }}>{station}</h2>
+      <p>{description}</p>
+    </div>
+  )
+}
 export function MaybeInterestingCards({ start_number, end_number }) {
   const listItems = stations
+    .filter((station) => station.id >= start_number && station.id <= end_number)
+    .map((station) => (
+      <StationCard
+        key={station.id} // добавление ключа для каждого элемента
+        station={station.name}
+        color={station.color}
+        tag_1_text={station.line_1}
+        Station_link={station.link}
+      />
+    ))
+  return (
+    <div className="W_AlsoLook">
+      <h2>Вот о чем еще можно почитать</h2>
+      <div className="W_CardsCollection">{listItems}</div>
+    </div>
+  )
+}
+export function MaybeInterestingCardsArticles({ start_number, end_number }) {
+  const listItems = articles
     .filter((station) => station.id >= start_number && station.id <= end_number)
     .map((station) => (
       <StationCard

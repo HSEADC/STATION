@@ -1,7 +1,7 @@
 //Какая-то проблема с подклюбчением в index.css
 .Q_Arrow {
-  width: 39px;
-  height: 39px;
+  width: 3vw;
+  height: 3vw;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -24,7 +24,9 @@
   &.backDef {
     width: 36px;
     height: 36px;
-    background-image: url(../../images/components/quarks/Q_Arrow_back_def.svg);
+    &.black {
+      background-image: url(../../images/components/quarks/Q_Arrow_back_def.svg);
+    }
     &.white {
       background-image: url(../../images/components/quarks/Q_Arrow_back_def_white.svg);
     }
@@ -122,12 +124,12 @@
 }
 .Q_Line {
   height: 3px;
-  width: 145px;
+  width: 10vw;
   background-color: var(--black);
   border-radius: 3px;
   margin-bottom: 6px;
   &.long {
-    width: 300px;
+    width: 19vw;
     background-color: var(--serpy);
     + h3 {
       color: var(--serpy);

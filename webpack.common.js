@@ -14,7 +14,8 @@ module.exports = {
     articles: './src/javascript/pages/articles.js',
     // styleguide: './src/javascript/pages/styleguide.js',
     // aboutus: './src/javascript/pages/aboutus.js',
-    page_biblioteka: './src/javascript/pages/biblioteka_lenina.js'
+    page_biblioteka: './src/javascript/pages/biblioteka_lenina.js',
+    peresadki: './src/javascript/pages/article_peresadki.js'
   },
   output: {
     filename: '[name].js',
@@ -131,6 +132,13 @@ module.exports = {
       template: './src/pages/stations/biblioteka_lenina.html',
       filename: './biblioteka_lenina.html',
       chunks: ['page_biblioteka']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/peresadki.html',
+      filename: './peresadki.html',
+      chunks: ['peresadki']
     })
   ],
   optimization: {

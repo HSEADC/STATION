@@ -19,15 +19,15 @@ export function Button({ text, arrow, linking }) {
   )
 }
 
-export function BackButton({ text, TextColor }) {
+export function BackButton({ text, color }) {
   const handleClick = () => {
     window.history.back()
   }
 
   return (
     <div className="A_SecondaryButton" onClick={handleClick}>
-      <div className="Q_Arrow backDef white"></div>
-      <p className="button">{text}</p>
+      <div className={`Q_Arrow backDef ${color}`}></div>
+      <p className={`button ${color}`}>{text}</p>
     </div>
   )
 }

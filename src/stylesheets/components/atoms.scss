@@ -33,11 +33,12 @@
   width: fit-content;
   border-radius: 100px;
   height: fit-content;
-  color: var(--white);
   cursor: pointer;
 }
 .A_SecondaryButton:hover {
-  color: var(--kalug);
+  p {
+    color: var(--kalug);
+  }
 }
 .A_SecondaryButton:hover .Q_Arrow {
   background-image: url(../../images/components/quarks/Q_Arrow_back_hover.svg);

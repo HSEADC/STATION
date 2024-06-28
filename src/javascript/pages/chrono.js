@@ -32,35 +32,79 @@ function Page() {
         <div class="W_ChronoLine century">
           <p>20 век</p>
           <p>31-40</p>
-          <div class="W_OneLinePoints">
+          <div className="W_OneLinePoints">
             <div
-              class="Q_Point"
+              className="Q_Point"
               onMouseEnter={() => handleDivMouseEnter(0)}
-              onMouseLeave={() => handleMouseLeave()}
             ></div>
             <div
-              class="Q_Point"
+              className="Q_Point"
               onMouseEnter={() => handleDivMouseEnter(1)}
-              onMouseLeave={() => handleMouseLeave()}
             ></div>
             <div
-              class="Q_Point"
+              className="Q_Point"
               onMouseEnter={() => handleDivMouseEnter(2)}
-              onMouseLeave={() => handleMouseLeave()}
             ></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
-            <div class="Q_Point"></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(3)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(4)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(5)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(6)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(7)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(8)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(9)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(10)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(11)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(12)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(13)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(14)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(15)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(16)}
+            ></div>
+            <div
+              className="Q_Point"
+              onMouseEnter={() => handleDivMouseEnter(17)}
+            ></div>
           </div>
         </div>
         <div class="W_ChronoLine">

@@ -42,7 +42,7 @@ export function SectionHeading({
 export function ArticleChapter({ heading, text }) {
   return (
     <div className="M_Text">
-      <h2>{heading}</h2>
+      <h2 className="light">{heading}</h2>
       <p style={{ width: `40vw` }}>{text}</p>
     </div>
   )

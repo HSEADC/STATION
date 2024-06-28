@@ -91,3 +91,17 @@
   margin-right: -6vw;
   margin-bottom: 5vh;
 }
+.O_ArticleHeading {
+  border-radius: 20px;
+  padding: 8vh 6vw;
+  margin-left: -6vw;
+  margin-right: -6vw;
+  margin-bottom: 5vh;
+  h2 {
+    width: 50vw;
+  }
+  h2 + p {
+    margin-left: 24vw;
+    margin-top: 3vh;
+  }
+}

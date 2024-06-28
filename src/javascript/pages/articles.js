@@ -103,7 +103,7 @@ function FullPage() {
             size={'large'}
             text={'Лайфхаки при пересадках, сокращающие время перехода'}
             bg_image={ArticleCard_BG}
-            linking={''}
+            linking={'./peresadki.html'}
           />
           <ArticlesList type={'article'} filter={filter} />
         </div>

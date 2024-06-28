@@ -8,7 +8,7 @@ import '../../stylesheets/components/wrappers.scss'
 function Menu({ state, activeTag1, activeTag2, activeTag3 }) {
   return (
     <div className="W_Menu">
-      <a className="A_MenuPoint" href="/index.html">
+      <a className="A_MenuPoint" href="/">
         <div className="Q_Logo menu" id="Q_Logo_Menu" alt=""></div>
       </a>
 
