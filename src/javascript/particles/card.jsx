@@ -5,7 +5,7 @@ import '../../stylesheets/components/atoms.scss'
 import '../../stylesheets/components/molecules.scss'
 import '../../stylesheets/components/wrappers.scss'
 import '../../stylesheets/vars.scss'
-import Button from './button.jsx'
+import { Button, BackButton } from './button.jsx'
 import BgChrono from '../../images/components/wrapped/ChronoCardBg.png'
 
 export function StationCard({
@@ -81,10 +81,28 @@ export function ChronoCard({ text, year, image_URL, isWhite }) {
     </div>
   )
 }
-export function StOfTheDay({ station }) {
+export function StOfTheDay({ station, BGUrl }) {
   return (
-    <div class="M_CardStationOfTheDay">
+    <div
+      class="M_CardStationOfTheDay"
+      style={{ backgroundImage: `url(${BGUrl})` }}
+    >
       <h2>Станция дня — {station}</h2>
+    </div>
+  )
+}
+
+export function StationHeading({ station, BGUrl, line }) {
+  return (
+    <div className="O_StationHeading">
+      <div
+        className="W_StationHeadingImage"
+        style={{ backgroundImage: `url(${BGUrl})` }}
+      >
+        <BackButton text={'назад'} />
+      </div>
+      <h1 style={{ color: `var(--white)` }}>{station}</h1>
+      <div className="A_Tags white">{line}</div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Button from './javascript/particles/button.jsx'
+import { Button } from './javascript/particles/button.jsx'
 import Menu from './javascript/particles/menu.jsx'
 import {
   StationCard,
@@ -32,6 +32,14 @@ const root = createRoot(rootElement)
 root.render(
   <StrictMode>
     <Menu activeTag1={''} activeTag2={''} activeTag3={''} />
+    <div>
+      <h1>ТУТ ВСЕ</h1>
+      <SectionHeading heading={'Мосметро'} />
+      <div
+        className="Q_TitleImage"
+        style={{ backgroundColor: 'var(--sokol)' }}
+      ></div>
+    </div>
     <div>
       <SectionHeading
         heading={'станции'}
@@ -122,7 +130,7 @@ root.render(
         }
       />
       <div className="W_CardsChronoCollection">
-        <Q_Image width={10} height={300} margin={0} url={Image_Chrono1} />
+        <Q_Image width={10} height={270} margin={0} url={Image_Chrono1} />
         <ChronoCard
           text={'Когда в метро заработали первые эскалаторы?'}
           year={'1932'}

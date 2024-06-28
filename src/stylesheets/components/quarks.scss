@@ -25,6 +25,9 @@
     width: 36px;
     height: 36px;
     background-image: url(../../images/components/quarks/Q_Arrow_back_def.svg);
+    &.white {
+      background-image: url(../../images/components/quarks/Q_Arrow_back_def_white.svg);
+    }
   }
   &.backHov {
     width: 36px;

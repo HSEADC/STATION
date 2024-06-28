@@ -12,7 +12,7 @@ export function Q_Image({ width, height, margin, url }) {
       src={`${url}`}
       style={{
         width: `${width_I}vw`,
-        height: `${height}px`,
+        height: `${height}vh`,
         marginLeft: `${margin_I}vw`
       }}
     />

@@ -3,7 +3,7 @@ import React from 'react'
 import '../../stylesheets/components/quarks.scss'
 import '../../stylesheets/components/atoms.scss'
 
-function Button({ text, arrow, linking }) {
+export function Button({ text, arrow, linking }) {
   let actual_arrow = `Q_Arrow ${arrow}`
   const linkLong = linking
   const handleClick = () => {
@@ -19,4 +19,15 @@ function Button({ text, arrow, linking }) {
   )
 }
 
-export default Button
+export function BackButton({ text, TextColor }) {
+  const handleClick = () => {
+    window.history.back()
+  }
+
+  return (
+    <div className="A_SecondaryButton" onClick={handleClick}>
+      <div className="Q_Arrow backDef white"></div>
+      <p className="button">{text}</p>
+    </div>
+  )
+}

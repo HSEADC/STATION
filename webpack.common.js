@@ -11,9 +11,10 @@ module.exports = {
     index: './src/index.js',
     stations: './src/javascript/pages/stations.js',
     chronology: './src/javascript/pages/chrono.js',
-    articles: './src/javascript/pages/articles.js'
+    articles: './src/javascript/pages/articles.js',
     // styleguide: './src/javascript/pages/styleguide.js',
-    // aboutus: './src/javascript/pages/aboutus.js'
+    // aboutus: './src/javascript/pages/aboutus.js',
+    page_biblioteka: './src/javascript/pages/biblioteka_lenina.js'
   },
   output: {
     filename: '[name].js',
@@ -123,6 +124,13 @@ module.exports = {
       template: './src/pages/Styleguide.html',
       filename: './Styleguide.html',
       chunks: ['styleguide']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/biblioteka_lenina.html',
+      filename: './biblioteka_lenina.html',
+      chunks: ['page_biblioteka']
     })
   ],
   optimization: {

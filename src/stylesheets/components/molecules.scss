@@ -109,8 +109,10 @@
   li {
     padding-bottom: 8px;
     &.active {
-      font-weight: 500;
+      font-weight: bolder;
+      color: var(--kalug);
     }
+    cursor: pointer;
   }
 }
 .M_CardStationOfTheDay {
@@ -132,20 +134,22 @@
   margin: 4vh;
   margin-left: -6vw;
   overflow-x: hidden;
-
-  border-bottom: 2px solid white;
+  width: calc(100% + 12vw);
+  padding-bottom: 1vh;
 }
 .M_FiltersPoints_inside {
   display: flex;
-  gap: 3.5vw;
-  margin-left: 7vw;
-  p {
-    width: fit-content;
-  }
-  p:hover {
-    font-weight: bolder;
-  }
-  p.active {
-    font-weight: bolder;
-  }
+  gap: 4vw;
+  margin-left: 6.5vw;
+}
+
+.M_Text {
+  margin-left: 24vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin-top: 10vh;
+}
+.M_Text + img {
+  margin-top: 3vh;
 }

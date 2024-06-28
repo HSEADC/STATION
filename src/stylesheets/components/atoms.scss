@@ -24,6 +24,24 @@
 .secondary:hover {
   color: var(--white);
 }
+.A_SecondaryButton {
+  display: flex;
+  padding: 14px;
+  padding-right: 32px;
+  gap: 12px;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100px;
+  height: fit-content;
+  color: var(--white);
+  cursor: pointer;
+}
+.A_SecondaryButton:hover {
+  color: var(--kalug);
+}
+.A_SecondaryButton:hover .Q_Arrow {
+  background-image: url(../../images/components/quarks/Q_Arrow_back_hover.svg);
+}
 
 .A_Tags {
   border: 1.5px solid var(--black);
@@ -112,4 +130,6 @@
   border-radius: 100px;
   background-color: var(--black);
   color: var(--white);
+}
+.A_StationAccentLine {
 }

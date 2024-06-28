@@ -38,3 +38,23 @@ export function SectionHeading({
     </>
   )
 }
+
+export function ArticleChapter({ heading, text }) {
+  return (
+    <div className="M_Text">
+      <h2>{heading}</h2>
+      <p style={{ width: `40vw` }}>{text}</p>
+    </div>
+  )
+}
+
+export function StationAccentLine({ heading, BGUrl }) {
+  return (
+    <div
+      className="A_StationAccentLine"
+      style={{ backgroundImage: `url(${BGUrl})` }}
+    >
+      <h3>{heading}</h3>
+    </div>
+  )
+}
