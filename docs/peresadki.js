@@ -619,7 +619,7 @@ var data_stations = [{
   color: 'sokol',
   link: '/'
 }];
-var data_articles = [{
+var articles = [{
   id: 0,
   name: 'Некрасовка и рыбки',
   line_1: 'Искусство',
@@ -733,7 +733,7 @@ var chronology = [{
 
 
 
-function Button(_ref) {
+function button_Button(_ref) {
   var text = _ref.text,
       arrow = _ref.arrow,
       linking = _ref.linking;
@@ -744,12 +744,12 @@ function Button(_ref) {
     window.location.href = linkLong;
   };
 
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: "A_Button",
     onClick: handleClick
-  }, /*#__PURE__*/react.createElement("p", {
+  }, /*#__PURE__*/React.createElement("p", {
     className: "button"
-  }, text), /*#__PURE__*/react.createElement("div", {
+  }, text), /*#__PURE__*/React.createElement("div", {
     className: actual_arrow
   })));
 }
@@ -761,12 +761,12 @@ function button_BackButton(_ref2) {
     window.history.back();
   };
 
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/react.createElement("div", {
     className: "A_SecondaryButton",
     onClick: handleClick
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Arrow backDef ".concat(color)
-  }), /*#__PURE__*/React.createElement("p", {
+  }), /*#__PURE__*/react.createElement("p", {
     className: "button ".concat(color)
   }, text));
 }
@@ -814,16 +814,16 @@ function ArticleCard(_ref2) {
       text_color = _ref2.text_color;
   var linkLong = linking;
   var Card_size = "W_ArticleCard ".concat(size);
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: Card_size,
     style: {
       backgroundImage: "url(".concat(bg_image, ")")
     }
-  }, /*#__PURE__*/react.createElement("h2", {
+  }, /*#__PURE__*/React.createElement("h2", {
     style: {
       color: "var(--".concat(text_color, ")")
     }
-  }, text), /*#__PURE__*/react.createElement(Button, {
+  }, text), /*#__PURE__*/React.createElement(Button, {
     text: 'читать',
     arrow: 'up',
     linking: linkLong
@@ -889,21 +889,21 @@ function ArticleHeading(_ref6) {
   var station = _ref6.station,
       BGUrl = _ref6.BGUrl,
       description = _ref6.description;
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/react.createElement("div", {
     className: "O_ArticleHeading"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: "W_StationHeadingImage",
     style: {
       backgroundImage: "url(".concat(BGUrl, ")")
     }
-  }, /*#__PURE__*/React.createElement(BackButton, {
+  }, /*#__PURE__*/react.createElement(button_BackButton, {
     text: 'назад',
     color: 'black'
-  })), /*#__PURE__*/React.createElement("h2", {
+  })), /*#__PURE__*/react.createElement("h2", {
     style: {
       color: "var(--black)"
     }
-  }, station), /*#__PURE__*/React.createElement("p", null, description));
+  }, station), /*#__PURE__*/react.createElement("p", null, description));
 }
 function MaybeInterestingCards(_ref7) {
   var start_number = _ref7.start_number,
@@ -932,7 +932,7 @@ function MaybeInterestingCardsArticles(_ref8) {
   var listItems = articles.filter(function (station) {
     return station.id >= start_number && station.id <= end_number;
   }).map(function (station) {
-    return /*#__PURE__*/React.createElement(StationCard, {
+    return /*#__PURE__*/react.createElement(StationCard, {
       key: station.id // добавление ключа для каждого элемента
       ,
       station: station.name,
@@ -941,12 +941,14 @@ function MaybeInterestingCardsArticles(_ref8) {
       Station_link: station.link
     });
   });
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/react.createElement("div", {
     className: "W_AlsoLook"
-  }, /*#__PURE__*/React.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/react.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/react.createElement("div", {
     className: "W_CardsCollection"
   }, listItems));
 }
+;// CONCATENATED MODULE: ./src/images/articles/articles_pages/peresadkiHeading.png
+const peresadkiHeading_namespaceObject = __webpack_require__.p + "images/8d03cf72de6940fe29f5.png";
 ;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
 
 
@@ -959,26 +961,26 @@ function SectionHeading(_ref) {
       unactive = _ref.unactive,
       id = _ref.id,
       onClick = _ref.onClick;
-  return /*#__PURE__*/react.createElement(react.Fragment, null, !unactive && /*#__PURE__*/react.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, !unactive && /*#__PURE__*/React.createElement("div", {
     "class": "A_SectionHeading",
     id: id,
     onClick: onClick
-  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), heading)), unactive && /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("span", null, "\u043E!"), heading)), unactive && /*#__PURE__*/React.createElement("div", {
     "class": "A_SectionHeading unactive",
     id: id,
     onClick: onClick
-  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), heading)), description && /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("span", null, "\u043E!"), heading)), description && /*#__PURE__*/React.createElement("div", {
     "class": "A_SectionDescribe"
-  }, /*#__PURE__*/react.createElement("p", null, description)));
+  }, /*#__PURE__*/React.createElement("p", null, description)));
 }
 function ArticleChapter(_ref2) {
   var heading = _ref2.heading,
       text = _ref2.text;
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/react.createElement("div", {
     className: "M_Text"
-  }, /*#__PURE__*/React.createElement("h2", {
+  }, /*#__PURE__*/react.createElement("h2", {
     className: "light"
-  }, heading), /*#__PURE__*/React.createElement("p", {
+  }, heading), /*#__PURE__*/react.createElement("p", {
     style: {
       width: "40vw"
     }
@@ -994,32 +996,67 @@ function StationAccentLine(_ref3) {
     }
   }, /*#__PURE__*/React.createElement("h3", null, heading));
 }
-;// CONCATENATED MODULE: ./src/javascript/particles/ArticlesCataloge.jsx
+;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
 
 
-
-
-function ArticlesList(_ref) {
-  var type = _ref.type,
-      filter = _ref.filter;
-  var listItems = data_articles.filter(function (article) {
-    return article.type === type && (filter !== undefined ? article.color === filter : true);
-  }).map(function (article) {
-    return /*#__PURE__*/react.createElement(StationCard, {
-      key: article.id // добавление ключа для каждого элемента
-      ,
-      station: article.name,
-      color: article.color,
-      tag_1_text: article.line_1,
-      tag_2_text: article.line_2,
-      tag_3_text: article.line_3,
-      Station_link: article.link
-    });
+function Q_Image(_ref) {
+  var width = _ref.width,
+      height = _ref.height,
+      margin = _ref.margin,
+      url = _ref.url;
+  var full_column = 4.7;
+  var gap = 1.2;
+  var width_I = width * full_column - gap;
+  var margin_I = margin * full_column;
+  return /*#__PURE__*/react.createElement("img", {
+    className: "Q_Image",
+    src: "".concat(url),
+    style: {
+      width: "".concat(width_I, "vw"),
+      height: "".concat(height, "vh"),
+      marginLeft: "".concat(margin_I, "vw")
+    }
   });
-  return /*#__PURE__*/react.createElement("div", {
-    className: "W_CardsCollection"
-  }, listItems);
 }
+function W_ImagesRow(_ref2) {
+  var width_1 = _ref2.width_1,
+      width_2 = _ref2.width_2,
+      width_3 = _ref2.width_3,
+      height = _ref2.height,
+      url_1 = _ref2.url_1,
+      url_2 = _ref2.url_2,
+      url_3 = _ref2.url_3;
+  var margin_actual;
+
+  if (!width_3) {
+    margin_actual = 2;
+  } else {
+    margin_actual = 0;
+  }
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "W_ImageRow"
+  }, width_1 && /*#__PURE__*/React.createElement(Q_Image, {
+    width: width_1,
+    height: height,
+    url: url_1,
+    margin: margin_actual
+  }), width_2 && /*#__PURE__*/React.createElement(Q_Image, {
+    width: width_2,
+    height: height,
+    url: url_2
+  }), width_3 && /*#__PURE__*/React.createElement(Q_Image, {
+    width: width_3,
+    height: height,
+    url: url_3
+  }));
+}
+;// CONCATENATED MODULE: ./src/images/articles/articles_pages/peresadki_img01.png
+const peresadki_img01_namespaceObject = __webpack_require__.p + "images/50a14b32f26bb201622c.png";
+;// CONCATENATED MODULE: ./src/images/articles/articles_pages/peresadki_img02.png
+const peresadki_img02_namespaceObject = __webpack_require__.p + "images/95b8677788e824b60ac4.png";
+;// CONCATENATED MODULE: ./src/images/articles/articles_pages/peresadki_img03.png
+const peresadki_img03_namespaceObject = __webpack_require__.p + "images/a52e4138f9b0a6e43400.png";
 ;// CONCATENATED MODULE: ./src/javascript/particles/footer.jsx
 
 
@@ -1071,22 +1108,9 @@ function Footer() {
 }
 
 /* harmony default export */ const footer = (Footer);
-;// CONCATENATED MODULE: ./src/images/articles/ArticleCard_Bg.jpg
-const ArticleCard_Bg_namespaceObject = __webpack_require__.p + "images/ad5c6dab42ad71685342.jpg";
-;// CONCATENATED MODULE: ./src/images/articles/NewsCard_Bg.png
-const NewsCard_Bg_namespaceObject = __webpack_require__.p + "images/9b7593b81f48b2387d59.png";
-;// CONCATENATED MODULE: ./src/javascript/pages/articles.js
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+;// CONCATENATED MODULE: ./src/javascript/pages/article_peresadki.js
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -1101,170 +1125,72 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
-
-function FullPage() {
-  var _useState = (0,react.useState)(true),
-      _useState2 = _slicedToArray(_useState, 2),
-      showArticles = _useState2[0],
-      setShowArticles = _useState2[1];
-
-  var _useState3 = (0,react.useState)(undefined),
-      _useState4 = _slicedToArray(_useState3, 2),
-      filter = _useState4[0],
-      setFilter = _useState4[1]; // Инициализируем undefined
-
-
-  var _useState5 = (0,react.useState)(''),
-      _useState6 = _slicedToArray(_useState5, 2),
-      activeFilter = _useState6[0],
-      setActiveFilter = _useState6[1]; // Состояние для активного фильтра
-
-
-  function handleCatNewsClick() {
-    setShowArticles(false);
-    setFilter(undefined); // Сброс фильтра при переключении на новости
-  }
-
-  function handleCatArticlesClick() {
-    setShowArticles(true);
-    setFilter(undefined); // Сброс фильтра при переключении на статьи
-  }
-
-  function handleFilterClick(newFilter) {
-    if (filter === newFilter) {
-      setFilter(undefined);
-      setActiveFilter('');
-    } else {
-      setFilter(newFilter);
-      setActiveFilter(newFilter);
-    }
-  }
-
-  return /*#__PURE__*/react.createElement("div", null, showArticles && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-    className: "W_PageTitleName"
-  }, /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'Статьи',
-    id: "Station"
-  }), /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'Новости',
-    id: "Map",
-    onClick: function onClick() {
-      return handleCatNewsClick();
-    },
-    unactive: 1
-  })), /*#__PURE__*/react.createElement("div", {
-    className: "M_Filters stations",
-    id: "category_filter_scroll"
-  }, /*#__PURE__*/react.createElement("ul", null, /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'arch' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('arch');
-    }
-  }, "\u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440\u0443"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'hist' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('hist');
-    }
-  }, "\u0438\u0441\u0442\u043E\u0440\u0438\u044F"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'art' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('art');
-    }
-  }, "\u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'tech' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('tech');
-    }
-  }, "\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'info' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('info');
-    }
-  }, "\u0438\u043D\u0444\u043E\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'evnt' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('evnt');
-    }
-  }, "\u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'life' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('life');
-    }
-  }, "\u043B\u0430\u0439\u0444\u0445\u0430\u043A\u0438"))), /*#__PURE__*/react.createElement(ArticleCard, {
-    size: 'large',
-    text: 'Лайфхаки при пересадках, сокращающие время перехода',
-    bg_image: ArticleCard_Bg_namespaceObject,
-    linking: './peresadki.html'
-  }), /*#__PURE__*/react.createElement(ArticlesList, {
-    type: 'article',
-    filter: filter
-  })), !showArticles && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-    className: "W_PageTitleName"
-  }, /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'Статьи',
-    id: "Station",
-    unactive: 1,
-    onClick: function onClick() {
-      return handleCatArticlesClick();
-    }
-  }), /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'Новости',
-    id: "Map"
-  })), /*#__PURE__*/react.createElement("div", {
-    className: "M_Filters stations",
-    id: "category_filter_scroll"
-  }, /*#__PURE__*/react.createElement("ul", null, /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'arch' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('arch');
-    }
-  }, "\u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440\u0443"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'hist' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('hist');
-    }
-  }, "\u0438\u0441\u0442\u043E\u0440\u0438\u044F"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'art' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('art');
-    }
-  }, "\u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'tech' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('tech');
-    }
-  }, "\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'info' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('info');
-    }
-  }, "\u0438\u043D\u0444\u043E\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'evnt' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('evnt');
-    }
-  }, "\u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u044F"), /*#__PURE__*/react.createElement("li", {
-    className: activeFilter === 'life' ? 'active' : '',
-    onClick: function onClick() {
-      return handleFilterClick('life');
-    }
-  }, "\u043B\u0430\u0439\u0444\u0445\u0430\u043A\u0438"))), /*#__PURE__*/react.createElement(ArticleCard, {
-    size: 'large',
-    text: 'Новые поезда на Замоскворецкой',
-    bg_image: NewsCard_Bg_namespaceObject,
-    linking: '',
-    text_color: 'white'
-  }), /*#__PURE__*/react.createElement(ArticlesList, {
-    type: 'news',
-    filter: filter
-  })));
-}
-
 root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, {
   activeTag1: '',
   activeTag2: '',
-  activeTag3: 'Active'
-}), /*#__PURE__*/react.createElement(FullPage, null), /*#__PURE__*/react.createElement(footer, null)));
+  activeTag3: ''
+}), /*#__PURE__*/react.createElement(ArticleHeading, {
+  BGUrl: peresadkiHeading_namespaceObject,
+  station: 'Лайфхаки при пересадках, сокращающие время перехода',
+  description: 'В этой статье мы поделимся небольшими хитростями, которые помогут вам быстро и удобно добраться до центральных станций, избегая лишних хлопот.'
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  heading: 'Охотный ряд — Площадь революции',
+  text: 'На этом транспортном узле нет прямого соединения красной и синей ветки, поэтому всё время придется тратить время на проход по Театральной. '
+}), /*#__PURE__*/react.createElement(Q_Image, {
+  width: 9,
+  height: 40,
+  margin: 5,
+  url: peresadki_img01_namespaceObject
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  text: 'Однако, можно заметно сократить себе путь пешком, если проехать чуть дальше до Библиотеки имени Ленина. Тут мы можем осуществить прямую пересадку. Поднимаемся по ступенькам, поворачиваем налево и идем прямо до эскалаторов. Главное осмотритесь, чтобы вас не сбили с ног люди, идущие от Александровского сада. Спускаемcя по эскалатору и садимся в поезд на синей ветке. Способ сильно проще, чем 4 раза переходить на эскалаторах в первом варианте. '
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  heading: 'Чистые пруды — Тургеневская',
+  text: 'Подключаем к нашей задаче выход в город. На этом транспортном узле обеспечен прямой переход между Чистыми Прудами и Тургеневской, но он пеший и очень длинный.'
+}), /*#__PURE__*/react.createElement(Q_Image, {
+  width: 9,
+  height: 40,
+  margin: 5,
+  url: peresadki_img02_namespaceObject
+}), /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, "\u042D\u043A\u043E\u043D\u043E\u043C\u0438\u044F \u0432\u0440\u0435\u043C\u0435\u043D\u0438 ~ 10 \u043C\u0438\u043D\u0443\u0442"), /*#__PURE__*/react.createElement("div", {
+  className: "W_TextCount"
+}, /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, " 1"), /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u043C\u0441\u044F \u043D\u0430 \u0427\u0438\u0441\u0442\u044B\u0445 \u043F\u0440\u0443\u0434\u0430\u0445 \u043F\u043E \u044D\u0441\u043A\u0430\u043B\u0430\u0442\u043E\u0440\u0443 \u0432 \u0441\u0442\u043E\u0440\u043E\u043D\u0443 2 \u0432\u044B\u0445\u043E\u0434\u0430")), /*#__PURE__*/react.createElement("div", {
+  className: "W_TextCount"
+}, /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, " 2"), /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u0435\u043C \u043D\u0430\u043F\u0440\u0430\u0432\u043E, \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u043C \u043F\u043E \u0432\u0435\u0441\u0442\u0438\u0431\u044E\u043B\u044E \u0438 \u0441\u043F\u0443\u0441\u043A\u0430\u0435\u043C\u0441\u044F \u043F\u043E \u044D\u0441\u043A\u0430\u043B\u0430\u0442\u043E\u0440\u0443 \u043A \u0422\u0443\u0440\u0433\u0435\u043D\u0435\u0432\u0441\u043A\u043E\u0439")), /*#__PURE__*/react.createElement(ArticleChapter, {
+  heading: 'Как не путать платформы и переходы на «Китай-городе» и «Третьяковской»?',
+  text: 'Кросс-платформенные пересадки всегда путают. Так как же запомнить, где нужно пересаживаться?'
+}), /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, "\u041D\u0438\u043A\u0430\u043A. \u0417\u0430\u0431\u0443\u0434\u044C \u043E\u0431 \u044D\u0442\u043E\u043C. \u0422\u0443\u0442 \u0434\u0430\u0436\u0435 \u043C\u0430\u0433\u0438\u044F \u0431\u0435\u0441\u0441\u0438\u043B\u044C\u043D\u0430."), /*#__PURE__*/react.createElement(ArticleChapter, {
+  heading: 'Павелецкая',
+  text: 'Клаустрофобный, долгий привокзальный переход с зеленой на коричневую ветку на Павелецкой пользуется большим спросом ежедневно, но можно опять подключить к этому делу выход в город.'
+}), /*#__PURE__*/react.createElement(Q_Image, {
+  width: 9,
+  height: 40,
+  margin: 5,
+  url: peresadki_img03_namespaceObject
+}), /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, "\u042D\u043A\u043E\u043D\u043E\u043C\u0438\u044F \u0432\u0440\u0435\u043C\u0435\u043D\u0438 ~ 5 \u043C\u0438\u043D\u0443\u0442"), /*#__PURE__*/react.createElement("div", {
+  className: "W_TextCount"
+}, /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, " 1"), /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u043C\u0441\u044F \u043D\u0430 \u0427\u0438\u0441\u0442\u044B\u0445 \u043F\u0440\u0443\u0434\u0430\u0445 \u043F\u043E \u044D\u0441\u043A\u0430\u043B\u0430\u0442\u043E\u0440\u0443 \u0432 \u0441\u0442\u043E\u0440\u043E\u043D\u0443 2 \u0432\u044B\u0445\u043E\u0434\u0430")), /*#__PURE__*/react.createElement("div", {
+  className: "W_TextCount"
+}, /*#__PURE__*/react.createElement("h3", {
+  className: "article"
+}, " 2"), /*#__PURE__*/react.createElement("p", null, "\u041D\u0435 \u0432\u044B\u0445\u043E\u0434\u044F \u0438\u0437 \u0432\u0435\u0441\u0442\u0438\u0431\u044E\u043B\u044F, \u0441\u043F\u0443\u0441\u043A\u0430\u0435\u043C\u0441\u044F \u043D\u0430 \u0432\u0442\u043E\u0440\u043E\u043C \u044D\u0441\u043A\u0430\u043B\u0430\u0442\u043E\u0440\u0435 \u043D\u0430 \u0437\u0435\u043B\u0435\u043D\u0443\u044E \u0432\u0435\u0442\u043A\u0443")), /*#__PURE__*/react.createElement(ArticleChapter, {
+  heading: 'Обратный путь',
+  text: 'При необходимости снова отправиться обратно на метро, пассажиру просто нужно будет следовать уже знакомому маршруту, только в обратном направлении. Это позволит сэкономить время и усилия, так как все шаги уже будут знакомы и пройдены ранее.'
+}), /*#__PURE__*/react.createElement(MaybeInterestingCardsArticles, {
+  start_number: 0,
+  end_number: 3
+}), /*#__PURE__*/react.createElement(footer, null)));
 })();
 
 /******/ })()

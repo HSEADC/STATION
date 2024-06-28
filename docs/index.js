@@ -557,7 +557,7 @@ function Button(_ref) {
 }
 function button_BackButton(_ref2) {
   var text = _ref2.text,
-      TextColor = _ref2.TextColor;
+      color = _ref2.color;
 
   var handleClick = function handleClick() {
     window.history.back();
@@ -567,9 +567,9 @@ function button_BackButton(_ref2) {
     className: "A_SecondaryButton",
     onClick: handleClick
   }, /*#__PURE__*/React.createElement("div", {
-    className: "Q_Arrow backDef white"
+    className: "Q_Arrow backDef ".concat(color)
   }), /*#__PURE__*/React.createElement("p", {
-    className: "button"
+    className: "button ".concat(color)
   }, text));
 }
 ;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
@@ -588,7 +588,7 @@ function Menu(_ref) {
     className: "W_Menu"
   }, /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint",
-    href: "/index.html"
+    href: "./"
   }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Logo menu",
     id: "Q_Logo_Menu",
@@ -660,7 +660,7 @@ var data_stations = [{
   color: 'sokol',
   link: '/'
 }];
-var articles = [{
+var data_articles = [{
   id: 0,
   name: 'Некрасовка и рыбки',
   line_1: 'Искусство',
@@ -706,69 +706,69 @@ var articles = [{
   link: '/',
   type: 'news'
 }];
-var data_chronology = [{
-  id: 0,
-  date: '1931',
-  heading: 'Начало',
-  text_1: '15 июня на пленуме ЦК ВКП(б) было принято решение о строительстве метрополитена в Москве. Это решение стало важным шагом в развитии столичной транспортной системы. Метро планировали создать, чтобы улучшить передвижение по городу и разгрузить наземный транспорт.',
-  text_2: 'Это был амбициозный проект, который обещал изменить жизнь миллионов москвичей. Построить метро в Москве означало радикально улучшить транспортную инфраструктуру и сделать город более удобным для жителей. ',
-  text_3: 'Работы по проектированию и строительству метро начались немедленно после принятия решения. Этот проект требовал больших усилий и инвестиций, но его реализация обещала огромные преимущества для города.'
-}, {
+var chronology = [{
   id: 1,
   date: '1933',
   heading: 'Проект первоочередных линий',
-  text_1: '13 августа в президиум Моссовета был представлен технический проект первоочередных линий метрополитена. К концу года проект был утверждён, и подготовка к строительству начала набирать обороты. Этот документ определял маршруты и основные станции, которые будут построены в первую очередь.',
+  text_1: '13 августа 1933 года в президиум Моссовета был представлен технический проект первоочередных линий метрополитена. К концу года проект был утверждён, и подготовка к строительству начала набирать обороты. Этот документ определял маршруты и основные станции, которые будут построены в первую очередь.',
   text_2: 'Работа над проектом велась быстро, чтобы как можно скорее начать строительство. Это требовало координации множества специалистов и значительных ресурсов. Несмотря на сложность задач, проект развивался по плану.',
   text_3: 'Утверждение проекта было важным шагом к созданию метро. Оно позволило перейти от планирования к реальным строительным работам, которые должны были изменить облик Москвы.'
 }, {
   id: 2,
   date: '1934',
-  heading: 'Пробный поезд',
-  text_1: '15 октября на пусковом участке появился первый пробный поезд из двух вагонов. Испытания проводились на участке «Комсомольская» — «Сокольники». Это было важное событие, которое подтвердило готовность метрополитена к дальнейшему строительству.',
+  heading: 'Первый пробный поезд',
+  text_1: '15 октября 1934 года на пусковом участке появился первый пробный поезд из двух вагонов. Испытания проводились на участке «Комсомольская» — «Сокольники». Это было важное событие, которое подтвердило готовность метрополитена к дальнейшему строительству.',
   text_2: 'Испытания прошли успешно, что стало важным шагом к скорому запуску метро. Первый пробный поезд показал, что система работает и готова к эксплуатации. Этот этап был ключевым для дальнейшего развития проекта.',
   text_3: 'Появление первого поезда стало символом прогресса и уверенности в успешной реализации проекта. Москвичи с нетерпением ждали, когда смогут воспользоваться новым видом транспорта.'
 }, {
   id: 3,
   date: '1935',
   heading: 'Торжественное открытие',
-  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_1: '14 мая 1935 года в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
   text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
   text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
 }, {
-  id: 3,
+  id: 4,
   date: '1935',
   heading: 'Открытие первого участка',
-  text_1: '15 мая открылся первый участок Московского метрополитена для всеобщего пользования. В состав пускового участка длиной 11,2 км вошли 13 станций: «Сокольники», «Красносельская», «Комсомольская», «Красные Ворота», «Кировская» (ныне — «Чистые пруды»), «Дзержинская» (ныне — «Лубянка»), «Охотный Ряд», «Библиотека имени Ленина», «Дворец Советов» (ныне — «Кропоткинская»), «Парк культуры», «Улица Коминтерна» (ныне — «Александровский сад»), «Арбатская» и «Смоленская».',
+  text_1: '15 мая 1935 года открылся первый участок Московского метрополитена для всеобщего пользования. В состав пускового участка длиной 11,2 км вошли 13 станций: «Сокольники», «Красносельская», «Комсомольская», «Красные Ворота», «Кировская» (ныне — «Чистые пруды»), «Дзержинская» (ныне — «Лубянка»), «Охотный Ряд», «Библиотека имени Ленина», «Дворец Советов» (ныне — «Кропоткинская»), «Парк культуры», «Улица Коминтерна» (ныне — «Александровский сад»), «Арбатская» и «Смоленская».',
   text_2: 'Этот день стал важной вехой в истории города. Открытие метро значительно облегчило передвижение по Москве и улучшило транспортную инфраструктуру. Новые станции быстро стали популярными среди жителей города.',
-  text_3: 'Метро открыло новые возможности для передвижения и значительно сократило время поездок по городу. Это был важный шаг к улучшению качества жизни в Москве и повышению её комфортабельности.'
+  text_3: ''
 }, {
-  id: 3,
+  id: 5,
+  date: '1935',
+  heading: 'Проезд в метро',
+  text_1: 'В 1935 году стоимость проезда в метро устанавливалась в 50 копеек. Это была доступная цена, позволяющая многим москвичам воспользоваться новым видом транспорта. Стоимость проезда позволяла поддерживать метро в хорошем состоянии и развивать его дальше.',
+  text_2: 'Московское метро стало важной частью городской инфраструктуры. Низкая стоимость проезда сделала его доступным для большинства жителей города. Это способствовало быстрому росту популярности метро.',
+  text_3: 'Благодаря этому метро быстро стало основным видом транспорта для многих москвичей. Его удобство и доступность сделали его незаменимым в повседневной жизни горожан.'
+}, {
+  id: 6,
   date: '1935',
   heading: 'Первые поезда',
-  text_1: 'На первом участке Московского метрополитена работали поезда типа А из четырёх вагонов. Это были современные на тот момент поезда, обеспечивающие комфортное и быстрое передвижение по городу. Введение поездов типа А стало первым шагом к развитию обширной сети метро.',
+  text_1: 'На первом участке Московского метрополитена в 1935 году работали поезда типа А из четырёх вагонов. Это были современные на тот момент поезда, обеспечивающие комфортное и быстрое передвижение по городу. Введение поездов типа А стало первым шагом к развитию обширной сети метро.',
   text_2: 'Эти поезда стали основой для дальнейшего роста транспортной системы Москвы. Они были оснащены новейшими технологиями и обеспечивали высокий уровень комфорта для пассажиров. Появление таких поездов стало важным этапом в истории метрополитена.',
   text_3: 'Поезда типа А быстро стали символом надежности и комфорта московского метро. Они обеспечили удобные и быстрые поездки для тысяч москвичей каждый день.'
 }, {
-  id: 3,
+  id: 7,
   date: '1936',
   heading: 'Увеличение состава поездов',
-  text_1: 'Составы Московского метрополитена стали шестивагонными. Это позволило увеличить пассажиропоток и повысить удобство для горожан. Увеличение количества вагонов было важным шагом в развитии метро.',
+  text_1: 'В 1936 году составы Московского метрополитена стали шестивагонными. Это позволило увеличить пассажиропоток и повысить удобство для горожан. Увеличение количества вагонов было важным шагом в развитии метро.',
   text_2: 'Это решение улучшило качество обслуживания пассажиров и ускорило их передвижение по городу. Шестивагонные поезда стали новым стандартом для московского метро. Они обеспечивали большую вместимость и комфорт для пассажиров.',
-  text_3: 'Увеличение числа вагонов в поездах позволило лучше справляться с растущим потоком пассажиров. Это стало важным шагом к улучшению транспортной системы города и повышению её эффективности'
+  text_3: 'Увеличение числа вагонов в поездах позволило лучше справляться с растущим потоком пассажиров. Это стало важным шагом к улучшению транспортной системы города и повышению её эффективности.'
 }, {
-  id: 3,
-  date: '1935',
-  heading: 'Торжественное открытие',
-  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
-  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
-  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
+  id: 8,
+  date: '1937',
+  heading: 'Открытие станции «Киевская»',
+  text_1: '20 марта 1937 года открылась следующая за «Смоленской» станция Московского метрополитена — «Киевская». Перегон «Смоленская» — «Киевская» (ныне относящийся к Филёвской линии) имеет длину 1,3 км и пересекает реку Москву по мосту.',
+  text_2: '«Киевская» стала первой станцией второй очереди метрополитена. Это открытие расширило возможности для пассажиров и улучшило транспортное сообщение в городе. Станция быстро стала одной из важных транспортных узлов Москвы.',
+  text_3: 'Перегон через реку Москву по мосту стал важным инженерным достижением. Он улучшил связь между разными частями города и сделал передвижение по Москве ещё более удобным.'
 }, {
-  id: 3,
-  date: '1935',
-  heading: 'Торжественное открытие',
-  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
-  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
-  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
+  id: 9,
+  date: '1938',
+  heading: 'Новые станции и линии',
+  text_1: '13 марта 1938 года открылось движение по участку от «Улицы Коминтерна» до станции «Курская» длиной 2,3 км. Это позволило ликвидировать вилочное движение и организовать раздельное движение по двум радиусам — Кировско-Фрунзенскому и Арбатско-Покровскому.',
+  text_2: 'В этот же день открылась станция «Площадь Революции». Новые станции и линии значительно улучшили транспортную систему Москвы и сделали поездки по городу ещё удобнее. Открытие этих станций стало важным событием для жителей города.',
+  text_3: 'Раздельное движение по двум радиусам улучшило организацию транспортного потока. Это повысило эффективность метро и сделало его ещё более удобным для пассажиров. Новые станции быстро стали популярными и активно использовались москвичами.'
 }];
 ;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
 const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
@@ -875,7 +875,8 @@ function StationHeading(_ref5) {
       backgroundImage: "url(".concat(BGUrl, ")")
     }
   }, /*#__PURE__*/React.createElement(BackButton, {
-    text: 'назад'
+    text: 'назад',
+    color: 'white'
   })), /*#__PURE__*/React.createElement("h1", {
     style: {
       color: "var(--white)"
@@ -884,9 +885,29 @@ function StationHeading(_ref5) {
     className: "A_Tags white"
   }, line));
 }
-function MaybeInterestingCards(_ref6) {
-  var start_number = _ref6.start_number,
-      end_number = _ref6.end_number;
+function ArticleHeading(_ref6) {
+  var station = _ref6.station,
+      BGUrl = _ref6.BGUrl,
+      description = _ref6.description;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "O_ArticleHeading"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "W_StationHeadingImage",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/React.createElement(BackButton, {
+    text: 'назад',
+    color: 'black'
+  })), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      color: "var(--black)"
+    }
+  }, station), /*#__PURE__*/React.createElement("p", null, description));
+}
+function MaybeInterestingCards(_ref7) {
+  var start_number = _ref7.start_number,
+      end_number = _ref7.end_number;
   var listItems = stations.filter(function (station) {
     return station.id >= start_number && station.id <= end_number;
   }).map(function (station) {
@@ -905,79 +926,27 @@ function MaybeInterestingCards(_ref6) {
     className: "W_CardsCollection"
   }, listItems));
 }
-;// CONCATENATED MODULE: ./src/javascript/particles/chrono.jsx
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-function TextChangingComponent() {
-  var _useState = useState('Текст по умолчанию....'),
-      _useState2 = _slicedToArray(_useState, 2),
-      displayDate = _useState2[0],
-      setDisplayDate = _useState2[1];
-
-  var _useState3 = useState('Текст по умолчанию'),
-      _useState4 = _slicedToArray(_useState3, 2),
-      displayHeading = _useState4[0],
-      setDisplayHeading = _useState4[1];
-
-  var _useState5 = useState('Текст по умолчанию'),
-      _useState6 = _slicedToArray(_useState5, 2),
-      displayText1 = _useState6[0],
-      setDisplayText1 = _useState6[1];
-
-  var _useState7 = useState('Текст по умолчанию'),
-      _useState8 = _slicedToArray(_useState7, 2),
-      displayText2 = _useState8[0],
-      setDisplayText2 = _useState8[1];
-
-  var _useState9 = useState('Текст по умолчанию'),
-      _useState10 = _slicedToArray(_useState9, 2),
-      displayText3 = _useState10[0],
-      setDisplayText3 = _useState10[1];
-
-  var handleDivMouseEnter = function handleDivMouseEnter(number) {
-    setDisplayDate(chronology[number].date);
-    setDisplayHeading(chronology[number].heading);
-    setDisplayText1(chronology[number].text_1);
-    setDisplayText2(chronology[number].text_2);
-    setDisplayText3(chronology[number].text_3);
-  }; // const handleMouseLeave = () => {
-  //   setDisplayText1('Текст по умолчанию')
-  // }
-
-
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(0);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u041F\u0435\u0440\u0432\u044B\u0439 div"), /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(1);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u0412\u0442\u043E\u0440\u043E\u0439 div"), /*#__PURE__*/React.createElement("div", {
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(2);
-    },
-    onMouseLeave: handleMouseLeave
-  }, "\u0422\u0440\u0435\u0442\u0438\u0439 div"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, displayDate), /*#__PURE__*/React.createElement("p", null, displayHeading), /*#__PURE__*/React.createElement("p", null, displayText1), /*#__PURE__*/React.createElement("p", null, displayText2), /*#__PURE__*/React.createElement("p", null, displayText3)));
+function MaybeInterestingCardsArticles(_ref8) {
+  var start_number = _ref8.start_number,
+      end_number = _ref8.end_number;
+  var listItems = articles.filter(function (station) {
+    return station.id >= start_number && station.id <= end_number;
+  }).map(function (station) {
+    return /*#__PURE__*/React.createElement(StationCard, {
+      key: station.id // добавление ключа для каждого элемента
+      ,
+      station: station.name,
+      color: station.color,
+      tag_1_text: station.line_1,
+      Station_link: station.link
+    });
+  });
+  return /*#__PURE__*/React.createElement("div", {
+    className: "W_AlsoLook"
+  }, /*#__PURE__*/React.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/React.createElement("div", {
+    className: "W_CardsCollection"
+  }, listItems));
 }
-
-/* harmony default export */ const chrono = ((/* unused pure expression or super */ null && (TextChangingComponent)));
 ;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
 
 
@@ -1007,7 +976,9 @@ function ArticleChapter(_ref2) {
       text = _ref2.text;
   return /*#__PURE__*/React.createElement("div", {
     className: "M_Text"
-  }, /*#__PURE__*/React.createElement("h2", null, heading), /*#__PURE__*/React.createElement("p", {
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "light"
+  }, heading), /*#__PURE__*/React.createElement("p", {
     style: {
       width: "40vw"
     }
@@ -1157,7 +1128,6 @@ const RunningLine_namespaceObject = __webpack_require__.p + "images/4d69fdf54e1f
 
 
 
-
  //* Импорт картинок
 
 
@@ -1261,7 +1231,7 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
   className: "W_CardsChronoCollection"
 }, /*#__PURE__*/react.createElement(Q_Image, {
   width: 10,
-  height: 270,
+  height: 33,
   margin: 0,
   url: Chrono1_namespaceObject
 }), /*#__PURE__*/react.createElement(ChronoCard, {
