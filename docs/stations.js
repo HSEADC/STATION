@@ -539,13 +539,16 @@ var client = __webpack_require__(745);
 
 
 function Menu(_ref) {
-  var state = _ref.state;
+  var state = _ref.state,
+      activeTag1 = _ref.activeTag1,
+      activeTag2 = _ref.activeTag2,
+      activeTag3 = _ref.activeTag3;
   return /*#__PURE__*/react.createElement("div", {
     className: "W_Menu"
   }, /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint",
     href: "/index.html"
-  }, /*#__PURE__*/react.createElement("img", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Logo menu",
     id: "Q_Logo_Menu",
     alt: ""
@@ -553,325 +556,67 @@ function Menu(_ref) {
     className: "M_MenuPoints"
   }, /*#__PURE__*/react.createElement("a", {
     href: "./CategoryChrono.html",
-    className: "A_Point"
-  }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
+    className: "A_Point".concat(activeTag1)
+  }, /*#__PURE__*/react.createElement("p", null, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F")), /*#__PURE__*/react.createElement("a", {
     href: "./\u0421ategoryStations.html",
-    className: "A_Point"
-  }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
+    className: "A_Point".concat(activeTag2)
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438")), /*#__PURE__*/react.createElement("a", {
     href: "./CategoryArticles.html",
-    className: "A_Point"
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
+    className: "A_Point".concat(activeTag3)
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))), /*#__PURE__*/react.createElement("div", {
     className: "Q_Burger",
     alt: ""
   }), /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint"
-  }, /*#__PURE__*/react.createElement("img", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Search",
     alt: ""
   })));
 }
 
 /* harmony default export */ const menu = (Menu);
-;// CONCATENATED MODULE: ./src/javascript/particles/button.jsx
-
-
-
-
-function Button(_ref) {
-  var text = _ref.text,
-      arrow = _ref.arrow,
-      linking = _ref.linking;
-  var actual_arrow = "Q_Arrow ".concat(arrow);
-  var linkLong = linking;
-
-  var handleClick = function handleClick() {
-    window.location.href = linkLong;
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "A_Button",
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "button"
-  }, text), /*#__PURE__*/react.createElement("div", {
-    className: actual_arrow
-  })));
-}
-
-/* harmony default export */ const particles_button = (Button);
-;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
-const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
-;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
-
-
-
-
-
-
-
-
-function StationCard(_ref) {
-  var station = _ref.station,
-      color = _ref.color,
-      tag_1_text = _ref.tag_1_text,
-      tag_2_text = _ref.tag_2_text,
-      tag_3_text = _ref.tag_3_text,
-      Station_link = _ref.Station_link;
-  var classForDiv = 'M_Card ' + color;
-
-  var handleClick = function handleClick() {
-    window.location.href = "".concat(Station_link);
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: classForDiv,
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("h3", null, station), /*#__PURE__*/react.createElement("div", {
-    className: "W_TagsCollection"
-  }, tag_1_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_1_text)), tag_2_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_2_text)), tag_3_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_3_text)))));
-}
-function ArticleCard(_ref2) {
-  var text = _ref2.text,
-      bg_image = _ref2.bg_image,
-      linking = _ref2.linking,
-      size = _ref2.size;
-  var linkLong = linking;
-  var Card_size = "W_ArticleCard ".concat(size);
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: Card_size,
-    style: {
-      backgroundImage: "url(".concat(bg_image, ")")
-    }
-  }, /*#__PURE__*/react.createElement("h2", null, text), /*#__PURE__*/react.createElement(particles_button, {
-    text: 'читать',
-    arrow: 'up',
-    linking: linkLong
-  })));
-}
-function ChronoCard(_ref3) {
-  var text = _ref3.text,
-      year = _ref3.year,
-      image_URL = _ref3.image_URL,
-      isWhite = _ref3.isWhite;
-  var actual_tag_class = "A_Tags ".concat(isWhite);
-  return /*#__PURE__*/React.createElement("div", {
-    className: "W_ChronoCard",
-    style: {
-      backgroundImage: "url(".concat(BgChrono, ")")
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "Q_Arrow orange"
-  }), /*#__PURE__*/React.createElement("h3", null, text), /*#__PURE__*/React.createElement("div", {
-    className: "W_ChronoCardImage",
-    style: {
-      backgroundImage: "url(".concat(image_URL, ")")
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: actual_tag_class
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "mini"
-  }, year))));
-}
-function StOfTheDay(_ref4) {
-  var station = _ref4.station;
-  return /*#__PURE__*/react.createElement("div", {
-    "class": "M_CardStationOfTheDay"
-  }, /*#__PURE__*/react.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
-}
-;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
-
-
-
-
-
-function SectionHeading(_ref) {
-  var heading = _ref.heading,
-      description = _ref.description,
-      unactive = _ref.unactive,
-      id = _ref.id,
-      onClick = _ref.onClick;
-  return /*#__PURE__*/react.createElement(react.Fragment, null, !unactive && /*#__PURE__*/react.createElement("div", {
-    "class": "A_SectionHeading",
-    id: id,
-    onClick: onClick
-  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), heading)), unactive && /*#__PURE__*/react.createElement("div", {
-    "class": "A_SectionHeading unactive",
-    id: id,
-    onClick: onClick
-  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), heading)), description && /*#__PURE__*/react.createElement("div", {
-    "class": "A_SectionDescribe"
-  }, /*#__PURE__*/react.createElement("p", null, description)));
-}
-;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
-
-
-function Q_Image(_ref) {
-  var width = _ref.width,
-      height = _ref.height,
-      margin = _ref.margin,
-      url = _ref.url;
-  var full_column = 4.7;
-  var gap = 1.2;
-  var width_I = width * full_column - gap;
-  var margin_I = margin * full_column;
-  return /*#__PURE__*/React.createElement("img", {
-    className: "Q_Image",
-    src: "".concat(url),
-    style: {
-      width: "".concat(width_I, "vw"),
-      height: "".concat(height, "px"),
-      marginLeft: "".concat(margin_I, "vw")
-    }
-  });
-}
-function W_ImagesRow(_ref2) {
-  var width_1 = _ref2.width_1,
-      width_2 = _ref2.width_2,
-      width_3 = _ref2.width_3,
-      height = _ref2.height,
-      url_1 = _ref2.url_1,
-      url_2 = _ref2.url_2,
-      url_3 = _ref2.url_3;
-  var margin_actual;
-
-  if (!width_3) {
-    margin_actual = 2;
-  } else {
-    margin_actual = 0;
-  }
-
-  return /*#__PURE__*/React.createElement("div", {
-    className: "W_ImageRow"
-  }, width_1 && /*#__PURE__*/React.createElement(Q_Image, {
-    width: width_1,
-    height: height,
-    url: url_1,
-    margin: margin_actual
-  }), width_2 && /*#__PURE__*/React.createElement(Q_Image, {
-    width: width_2,
-    height: height,
-    url: url_2
-  }), width_3 && /*#__PURE__*/React.createElement(Q_Image, {
-    width: width_3,
-    height: height,
-    url: url_3
-  }));
-}
-;// CONCATENATED MODULE: ./src/javascript/particles/footer.jsx
- // import Logo from '../images/components/quarks/Q_Logo_white.svg'
-// import Dzen from '../images/tiser/icon_dzen.svg'
-// import VK from '../images/tiser/icon_vk.svg'
-// import TG from '../images/tiser/icon_tg.svg'
-
-
-
-
-
-
-
-function Footer() {
-  return /*#__PURE__*/react.createElement("div", {
-    className: "O_Footer"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "ProjectLinks"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Content"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Logo white"
-  }), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0425\u0440\u043E\u043D\u043E")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0421\u043F\u0438\u0441\u043E\u043A"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u041A\u0430\u0440\u0442\u0430"))), /*#__PURE__*/react.createElement("div", {
-    className: "Icons"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia tg"
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia vk"
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia dzen"
-  }))), /*#__PURE__*/react.createElement("div", {
-    className: "UniversityInfo"
-  }, /*#__PURE__*/react.createElement("p", {
-    style: {
-      fontSize: '24px'
-    }
-  }, "HSE ADC"), /*#__PURE__*/react.createElement("p", null, "\u0410\u0442\u043B\u0430\u0441\u043E\u0432\u0430 \u041D\u0430\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u0413\u0430\u043B\u0438\u0435\u0432\u0430 \u042D\u043B\u044C\u0432\u0438\u0440\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u043E\u043C\u043A\u043E\u0432\u0430 \u0410\u043D\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u0430\u0435\u043C \u0421\u043E\u0444\u044C\u044F")));
-}
-
-/* harmony default export */ const footer = (Footer);
 ;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
-var stations = [{
+var data_stations = [{
   id: 0,
   name: 'Библиотека им.Ленина',
   line_1: 'Сокольническая',
-  line_2: '',
-  line_3: '',
   color: 'sokol',
-  link: '/'
+  link: './biblioteka_lenina.html'
 }, {
   id: 1,
   name: 'Маяковская',
   line_1: 'Замоскворецкая',
-  line_2: '',
-  line_3: '',
   color: 'zamos',
   link: '/'
 }, {
   id: 2,
   name: 'Римская',
   line_1: 'Люблинско-дмитровская',
-  line_2: '',
-  line_3: '',
   color: 'lubli',
   link: '/'
 }, {
   id: 3,
   name: 'Площадь Революции',
   line_1: 'Арбатско-покровская',
-  line_2: '',
-  line_3: '',
   color: 'arbat',
   link: '/'
 }, {
   id: 4,
   name: 'Третьяковская',
   line_1: 'Калужско-Рижская',
-  line_2: 'Калининская',
-  line_3: '',
   color: 'kalug',
   link: '/'
 }, {
   id: 5,
   name: 'Павелецкая',
   line_1: 'Кольцевая',
-  line_2: 'Замоскворецкая',
-  line_3: '',
   color: 'kolic',
+  link: '/'
+}, {
+  id: 6,
+  name: 'Сокольники',
+  line_1: 'Сокольническая',
+  color: 'sokol',
   link: '/'
 }];
 var articles = [{
@@ -922,33 +667,395 @@ var articles = [{
 }];
 var chronology = [{
   id: 0,
-  date: '1935',
-  heading: 'Эскалаторы',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор. ',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  date: '1931',
+  heading: 'Начало',
+  text_1: '15 июня на пленуме ЦК ВКП(б) было принято решение о строительстве метрополитена в Москве. Это решение стало важным шагом в развитии столичной транспортной системы. Метро планировали создать, чтобы улучшить передвижение по городу и разгрузить наземный транспорт.',
+  text_2: 'Это был амбициозный проект, который обещал изменить жизнь миллионов москвичей. Построить метро в Москве означало радикально улучшить транспортную инфраструктуру и сделать город более удобным для жителей. ',
+  text_3: 'Работы по проектированию и строительству метро начались немедленно после принятия решения. Этот проект требовал больших усилий и инвестиций, но его реализация обещала огромные преимущества для города.'
 }, {
   id: 1,
-  date: '1935',
-  heading: 'Первый айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  date: '1933',
+  heading: 'Проект первоочередных линий',
+  text_1: '13 августа в президиум Моссовета был представлен технический проект первоочередных линий метрополитена. К концу года проект был утверждён, и подготовка к строительству начала набирать обороты. Этот документ определял маршруты и основные станции, которые будут построены в первую очередь.',
+  text_2: 'Работа над проектом велась быстро, чтобы как можно скорее начать строительство. Это требовало координации множества специалистов и значительных ресурсов. Несмотря на сложность задач, проект развивался по плану.',
+  text_3: 'Утверждение проекта было важным шагом к созданию метро. Оно позволило перейти от планирования к реальным строительным работам, которые должны были изменить облик Москвы.'
 }, {
   id: 2,
-  date: '1935',
-  heading: 'Второй айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  date: '1934',
+  heading: 'Пробный поезд',
+  text_1: '15 октября на пусковом участке появился первый пробный поезд из двух вагонов. Испытания проводились на участке «Комсомольская» — «Сокольники». Это было важное событие, которое подтвердило готовность метрополитена к дальнейшему строительству.',
+  text_2: 'Испытания прошли успешно, что стало важным шагом к скорому запуску метро. Первый пробный поезд показал, что система работает и готова к эксплуатации. Этот этап был ключевым для дальнейшего развития проекта.',
+  text_3: 'Появление первого поезда стало символом прогресса и уверенности в успешной реализации проекта. Москвичи с нетерпением ждали, когда смогут воспользоваться новым видом транспорта.'
 }, {
   id: 3,
   date: '1935',
-  heading: 'Третий айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  heading: 'Торжественное открытие',
+  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
+  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Открытие первого участка',
+  text_1: '15 мая открылся первый участок Московского метрополитена для всеобщего пользования. В состав пускового участка длиной 11,2 км вошли 13 станций: «Сокольники», «Красносельская», «Комсомольская», «Красные Ворота», «Кировская» (ныне — «Чистые пруды»), «Дзержинская» (ныне — «Лубянка»), «Охотный Ряд», «Библиотека имени Ленина», «Дворец Советов» (ныне — «Кропоткинская»), «Парк культуры», «Улица Коминтерна» (ныне — «Александровский сад»), «Арбатская» и «Смоленская».',
+  text_2: 'Этот день стал важной вехой в истории города. Открытие метро значительно облегчило передвижение по Москве и улучшило транспортную инфраструктуру. Новые станции быстро стали популярными среди жителей города.',
+  text_3: 'Метро открыло новые возможности для передвижения и значительно сократило время поездок по городу. Это был важный шаг к улучшению качества жизни в Москве и повышению её комфортабельности.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Первые поезда',
+  text_1: 'На первом участке Московского метрополитена работали поезда типа А из четырёх вагонов. Это были современные на тот момент поезда, обеспечивающие комфортное и быстрое передвижение по городу. Введение поездов типа А стало первым шагом к развитию обширной сети метро.',
+  text_2: 'Эти поезда стали основой для дальнейшего роста транспортной системы Москвы. Они были оснащены новейшими технологиями и обеспечивали высокий уровень комфорта для пассажиров. Появление таких поездов стало важным этапом в истории метрополитена.',
+  text_3: 'Поезда типа А быстро стали символом надежности и комфорта московского метро. Они обеспечили удобные и быстрые поездки для тысяч москвичей каждый день.'
+}, {
+  id: 3,
+  date: '1936',
+  heading: 'Увеличение состава поездов',
+  text_1: 'Составы Московского метрополитена стали шестивагонными. Это позволило увеличить пассажиропоток и повысить удобство для горожан. Увеличение количества вагонов было важным шагом в развитии метро.',
+  text_2: 'Это решение улучшило качество обслуживания пассажиров и ускорило их передвижение по городу. Шестивагонные поезда стали новым стандартом для московского метро. Они обеспечивали большую вместимость и комфорт для пассажиров.',
+  text_3: 'Увеличение числа вагонов в поездах позволило лучше справляться с растущим потоком пассажиров. Это стало важным шагом к улучшению транспортной системы города и повышению её эффективности'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Торжественное открытие',
+  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
+  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Торжественное открытие',
+  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
+  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
 }];
+;// CONCATENATED MODULE: ./src/javascript/particles/button.jsx
+
+
+
+function Button(_ref) {
+  var text = _ref.text,
+      arrow = _ref.arrow,
+      linking = _ref.linking;
+  var actual_arrow = "Q_Arrow ".concat(arrow);
+  var linkLong = linking;
+
+  var handleClick = function handleClick() {
+    window.location.href = linkLong;
+  };
+
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: "A_Button",
+    onClick: handleClick
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "button"
+  }, text), /*#__PURE__*/react.createElement("div", {
+    className: actual_arrow
+  })));
+}
+function button_BackButton(_ref2) {
+  var text = _ref2.text,
+      TextColor = _ref2.TextColor;
+
+  var handleClick = function handleClick() {
+    window.history.back();
+  };
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "A_SecondaryButton",
+    onClick: handleClick
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "Q_Arrow backDef white"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "button"
+  }, text));
+}
+;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
+const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
+;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
+
+
+
+
+
+
+
+
+
+function StationCard(_ref) {
+  var station = _ref.station,
+      color = _ref.color,
+      tag_1_text = _ref.tag_1_text,
+      tag_2_text = _ref.tag_2_text,
+      tag_3_text = _ref.tag_3_text,
+      Station_link = _ref.Station_link;
+  var classForDiv = 'M_Card ' + color;
+
+  var handleClick = function handleClick() {
+    window.location.href = "".concat(Station_link);
+  };
+
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: classForDiv,
+    onClick: handleClick
+  }, /*#__PURE__*/react.createElement("h3", null, station), /*#__PURE__*/react.createElement("div", {
+    className: "W_TagsCollection"
+  }, tag_1_text && /*#__PURE__*/react.createElement("div", {
+    className: "A_Tags secondary"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "mini"
+  }, tag_1_text)))));
+}
+function ArticleCard(_ref2) {
+  var text = _ref2.text,
+      bg_image = _ref2.bg_image,
+      linking = _ref2.linking,
+      size = _ref2.size,
+      text_color = _ref2.text_color;
+  var linkLong = linking;
+  var Card_size = "W_ArticleCard ".concat(size);
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: Card_size,
+    style: {
+      backgroundImage: "url(".concat(bg_image, ")")
+    }
+  }, /*#__PURE__*/react.createElement("h2", {
+    style: {
+      color: "var(--".concat(text_color, ")")
+    }
+  }, text), /*#__PURE__*/react.createElement(Button, {
+    text: 'читать',
+    arrow: 'up',
+    linking: linkLong
+  })));
+}
+function ChronoCard(_ref3) {
+  var text = _ref3.text,
+      year = _ref3.year,
+      image_URL = _ref3.image_URL,
+      isWhite = _ref3.isWhite;
+  var actual_tag_class = "A_Tags ".concat(isWhite);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "W_ChronoCard",
+    style: {
+      backgroundImage: "url(".concat(BgChrono, ")")
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "Q_Arrow orange"
+  }), /*#__PURE__*/React.createElement("h3", null, text), /*#__PURE__*/React.createElement("div", {
+    className: "W_ChronoCardImage",
+    style: {
+      backgroundImage: "url(".concat(image_URL, ")")
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: actual_tag_class
+  }, /*#__PURE__*/React.createElement("p", {
+    className: "mini"
+  }, year))));
+}
+function StOfTheDay(_ref4) {
+  var station = _ref4.station,
+      BGUrl = _ref4.BGUrl;
+  return /*#__PURE__*/react.createElement("div", {
+    "class": "M_CardStationOfTheDay",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/react.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
+}
+function StationHeading(_ref5) {
+  var station = _ref5.station,
+      BGUrl = _ref5.BGUrl,
+      line = _ref5.line;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "O_StationHeading"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "W_StationHeadingImage",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/React.createElement(BackButton, {
+    text: 'назад'
+  })), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      color: "var(--white)"
+    }
+  }, station), /*#__PURE__*/React.createElement("div", {
+    className: "A_Tags white"
+  }, line));
+}
+function MaybeInterestingCards(_ref6) {
+  var start_number = _ref6.start_number,
+      end_number = _ref6.end_number;
+  var listItems = stations.filter(function (station) {
+    return station.id >= start_number && station.id <= end_number;
+  }).map(function (station) {
+    return /*#__PURE__*/React.createElement(StationCard, {
+      key: station.id // добавление ключа для каждого элемента
+      ,
+      station: station.name,
+      color: station.color,
+      tag_1_text: station.line_1,
+      Station_link: station.link
+    });
+  });
+  return /*#__PURE__*/React.createElement("div", {
+    className: "W_AlsoLook"
+  }, /*#__PURE__*/React.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/React.createElement("div", {
+    className: "W_CardsCollection"
+  }, listItems));
+}
+;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
+
+
+
+
+
+function SectionHeading(_ref) {
+  var heading = _ref.heading,
+      description = _ref.description,
+      unactive = _ref.unactive,
+      id = _ref.id,
+      onClick = _ref.onClick;
+  return /*#__PURE__*/react.createElement(react.Fragment, null, !unactive && /*#__PURE__*/react.createElement("div", {
+    "class": "A_SectionHeading",
+    id: id,
+    onClick: onClick
+  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), heading)), unactive && /*#__PURE__*/react.createElement("div", {
+    "class": "A_SectionHeading unactive",
+    id: id,
+    onClick: onClick
+  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), heading)), description && /*#__PURE__*/react.createElement("div", {
+    "class": "A_SectionDescribe"
+  }, /*#__PURE__*/react.createElement("p", null, description)));
+}
+function ArticleChapter(_ref2) {
+  var heading = _ref2.heading,
+      text = _ref2.text;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "M_Text"
+  }, /*#__PURE__*/React.createElement("h2", null, heading), /*#__PURE__*/React.createElement("p", {
+    style: {
+      width: "40vw"
+    }
+  }, text));
+}
+function StationAccentLine(_ref3) {
+  var heading = _ref3.heading,
+      BGUrl = _ref3.BGUrl;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "A_StationAccentLine",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/React.createElement("h3", null, heading));
+}
+;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
+
+
+function Q_Image(_ref) {
+  var width = _ref.width,
+      height = _ref.height,
+      margin = _ref.margin,
+      url = _ref.url;
+  var full_column = 4.7;
+  var gap = 1.2;
+  var width_I = width * full_column - gap;
+  var margin_I = margin * full_column;
+  return /*#__PURE__*/React.createElement("img", {
+    className: "Q_Image",
+    src: "".concat(url),
+    style: {
+      width: "".concat(width_I, "vw"),
+      height: "".concat(height, "vh"),
+      marginLeft: "".concat(margin_I, "vw")
+    }
+  });
+}
+function W_ImagesRow(_ref2) {
+  var width_1 = _ref2.width_1,
+      width_2 = _ref2.width_2,
+      width_3 = _ref2.width_3,
+      height = _ref2.height,
+      url_1 = _ref2.url_1,
+      url_2 = _ref2.url_2,
+      url_3 = _ref2.url_3;
+  var margin_actual;
+
+  if (!width_3) {
+    margin_actual = 2;
+  } else {
+    margin_actual = 0;
+  }
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "W_ImageRow"
+  }, width_1 && /*#__PURE__*/React.createElement(Q_Image, {
+    width: width_1,
+    height: height,
+    url: url_1,
+    margin: margin_actual
+  }), width_2 && /*#__PURE__*/React.createElement(Q_Image, {
+    width: width_2,
+    height: height,
+    url: url_2
+  }), width_3 && /*#__PURE__*/React.createElement(Q_Image, {
+    width: width_3,
+    height: height,
+    url: url_3
+  }));
+}
+;// CONCATENATED MODULE: ./src/javascript/particles/footer.jsx
+
+
+
+
+
+
+
+function Footer() {
+  return /*#__PURE__*/react.createElement("div", {
+    className: "O_Footer"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "ProjectLinks"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Content"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_Logo white"
+  }), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
+    href: ""
+  }, "\u0425\u0440\u043E\u043D\u043E")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
+    href: ""
+  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
+    href: ""
+  }, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
+    href: ""
+  }, "\u0421\u043F\u0438\u0441\u043E\u043A"), /*#__PURE__*/react.createElement("a", {
+    href: ""
+  }, "\u041A\u0430\u0440\u0442\u0430"))), /*#__PURE__*/react.createElement("div", {
+    className: "Icons"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_SocialMedia tg"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_SocialMedia vk"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_SocialMedia dzen"
+  }))), /*#__PURE__*/react.createElement("div", {
+    className: "UniversityInfo"
+  }, /*#__PURE__*/react.createElement("p", {
+    style: {
+      fontSize: '24px'
+    }
+  }, "HSE ADC"), /*#__PURE__*/react.createElement("p", null, "\u0410\u0442\u043B\u0430\u0441\u043E\u0432\u0430 \u041D\u0430\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u0413\u0430\u043B\u0438\u0435\u0432\u0430 \u042D\u043B\u044C\u0432\u0438\u0440\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u043E\u043C\u043A\u043E\u0432\u0430 \u0410\u043D\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u0430\u0435\u043C \u0421\u043E\u0444\u044C\u044F")));
+}
+
+/* harmony default export */ const footer = (Footer);
 ;// CONCATENATED MODULE: ./src/javascript/particles/StationsCataloge.jsx
 
 
@@ -956,43 +1063,35 @@ var chronology = [{
 
 function StationList(_ref) {
   var ArticleCard_text = _ref.ArticleCard_text,
-      ArticleCard_link = _ref.ArticleCard_link;
-  var listItems = stations.filter(function (station) {
-    return station.id >= 2;
+      ArticleCard_link = _ref.ArticleCard_link,
+      ArticleCard_bg = _ref.ArticleCard_bg,
+      type = _ref.type;
+  var listItems = data_stations.filter(function (station) {
+    return type !== undefined ? station.color === type : true;
   }).map(function (station) {
     return /*#__PURE__*/react.createElement(StationCard, {
       station: station.name,
       color: station.color,
       tag_1_text: station.line_1,
-      tag_2_text: station.line_2,
-      tag_3_text: station.line_3,
-      Station_link: station.link
+      Station_link: station.link,
+      key: station.id
     });
   });
   return /*#__PURE__*/react.createElement("div", {
     className: "W_CardsCollection"
-  }, /*#__PURE__*/react.createElement(StationCard, {
-    station: Object.values(stations)[0].name,
-    color: Object.values(stations)[0].color,
-    tag_1_text: Object.values(stations)[0].line_1,
-    tag_2_text: Object.values(stations)[0].line_2,
-    tag_3_text: Object.values(stations)[0].line_3,
-    Station_link: Object.values(stations)[0].link
-  }), /*#__PURE__*/react.createElement(StationCard, {
-    station: Object.values(stations)[1].name,
-    color: Object.values(stations)[1].color,
-    tag_1_text: Object.values(stations)[1].line_1,
-    tag_2_text: Object.values(stations)[1].line_2,
-    tag_3_text: Object.values(stations)[1].line_3,
-    Station_link: Object.values(stations)[1].link
-  }), /*#__PURE__*/react.createElement(ArticleCard, {
+  }, /*#__PURE__*/react.createElement(ArticleCard, {
     text: ArticleCard_text,
     size: 'medium',
-    linking: ArticleCard_link
+    linking: ArticleCard_link,
+    bg_image: ArticleCard_bg
   }), listItems);
 }
 
 /* harmony default export */ const StationsCataloge = (StationList);
+;// CONCATENATED MODULE: ./src/images/stations/StationOfTheDay_bg.png
+const StationOfTheDay_bg_namespaceObject = __webpack_require__.p + "images/4d2c8f5bec1f174d875d.png";
+;// CONCATENATED MODULE: ./src/images/stations/bg_big_card.jpg
+const bg_big_card_namespaceObject = __webpack_require__.p + "images/2408b1b44ed714fc4484.jpg";
 ;// CONCATENATED MODULE: ./src/javascript/pages/stations.js
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -1018,59 +1117,176 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function FullPage() {
-  var _useState = (0,react.useState)(true),
+  var _useState = (0,react.useState)(undefined),
       _useState2 = _slicedToArray(_useState, 2),
-      showStations = _useState2[0],
-      setShowStations = _useState2[1];
+      typeOfFilter = _useState2[0],
+      setTypeOfFilter = _useState2[1];
 
-  function handleCatStationsClick() {
-    setShowStations(false);
+  var _useState3 = (0,react.useState)(''),
+      _useState4 = _slicedToArray(_useState3, 2),
+      activeFilter = _useState4[0],
+      setActiveFilter = _useState4[1];
+
+  function handleFilterClick(filter) {
+    if (typeOfFilter === filter) {
+      setTypeOfFilter(undefined);
+      setActiveFilter('');
+    } else {
+      setTypeOfFilter(filter);
+      setActiveFilter(filter);
+    }
   }
 
-  function handleCatMapClick() {
-    setShowStations(true);
-  }
-
-  return /*#__PURE__*/react.createElement("div", null, showStations && /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+  return /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
     className: "W_PageTitleName"
   }, /*#__PURE__*/react.createElement(SectionHeading, {
     heading: 'Станции',
     id: "Station"
-  }), /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'карта',
-    unactive: 1,
-    id: "Map",
-    onClick: function onClick() {
-      return handleCatStationsClick();
-    }
-  })), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-    "class": "M_Filters",
+  })), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(StOfTheDay, {
+    station: 'Люблино',
+    BGUrl: StationOfTheDay_bg_namespaceObject
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "M_FiltersPoints"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "M_FiltersPoints_inside",
     id: "category_filter_scroll"
-  }, /*#__PURE__*/react.createElement("ul", null, /*#__PURE__*/react.createElement("li", {
-    "class": "active"
-  }, "\u0432\u0441\u0435"), /*#__PURE__*/react.createElement("li", null, "\u0441\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0437\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0430\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u043F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0444\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043A\u0430\u043B\u0443\u0436\u0441\u043A\u043E-\u0440\u0438\u0436\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0442\u0430\u0433\u0430\u043D\u0441\u043A\u043E-\u043A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043A\u0430\u043B\u0438\u043D\u0438\u043D\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0441\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0441\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u043E-\u0442\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u043E-\u0434\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u0431\u0443\u0442\u043E\u0432\u0441\u043A\u0430\u044F"), /*#__PURE__*/react.createElement("li", null, "\u043D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F"))), /*#__PURE__*/react.createElement(StOfTheDay, {
-    station: 'Люблино'
-  }), /*#__PURE__*/react.createElement(StationsCataloge, {
-    ArticleCard_text: 'Пыхтино — метро в аэропорт'
-  }))), !showStations && /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-    className: "W_PageTitleName"
-  }, /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'Станции',
-    id: "Station",
-    onClick: function onClick() {
-      return handleCatMapClick();
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'sokol' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--sokol)'
     },
-    unactive: 1
-  }), /*#__PURE__*/react.createElement(SectionHeading, {
-    heading: 'карта',
-    id: "Map"
-  })), "ehf ehf", ' '));
+    onClick: function onClick() {
+      return handleFilterClick('sokol');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'zamos' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--zamos)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('zamos');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'arbat' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--arbat)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('arbat');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'filev' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--filev)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('filev');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'kolic' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--kolic)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('kolic');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'kalug' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--kalug)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('kalug');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'tagan' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--tagan)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('tagan');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'solnc' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--solnc)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('solnc');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'serpy' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--serpy)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('serpy');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'lubli' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--lubli)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('lubli');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'BKL' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--BKL)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('BKL');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'butov' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--butov)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('butov');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'nekra' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--nekra)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('nekra');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'birul' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--birul)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('birul');
+    }
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_FilterPoint ".concat(activeFilter === 'troick' ? 'active' : ''),
+    style: {
+      backgroundColor: 'var(--troick)'
+    },
+    onClick: function onClick() {
+      return handleFilterClick('troick');
+    }
+  }))), /*#__PURE__*/react.createElement(StationsCataloge, {
+    ArticleCard_text: 'Пыхтино — метро в аэропорт',
+    ArticleCard_bg: bg_big_card_namespaceObject,
+    type: typeOfFilter
+  })));
 }
 
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, null), /*#__PURE__*/react.createElement(FullPage, null), /*#__PURE__*/react.createElement(footer, null)));
+root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, {
+  activeTag1: '',
+  activeTag2: 'Active',
+  activeTag3: ''
+}), /*#__PURE__*/react.createElement(FullPage, null), /*#__PURE__*/react.createElement(footer, null)));
 })();
 
 /******/ })()

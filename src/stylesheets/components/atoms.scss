@@ -132,4 +132,20 @@
   color: var(--white);
 }
 .A_StationAccentLine {
+  width: 100vw;
+  height: 312px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10vh;
+  margin-left: -6vw;
+  margin-right: -6vw;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  h3 {
+    margin-left: 15.2vw;
+    width: 40vw;
+    color: var(--white);
+  }
 }

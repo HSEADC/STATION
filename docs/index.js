@@ -535,7 +535,6 @@ var client = __webpack_require__(745);
 
 
 
-
 function Button(_ref) {
   var text = _ref.text,
       arrow = _ref.arrow,
@@ -556,8 +555,23 @@ function Button(_ref) {
     className: actual_arrow
   })));
 }
+function button_BackButton(_ref2) {
+  var text = _ref2.text,
+      TextColor = _ref2.TextColor;
 
-/* harmony default export */ const particles_button = (Button);
+  var handleClick = function handleClick() {
+    window.history.back();
+  };
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "A_SecondaryButton",
+    onClick: handleClick
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "Q_Arrow backDef white"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "button"
+  }, text));
+}
 ;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
 
 
@@ -566,13 +580,16 @@ function Button(_ref) {
 
 
 function Menu(_ref) {
-  var state = _ref.state;
+  var state = _ref.state,
+      activeTag1 = _ref.activeTag1,
+      activeTag2 = _ref.activeTag2,
+      activeTag3 = _ref.activeTag3;
   return /*#__PURE__*/react.createElement("div", {
     className: "W_Menu"
   }, /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint",
     href: "/index.html"
-  }, /*#__PURE__*/react.createElement("img", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Logo menu",
     id: "Q_Logo_Menu",
     alt: ""
@@ -580,164 +597,67 @@ function Menu(_ref) {
     className: "M_MenuPoints"
   }, /*#__PURE__*/react.createElement("a", {
     href: "./CategoryChrono.html",
-    className: "A_Point"
-  }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
+    className: "A_Point".concat(activeTag1)
+  }, /*#__PURE__*/react.createElement("p", null, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F")), /*#__PURE__*/react.createElement("a", {
     href: "./\u0421ategoryStations.html",
-    className: "A_Point"
-  }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
+    className: "A_Point".concat(activeTag2)
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438")), /*#__PURE__*/react.createElement("a", {
     href: "./CategoryArticles.html",
-    className: "A_Point"
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438")), /*#__PURE__*/react.createElement("img", {
+    className: "A_Point".concat(activeTag3)
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))), /*#__PURE__*/react.createElement("div", {
     className: "Q_Burger",
     alt: ""
   }), /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint"
-  }, /*#__PURE__*/react.createElement("img", {
+  }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Search",
     alt: ""
   })));
 }
 
 /* harmony default export */ const menu = (Menu);
-;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
-const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
-;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
-
-
-
-
-
-
-
-
-function StationCard(_ref) {
-  var station = _ref.station,
-      color = _ref.color,
-      tag_1_text = _ref.tag_1_text,
-      tag_2_text = _ref.tag_2_text,
-      tag_3_text = _ref.tag_3_text,
-      Station_link = _ref.Station_link;
-  var classForDiv = 'M_Card ' + color;
-
-  var handleClick = function handleClick() {
-    window.location.href = "".concat(Station_link);
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: classForDiv,
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("h3", null, station), /*#__PURE__*/react.createElement("div", {
-    className: "W_TagsCollection"
-  }, tag_1_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_1_text)), tag_2_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_2_text)), tag_3_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_3_text)))));
-}
-function ArticleCard(_ref2) {
-  var text = _ref2.text,
-      bg_image = _ref2.bg_image,
-      linking = _ref2.linking,
-      size = _ref2.size;
-  var linkLong = linking;
-  var Card_size = "W_ArticleCard ".concat(size);
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: Card_size,
-    style: {
-      backgroundImage: "url(".concat(bg_image, ")")
-    }
-  }, /*#__PURE__*/react.createElement("h2", null, text), /*#__PURE__*/react.createElement(particles_button, {
-    text: 'читать',
-    arrow: 'up',
-    linking: linkLong
-  })));
-}
-function ChronoCard(_ref3) {
-  var text = _ref3.text,
-      year = _ref3.year,
-      image_URL = _ref3.image_URL,
-      isWhite = _ref3.isWhite;
-  var actual_tag_class = "A_Tags ".concat(isWhite);
-  return /*#__PURE__*/react.createElement("div", {
-    className: "W_ChronoCard",
-    style: {
-      backgroundImage: "url(".concat(ChronoCardBg_namespaceObject, ")")
-    }
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Arrow orange"
-  }), /*#__PURE__*/react.createElement("h3", null, text), /*#__PURE__*/react.createElement("div", {
-    className: "W_ChronoCardImage",
-    style: {
-      backgroundImage: "url(".concat(image_URL, ")")
-    }
-  }, /*#__PURE__*/react.createElement("div", {
-    className: actual_tag_class
-  }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, year))));
-}
-function StOfTheDay(_ref4) {
-  var station = _ref4.station;
-  return /*#__PURE__*/React.createElement("div", {
-    "class": "M_CardStationOfTheDay"
-  }, /*#__PURE__*/React.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
-}
 ;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
-var stations = [{
+var data_stations = [{
   id: 0,
   name: 'Библиотека им.Ленина',
   line_1: 'Сокольническая',
-  line_2: '',
-  line_3: '',
   color: 'sokol',
-  link: '/'
+  link: './biblioteka_lenina.html'
 }, {
   id: 1,
   name: 'Маяковская',
   line_1: 'Замоскворецкая',
-  line_2: '',
-  line_3: '',
   color: 'zamos',
   link: '/'
 }, {
   id: 2,
   name: 'Римская',
   line_1: 'Люблинско-дмитровская',
-  line_2: '',
-  line_3: '',
   color: 'lubli',
   link: '/'
 }, {
   id: 3,
   name: 'Площадь Революции',
   line_1: 'Арбатско-покровская',
-  line_2: '',
-  line_3: '',
   color: 'arbat',
   link: '/'
 }, {
   id: 4,
   name: 'Третьяковская',
   line_1: 'Калужско-Рижская',
-  line_2: 'Калининская',
-  line_3: '',
   color: 'kalug',
   link: '/'
 }, {
   id: 5,
   name: 'Павелецкая',
   line_1: 'Кольцевая',
-  line_2: 'Замоскворецкая',
-  line_3: '',
   color: 'kolic',
+  link: '/'
+}, {
+  id: 6,
+  name: 'Сокольники',
+  line_1: 'Сокольническая',
+  color: 'sokol',
   link: '/'
 }];
 var articles = [{
@@ -788,33 +708,203 @@ var articles = [{
 }];
 var data_chronology = [{
   id: 0,
-  date: '1935',
-  heading: 'Эскалаторы',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор. ',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  date: '1931',
+  heading: 'Начало',
+  text_1: '15 июня на пленуме ЦК ВКП(б) было принято решение о строительстве метрополитена в Москве. Это решение стало важным шагом в развитии столичной транспортной системы. Метро планировали создать, чтобы улучшить передвижение по городу и разгрузить наземный транспорт.',
+  text_2: 'Это был амбициозный проект, который обещал изменить жизнь миллионов москвичей. Построить метро в Москве означало радикально улучшить транспортную инфраструктуру и сделать город более удобным для жителей. ',
+  text_3: 'Работы по проектированию и строительству метро начались немедленно после принятия решения. Этот проект требовал больших усилий и инвестиций, но его реализация обещала огромные преимущества для города.'
 }, {
   id: 1,
-  date: '1935',
-  heading: 'Первый айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  date: '1933',
+  heading: 'Проект первоочередных линий',
+  text_1: '13 августа в президиум Моссовета был представлен технический проект первоочередных линий метрополитена. К концу года проект был утверждён, и подготовка к строительству начала набирать обороты. Этот документ определял маршруты и основные станции, которые будут построены в первую очередь.',
+  text_2: 'Работа над проектом велась быстро, чтобы как можно скорее начать строительство. Это требовало координации множества специалистов и значительных ресурсов. Несмотря на сложность задач, проект развивался по плану.',
+  text_3: 'Утверждение проекта было важным шагом к созданию метро. Оно позволило перейти от планирования к реальным строительным работам, которые должны были изменить облик Москвы.'
 }, {
   id: 2,
-  date: '1935',
-  heading: 'Второй айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  date: '1934',
+  heading: 'Пробный поезд',
+  text_1: '15 октября на пусковом участке появился первый пробный поезд из двух вагонов. Испытания проводились на участке «Комсомольская» — «Сокольники». Это было важное событие, которое подтвердило готовность метрополитена к дальнейшему строительству.',
+  text_2: 'Испытания прошли успешно, что стало важным шагом к скорому запуску метро. Первый пробный поезд показал, что система работает и готова к эксплуатации. Этот этап был ключевым для дальнейшего развития проекта.',
+  text_3: 'Появление первого поезда стало символом прогресса и уверенности в успешной реализации проекта. Москвичи с нетерпением ждали, когда смогут воспользоваться новым видом транспорта.'
 }, {
   id: 3,
   date: '1935',
-  heading: 'Третий айди',
-  text_1: 'Первоначальную дату открытие метро пришлось перенести из-за отсутствия эскалаторов. В то время эскалаторы работали только в Лондонском метро, их делали всего 2 компании в мире.',
-  text_2: 'Времени для своих разработок не хватало и пришлось закупить за колоссальную по тем временам сумму 200 000 золотых рублей один эскалатор.',
-  text_3: 'Его разобрали и разработать эскалаторы советского производства. В рекордные сроки 6 февраля 1935 года первые эскалаторы успешно прошли испытания.'
+  heading: 'Торжественное открытие',
+  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
+  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Открытие первого участка',
+  text_1: '15 мая открылся первый участок Московского метрополитена для всеобщего пользования. В состав пускового участка длиной 11,2 км вошли 13 станций: «Сокольники», «Красносельская», «Комсомольская», «Красные Ворота», «Кировская» (ныне — «Чистые пруды»), «Дзержинская» (ныне — «Лубянка»), «Охотный Ряд», «Библиотека имени Ленина», «Дворец Советов» (ныне — «Кропоткинская»), «Парк культуры», «Улица Коминтерна» (ныне — «Александровский сад»), «Арбатская» и «Смоленская».',
+  text_2: 'Этот день стал важной вехой в истории города. Открытие метро значительно облегчило передвижение по Москве и улучшило транспортную инфраструктуру. Новые станции быстро стали популярными среди жителей города.',
+  text_3: 'Метро открыло новые возможности для передвижения и значительно сократило время поездок по городу. Это был важный шаг к улучшению качества жизни в Москве и повышению её комфортабельности.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Первые поезда',
+  text_1: 'На первом участке Московского метрополитена работали поезда типа А из четырёх вагонов. Это были современные на тот момент поезда, обеспечивающие комфортное и быстрое передвижение по городу. Введение поездов типа А стало первым шагом к развитию обширной сети метро.',
+  text_2: 'Эти поезда стали основой для дальнейшего роста транспортной системы Москвы. Они были оснащены новейшими технологиями и обеспечивали высокий уровень комфорта для пассажиров. Появление таких поездов стало важным этапом в истории метрополитена.',
+  text_3: 'Поезда типа А быстро стали символом надежности и комфорта московского метро. Они обеспечили удобные и быстрые поездки для тысяч москвичей каждый день.'
+}, {
+  id: 3,
+  date: '1936',
+  heading: 'Увеличение состава поездов',
+  text_1: 'Составы Московского метрополитена стали шестивагонными. Это позволило увеличить пассажиропоток и повысить удобство для горожан. Увеличение количества вагонов было важным шагом в развитии метро.',
+  text_2: 'Это решение улучшило качество обслуживания пассажиров и ускорило их передвижение по городу. Шестивагонные поезда стали новым стандартом для московского метро. Они обеспечивали большую вместимость и комфорт для пассажиров.',
+  text_3: 'Увеличение числа вагонов в поездах позволило лучше справляться с растущим потоком пассажиров. Это стало важным шагом к улучшению транспортной системы города и повышению её эффективности'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Торжественное открытие',
+  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
+  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
+}, {
+  id: 3,
+  date: '1935',
+  heading: 'Торжественное открытие',
+  text_1: '14 мая в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
+  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
+  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
 }];
+;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
+const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
+;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
+
+
+
+
+
+
+
+
+
+function StationCard(_ref) {
+  var station = _ref.station,
+      color = _ref.color,
+      tag_1_text = _ref.tag_1_text,
+      tag_2_text = _ref.tag_2_text,
+      tag_3_text = _ref.tag_3_text,
+      Station_link = _ref.Station_link;
+  var classForDiv = 'M_Card ' + color;
+
+  var handleClick = function handleClick() {
+    window.location.href = "".concat(Station_link);
+  };
+
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: classForDiv,
+    onClick: handleClick
+  }, /*#__PURE__*/react.createElement("h3", null, station), /*#__PURE__*/react.createElement("div", {
+    className: "W_TagsCollection"
+  }, tag_1_text && /*#__PURE__*/react.createElement("div", {
+    className: "A_Tags secondary"
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "mini"
+  }, tag_1_text)))));
+}
+function ArticleCard(_ref2) {
+  var text = _ref2.text,
+      bg_image = _ref2.bg_image,
+      linking = _ref2.linking,
+      size = _ref2.size,
+      text_color = _ref2.text_color;
+  var linkLong = linking;
+  var Card_size = "W_ArticleCard ".concat(size);
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: Card_size,
+    style: {
+      backgroundImage: "url(".concat(bg_image, ")")
+    }
+  }, /*#__PURE__*/react.createElement("h2", {
+    style: {
+      color: "var(--".concat(text_color, ")")
+    }
+  }, text), /*#__PURE__*/react.createElement(Button, {
+    text: 'читать',
+    arrow: 'up',
+    linking: linkLong
+  })));
+}
+function ChronoCard(_ref3) {
+  var text = _ref3.text,
+      year = _ref3.year,
+      image_URL = _ref3.image_URL,
+      isWhite = _ref3.isWhite;
+  var actual_tag_class = "A_Tags ".concat(isWhite);
+  return /*#__PURE__*/react.createElement("div", {
+    className: "W_ChronoCard",
+    style: {
+      backgroundImage: "url(".concat(ChronoCardBg_namespaceObject, ")")
+    }
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_Arrow orange"
+  }), /*#__PURE__*/react.createElement("h3", null, text), /*#__PURE__*/react.createElement("div", {
+    className: "W_ChronoCardImage",
+    style: {
+      backgroundImage: "url(".concat(image_URL, ")")
+    }
+  }, /*#__PURE__*/react.createElement("div", {
+    className: actual_tag_class
+  }, /*#__PURE__*/react.createElement("p", {
+    className: "mini"
+  }, year))));
+}
+function StOfTheDay(_ref4) {
+  var station = _ref4.station,
+      BGUrl = _ref4.BGUrl;
+  return /*#__PURE__*/React.createElement("div", {
+    "class": "M_CardStationOfTheDay",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/React.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
+}
+function StationHeading(_ref5) {
+  var station = _ref5.station,
+      BGUrl = _ref5.BGUrl,
+      line = _ref5.line;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "O_StationHeading"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "W_StationHeadingImage",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/React.createElement(BackButton, {
+    text: 'назад'
+  })), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      color: "var(--white)"
+    }
+  }, station), /*#__PURE__*/React.createElement("div", {
+    className: "A_Tags white"
+  }, line));
+}
+function MaybeInterestingCards(_ref6) {
+  var start_number = _ref6.start_number,
+      end_number = _ref6.end_number;
+  var listItems = stations.filter(function (station) {
+    return station.id >= start_number && station.id <= end_number;
+  }).map(function (station) {
+    return /*#__PURE__*/React.createElement(StationCard, {
+      key: station.id // добавление ключа для каждого элемента
+      ,
+      station: station.name,
+      color: station.color,
+      tag_1_text: station.line_1,
+      Station_link: station.link
+    });
+  });
+  return /*#__PURE__*/React.createElement("div", {
+    className: "W_AlsoLook"
+  }, /*#__PURE__*/React.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/React.createElement("div", {
+    className: "W_CardsCollection"
+  }, listItems));
+}
 ;// CONCATENATED MODULE: ./src/javascript/particles/chrono.jsx
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -833,7 +923,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function TextChangingComponent() {
-  var _useState = useState('Текст по умолчанию'),
+  var _useState = useState('Текст по умолчанию....'),
       _useState2 = _slicedToArray(_useState, 2),
       displayDate = _useState2[0],
       setDisplayDate = _useState2[1];
@@ -864,11 +954,10 @@ function TextChangingComponent() {
     setDisplayText1(chronology[number].text_1);
     setDisplayText2(chronology[number].text_2);
     setDisplayText3(chronology[number].text_3);
-  };
+  }; // const handleMouseLeave = () => {
+  //   setDisplayText1('Текст по умолчанию')
+  // }
 
-  var handleMouseLeave = function handleMouseLeave() {
-    setDisplayText1('Текст по умолчанию');
-  };
 
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     onMouseEnter: function onMouseEnter() {
@@ -913,6 +1002,27 @@ function SectionHeading(_ref) {
     "class": "A_SectionDescribe"
   }, /*#__PURE__*/react.createElement("p", null, description)));
 }
+function ArticleChapter(_ref2) {
+  var heading = _ref2.heading,
+      text = _ref2.text;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "M_Text"
+  }, /*#__PURE__*/React.createElement("h2", null, heading), /*#__PURE__*/React.createElement("p", {
+    style: {
+      width: "40vw"
+    }
+  }, text));
+}
+function StationAccentLine(_ref3) {
+  var heading = _ref3.heading,
+      BGUrl = _ref3.BGUrl;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "A_StationAccentLine",
+    style: {
+      backgroundImage: "url(".concat(BGUrl, ")")
+    }
+  }, /*#__PURE__*/React.createElement("h3", null, heading));
+}
 ;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
 
 
@@ -930,7 +1040,7 @@ function Q_Image(_ref) {
     src: "".concat(url),
     style: {
       width: "".concat(width_I, "vw"),
-      height: "".concat(height, "px"),
+      height: "".concat(height, "vh"),
       marginLeft: "".concat(margin_I, "vw")
     }
   });
@@ -969,10 +1079,6 @@ function W_ImagesRow(_ref2) {
   }));
 }
 ;// CONCATENATED MODULE: ./src/javascript/particles/footer.jsx
- // import Logo from '../images/components/quarks/Q_Logo_white.svg'
-// import Dzen from '../images/tiser/icon_dzen.svg'
-// import VK from '../images/tiser/icon_vk.svg'
-// import TG from '../images/tiser/icon_tg.svg'
 
 
 
@@ -1065,7 +1171,18 @@ const RunningLine_namespaceObject = __webpack_require__.p + "images/4d69fdf54e1f
 
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, null), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
+root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, {
+  activeTag1: '',
+  activeTag2: '',
+  activeTag3: ''
+}), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", null, "\u0422\u0423\u0422 \u0412\u0421\u0415"), /*#__PURE__*/react.createElement(SectionHeading, {
+  heading: 'Мосметро'
+}), /*#__PURE__*/react.createElement("div", {
+  className: "Q_TitleImage",
+  style: {
+    backgroundColor: 'var(--sokol)'
+  }
+})), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(SectionHeading, {
   heading: 'станции',
   description: 'Полный сборник истории всех станций Московского метро поможет изучить каждую линию по отдельности, чтобы собрать целую карту в едино'
 }), /*#__PURE__*/react.createElement("div", {
@@ -1083,7 +1200,8 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
 }), /*#__PURE__*/react.createElement(ArticleCard, {
   text: 'Пыхтино – метро в аэропорт',
   size: 'medium',
-  bg_image: Station1_namespaceObject
+  bg_image: Station1_namespaceObject,
+  text_color: 'white'
 }))), /*#__PURE__*/react.createElement("div", {
   "class": "O_FullArticleSection"
 }, /*#__PURE__*/react.createElement("div", {
@@ -1122,7 +1240,7 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
   "class": "W_TextArticleSection"
 }, /*#__PURE__*/react.createElement("h1", null, "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430"), /*#__PURE__*/react.createElement("div", {
   "class": "A_ArticleBody"
-}, /*#__PURE__*/react.createElement("p", null, "C\u0442\u0430\u043D\u0446\u0438\u044F \u043F\u0435\u0440\u0432\u043E\u0439 \u043E\u0447\u0435\u0440\u0435\u0434\u0438 \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u0430\u044F 15 \u043C\u0430\u044F 1935 \u0433\u043E\u0434\u0443."), /*#__PURE__*/react.createElement("p", null, "\u041E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043F\u043E\u0441\u0432\u044F\u0449\u0435\u043D\u043E \u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430 ( \u043D\u044B\u043D\u044F\u0448\u043D\u044F\u044F \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0430\u044F \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430)."))), /*#__PURE__*/react.createElement(particles_button, {
+}, /*#__PURE__*/react.createElement("p", null, "C\u0442\u0430\u043D\u0446\u0438\u044F \u043F\u0435\u0440\u0432\u043E\u0439 \u043E\u0447\u0435\u0440\u0435\u0434\u0438 \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u0430\u044F 15 \u043C\u0430\u044F 1935 \u0433\u043E\u0434\u0443."), /*#__PURE__*/react.createElement("p", null, "\u041E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043F\u043E\u0441\u0432\u044F\u0449\u0435\u043D\u043E \u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430 ( \u043D\u044B\u043D\u044F\u0448\u043D\u044F\u044F \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0430\u044F \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430)."))), /*#__PURE__*/react.createElement(Button, {
   text: 'читать',
   arrow: 'up',
   linking: ''
@@ -1143,7 +1261,7 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
   className: "W_CardsChronoCollection"
 }, /*#__PURE__*/react.createElement(Q_Image, {
   width: 10,
-  height: 300,
+  height: 270,
   margin: 0,
   url: Chrono1_namespaceObject
 }), /*#__PURE__*/react.createElement(ChronoCard, {
@@ -1157,7 +1275,8 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
 }), /*#__PURE__*/react.createElement(ArticleCard, {
   text: 'Тройка — просто пластиковая карта или что-то поинтереснее? ',
   size: 'large',
-  bg_image: Article5_namespaceObject
+  bg_image: Article5_namespaceObject,
+  text_color: 'white'
 })), /*#__PURE__*/react.createElement(footer, null)));
 })();
 
