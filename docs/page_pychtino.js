@@ -635,24 +635,22 @@ function W_ImagesRow(_ref2) {
     url: url_3
   }));
 }
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img01.png
-const bibliotekaLenina_img01_namespaceObject = __webpack_require__.p + "images/b0c1af7f39be9662b3db.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img02.png
-const bibliotekaLenina_img02_namespaceObject = __webpack_require__.p + "images/f53c8d43525804c0f392.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img03.png
-const bibliotekaLenina_img03_namespaceObject = __webpack_require__.p + "images/6b85938fe62d2f411101.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img04.png
-const bibliotekaLenina_img04_namespaceObject = __webpack_require__.p + "images/eb3f5447097a45ba98c3.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img05.png
-const bibliotekaLenina_img05_namespaceObject = __webpack_require__.p + "images/6cd9184285f501258b93.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img06.png
-const bibliotekaLenina_img06_namespaceObject = __webpack_require__.p + "images/8eea58dbe1e022d45e90.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img07.png
-const bibliotekaLenina_img07_namespaceObject = __webpack_require__.p + "images/ca3d600f1484f64be108.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLeninaHeading.png
-const bibliotekaLeninaHeading_namespaceObject = __webpack_require__.p + "images/9077a6456864e0d47208.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLeninaLine.png
-const bibliotekaLeninaLine_namespaceObject = __webpack_require__.p + "images/80e998130732c35d51ea.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtino_img01.png
+const pychtino_img01_namespaceObject = __webpack_require__.p + "images/c34d2a1e72ad8a13e183.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtino_img02.png
+const pychtino_img02_namespaceObject = __webpack_require__.p + "images/ecd34833f79f7ce114b2.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtino_img03.png
+const pychtino_img03_namespaceObject = __webpack_require__.p + "images/cbca5719f6306d2434a2.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtino_img04.png
+const pychtino_img04_namespaceObject = __webpack_require__.p + "images/0d9ee8edc4e91b6bb0d7.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtino_img05.png
+const pychtino_img05_namespaceObject = __webpack_require__.p + "images/afc1b0a74be1a3e9c382.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtino_img06.png
+const pychtino_img06_namespaceObject = __webpack_require__.p + "images/e15c069a8f0ff31b4c50.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtinoHeading.png
+const pychtinoHeading_namespaceObject = __webpack_require__.p + "images/eb9f53e380db3fc8c610.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/pychtinoLine.png
+const pychtinoLine_namespaceObject = __webpack_require__.p + "images/12c32dda4f5cd8a5b718.png";
 ;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
 var stations = [{
   id: 0,
@@ -674,24 +672,18 @@ var stations = [{
   link: '/rimskay.html'
 }, {
   id: 3,
-  name: 'Менделеевская',
-  line_1: 'Серпуховско-тимирязевская',
-  color: 'serpy',
-  link: '/mendeleevskay.html'
-}, {
-  id: 4,
   name: 'Рижская',
   line_1: 'Калужско-Рижская',
   color: 'kalug',
   link: '/rizchskay.html'
 }, {
-  id: 5,
+  id: 4,
   name: 'Пыхтино',
   line_1: 'Калининская',
   color: 'solnc',
   link: '/pychtino.html'
 }, {
-  id: 6,
+  id: 5,
   name: 'Сокольники',
   line_1: 'Сокольническая',
   color: 'sokol',
@@ -699,12 +691,12 @@ var stations = [{
 }];
 var data_articles = [{
   id: 0,
-  name: 'Подземные секреты ',
-  line_1: 'Искусство',
+  name: 'Подземные секреты',
+  line_1: 'Архитектура ',
   line_2: '',
   line_3: '',
-  color: 'art',
-  link: '/',
+  color: 'arch',
+  link: '/secrets.html',
   type: 'article'
 }, {
   id: 1,
@@ -713,34 +705,97 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/',
+  link: '/troika.html',
   type: 'article'
 }, {
   id: 2,
-  name: 'Древние находки в метро',
-  line_1: 'Архитектура',
+  name: 'Метро в кино ',
+  line_1: 'Искусство',
   line_2: 'История',
   line_3: '',
-  color: 'arch',
-  link: '/',
+  color: 'art',
+  link: '/cinema.html',
   type: 'article'
 }, {
   id: 3,
-  name: 'Метро в кино',
-  line_1: 'Искусство',
+  name: 'Лайфхаки при пересадках ',
+  line_1: 'Лайфхаки',
   line_2: '',
   line_3: '',
-  color: 'art',
-  link: '/',
+  color: 'life',
+  link: '/peresadki.html ',
   type: 'article'
 }, {
   id: 4,
-  name: 'Новые поезда Замоскворецкой',
+  name: 'Новые поезда Замоскво- рецкой',
   line_1: 'Инфоструктура',
   line_2: '',
   line_3: '',
   color: 'info',
-  link: '/',
+  link: '/new_trains.html',
+  type: 'news'
+}, {
+  id: 5,
+  name: 'Нина Алешина – мать мтерополитена ',
+  line_1: 'История',
+  line_2: '',
+  line_3: '',
+  color: 'hist',
+  link: '/nina.html ',
+  type: 'article'
+}, {
+  id: 6,
+  name: 'Что такое плывуны и чем они опасны для метро? ',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/swimmer.html ',
+  type: 'article'
+}, {
+  id: 7,
+  name: 'Нью Лук для салатовой ветки ',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/new_look.html',
+  type: 'news'
+}, {
+  id: 8,
+  name: 'Ваши дела закрыты!',
+  line_1: 'Инфоструктура',
+  line_2: '',
+  line_3: '',
+  color: 'info',
+  link: '/dela.html ',
+  type: 'news'
+}, {
+  id: 9,
+  name: 'Научная конференция в метро',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/science.html',
+  type: 'article'
+}, {
+  id: 10,
+  name: 'Новый запахи в метро',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/zapach.html',
+  type: 'article'
+}, {
+  id: 11,
+  name: 'Открыто тестирование новой тройки',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/test_troika.html',
   type: 'news'
 }];
 var chronology = [{
@@ -1189,7 +1244,6 @@ function Footer() {
 
 
 
-
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
 root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, {
@@ -1197,64 +1251,48 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
   activeTag2: '',
   activeTag3: ''
 }), /*#__PURE__*/react.createElement(StationHeading, {
-  BGUrl: bibliotekaLeninaHeading_namespaceObject,
-  station: 'Библиотека им.Ленина',
-  line: 'Сокольническая'
+  BGUrl: pychtinoHeading_namespaceObject,
+  station: 'Пыхтино',
+  line: 'Калининская'
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
   heading: 'Когда станция открылась?',
-  text: 'Библиотека им.Ленина - станция первой очереди Московского метрополитена, открытая 15 мая 1935 году. Оформление станции посвящено Библиотеке им. Ленина (ныняшняя Российская государственная библиотека)'
+  text: 'Вторая полуподземная станция московского метрополитена, открытая в 2023 году в составе Солнцевской линии. Тематика станции — авиация, что можно очень четко понять из расположения станции рядом с аэропортом Внуково, а также модели самолета ТУ-144, находящимся над эскалаторной линией.'
 }), /*#__PURE__*/react.createElement(Q_Image, {
   width: 9,
   height: 40,
   margin: 5,
-  url: bibliotekaLenina_img01_namespaceObject
+  url: pychtino_img01_namespaceObject
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
   heading: 'История станции',
-  text: 'Физически станция располагается прямо под Моховой улицей, что заметно усложнило процесс работы над ней. Так станция получила уникальную по тем времена конструкцию — односводчатую мелкого заложения. То есть для строительства станции не вырывали котлован, так как нельзя было перекрывать центральную улицу столицы, а работали под тонким слоем грунта, всего 3 метра от поверхности. Кроме того появилосбь еще и ограничение в ширину улицы, поэтому перед архитекторами и инженерами стояла сложная задача — сделать маленькую станцию — широкой и величественной.'
+  text: 'Строительство метро до аэропоорта Внуково планировалось еще с 2015 года, предположительной датой открытия был 2025, но получилось завершить проект на 2 года раньше. '
 }), /*#__PURE__*/react.createElement(Q_Image, {
   width: 12,
   height: 40,
   margin: 4,
-  url: bibliotekaLenina_img02_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: "\u0410\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440\u043E\u043C \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0432\u044B\u0441\u0442\u0443\u043F\u0438\u043B\u0438 \u0410.\u0418. \u0413\u043E\u043D\u0446\u043A\u0435\u0432\u0438\u0447 \u0438\xA0\u0421.\xA0\u0421\u0443\u043B\u0438\u043D. \u041F\u043E\xA0\u0438\u0445\xA0\u0437\u0430\u0434\u0443\u043C\u043A\u0435, \u043E\u0434\u043D\u043E\u0441\u0432\u043E\u0434\u0447\u0430\u0442\u0430\u044F \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u044C \u0441\u0442\u0430\u043D\u0446\u0438\u044E, \u0430\xA0\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0432\u043E\u0430\u043D\u0438\u0435 \u0431\u0435\u043B\u044B\u0445 \u0438\xA0\u0442\u0435\u043F\u043B\u044B\u0445 \u0442\u043E\u043D\u043E\u0432 \u043F\u0440\u0438\u0437\u0432\u0430\u0442\u044C \u043A\xA0\u0447\u0443\u0432\u0441\u0442\u0432\u0443 \u0443\u044E\u0442\u0430 \u0438\xA0\u0441\u043F\u043E\u0441\u043E\u0439\u0441\u0442\u0432\u0438\u044F. \u0418\xA0\u043F\u0440\u0430\u0432\u0434\u0430, \u0435\u0441\u043B\u0438 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043D\u0430\xA0\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0438 1935 \u0433\u043E\u0434\u0430\xA0\u2014 \u0441\u0442\u0430\u043D\u0446\u0438\u044F \u043A\u0430\u0436\u0435\u0442\u0441\u044F \u043E\u0447\u0435\u043D\u044C \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0437\u0430\xA0\u0441\u0447\u0435\u0442 \u043E\u0442\u0441\u0443\u0442\u0441\u0432\u0438\u044F \u043A\u0430\u043A\u0438\u0445-\u043B\u0438\u0431\u043E \u043F\u0440\u0435\u0433\u0440\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0432\xA0\u0446\u0435\u043D\u0442\u0440\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B.\u041E\u0434\u043D\u0430\u043A\u043E \u0443\u0436\u0435 \u0432\xA01937 \u0433\u043E\u0434\u0443 \u0437\u0430\u0434\u0443\u043C\u043A\u0430 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u0440\u0430\u0437\u0440\u0443\u0448\u0438\u043B\u0430\u0441\u044C. \u0414\u043B\u044F \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u043F\u0435\u0440\u0435\u0441\u0430\u0434\u043E\u043A \u043D\u0430\xA0\u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0431\u044B\u043B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D \u043F\u0440\u044F\u043C\u043E\u0439 \u043F\u0435\u0440\u0435\u0445\u043E\u0434 \u043D\u0430\xA0\u0441\u0442\u0430\u043D\u0446\u0438\u044E \xAB\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430\xBB (\u043D\u044B\u043D\u0435\u0448\u043D\u0438\u0439 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u0441\u0430\u0434) \u043F\u0440\u044F\u043C\u043E \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B, \u0447\u0442\u043E \u0441\u0445\u043B\u043E\u043F\u043D\u0443\u043B\u043E \u0432\u0441\u0451 \u0432\u0435\u043B\u0438\u0447\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438. \u041A\xA0\u0442\u043E\u043C\u0443\xA0\u0436\u0435 \u043F\u0435\u0440\u0435\u0441\u0430\u0434\u043A\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u043B\u0430 \u043E\u0434\u0438\u043D\u043E\u0447\u043D\u044B\u0439 \u043A\u043E\u0440\u0438\u0434\u043E\u0440 \u0432\xA0\u043C\u0438\u0440 \u0437\u043D\u0430\u043D\u0438\u0439 \u0432\xA0\u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u044B\u0439 \u0443\u0437\u0435\u043B. \u0410\xA0\u0432\xA01953 \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F \u0442\u043E\u0442 \u0441\u0430\u043C\u044B\u0439 \u0437\u0430\u043F\u0443\u0442\u0430\u043D\u044B\u0439 \u0430\u0432\u0430\u043D\u0437\u0430\u043B, \u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0432\u0448\u0438\u0439 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438 \u0441\u0430\u0434, \u0410\u0440\u0431\u0442\u0430\u0441\u043A\u0443\u044E \u0438\xA0\u0411\u0438\u0431\u0438\u043B\u043E\u0438\u0442\u0435\u043A\u0443 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430."
+  url: pychtino_img02_namespaceObject
 }), /*#__PURE__*/react.createElement(StationAccentLine, {
-  BGUrl: bibliotekaLeninaLine_namespaceObject,
-  heading: 'Вам никогда не казалось странным, что у Библиотеки им. Ленина такое длинное название?'
+  BGUrl: pychtinoLine_namespaceObject,
+  heading: 'Станция названа в честь ближайшей к ней деревне Пыхтино'
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: 'При открытии у Билиотеки было два наземных вестибюля: восточный, выходящий к главному входу в здание Библиотеки имнеи Ленина, и западный, ближе к центру Моховой улицы и дому Пашкова.'
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Архитектура',
-  text: 'Архитектурой восточного вестибюля занимались П.П. Файдыш и С.П. Лавров. Их задачей было максимально аккуратно вписать здание в стилистику самой Библиотеки, что у них успешно получилось. Те же колонны, бетонное величие и грубая буква М. '
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 12,
-  height: 40,
-  margin: 4,
-  url: bibliotekaLenina_img03_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: 'От западного вестибюля ожидали совршенно другого настроение, ближе к чему-то элегантному и аккуратному. Эту задачу отдали архитекторам С.М. Кравецу и А.И. Соколову. Они также удачно справились с этим, сделав основной изюмникой вестибюля — окна. Рама окон выполнена из металла с интересной интерпретацией буквы М посередине. Изначально окна были выполнены из темного материала и затонированы, но после реконскции они преобрели светлый и более открытый вид.'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 12,
-  height: 40,
-  margin: 4,
-  url: bibliotekaLenina_img04_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Потерянные вестибюли',
-  text: 'Но и вестибюлями станцию начали обделять. В 1970-х восточный вестибюль снесли в угоду более удобного передвижение на площади перед Библиотекой. А в 1984 году западный вестибюль переделали во вход на станцию Боровицкая. Тем самым сейчас у Библиотеки нет ни наземного входа. '
+  heading: 'Инженерное',
+  text: 'У станции довольно уникальное строение — полуподземное. В Москве такой тип станции встречается также на станции Мичуринский проспект. Такое строение станции обусловлено резким перепадом высот в районе ее расположения , поэтому с одной стороны платформы находится стена и обычный метрошный тоннель, а с другой метромост и панорамное остекление с видом на город. '
 }), /*#__PURE__*/react.createElement(W_ImagesRow, {
   width_1: 8,
   width_2: 7,
   height: 30,
-  url_1: bibliotekaLenina_img05_namespaceObject,
-  url_2: bibliotekaLenina_img06_namespaceObject
+  url_1: pychtino_img03_namespaceObject,
+  url_2: pychtino_img04_namespaceObject
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Потерянные вестибюли',
-  text: 'Так с течением времени, изначальная задумка станции, как коридора в мир библиотеки полностью истощилась. Почему так произошло? Основной причиной можно назвать недальнозоркость инженеров при проектировке станции в 30-х годах. При проектировании рассчитывалось, что пассажиропоток на станции будет небольшим. Ведь это просто станция для библиотеки. Но удобство ее расположения сыграло против нее. Станция располагающая почти в центре Москвы не могла не стать важным транспортным узлом, особенно когда вокруг нее настроили еще станции. Сейчас транспортный узел Александровский сад — Боровицкая — Арбатская — Библиотека им.Ленина — самый сложный в Москве. Компановка станций не позволяет сделать удобные переходы, из-за чего приходится жертвовать даже станция первой очереди.'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 15,
-  height: 40,
-  margin: 2,
-  url: bibliotekaLenina_img07_namespaceObject
+  heading: 'Искусство',
+  text: 'У станции довольно уникальное строение — полуподземное. В Москве такой тип станции встречается также на станции Мичуринский проспект. Такое строение станции обусловлено резким перепадом высот в районе ее расположения , поэтому с одной стороны платформы находится стена и обычный метрошный тоннель, а с другой метромост и панорамное остекление с видом на город. '
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  text: 'Изюминкой станции, конечно, является полноразмерная модель пассажирского сверхзвукового самолета Ту-144. Он висит над эскалаторной линией 1 выхода и прекрасно вписывается в симметричный дизайн станции.'
+}), /*#__PURE__*/react.createElement(W_ImagesRow, {
+  width_1: 8,
+  width_2: 7,
+  height: 30,
+  url_1: pychtino_img05_namespaceObject,
+  url_2: pychtino_img06_namespaceObject
 }), /*#__PURE__*/react.createElement(MaybeInterestingCards, {
   start_number: 2,
   end_number: 5

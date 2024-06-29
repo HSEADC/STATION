@@ -22,27 +22,20 @@ export const stations = [
   },
   {
     id: 3,
-    name: 'Менделеевская',
-    line_1: 'Серпуховско-тимирязевская',
-    color: 'serpy',
-    link: '/mendeleevskay.html'
-  },
-  {
-    id: 4,
     name: 'Рижская',
     line_1: 'Калужско-Рижская',
     color: 'kalug',
     link: '/rizchskay.html'
   },
   {
-    id: 5,
+    id: 4,
     name: 'Пыхтино',
     line_1: 'Калининская',
     color: 'solnc',
     link: '/pychtino.html'
   },
   {
-    id: 6,
+    id: 5,
     name: 'Сокольники',
     line_1: 'Сокольническая',
     color: 'sokol',
@@ -128,7 +121,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/',
+    link: '/new_look.html',
     type: 'news'
   },
   {
@@ -138,7 +131,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'info',
-    link: '/swimmer.html ',
+    link: '/dela.html ',
     type: 'news'
   },
   {
@@ -148,7 +141,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/new_trains.html',
+    link: '/science.html',
     type: 'article'
   },
   {
@@ -158,7 +151,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/new_trains.html',
+    link: '/zapach.html',
     type: 'article'
   },
   {
@@ -168,7 +161,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/new_trains.html',
+    link: '/test_troika.html',
     type: 'news'
   }
 ]

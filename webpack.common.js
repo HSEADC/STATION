@@ -13,7 +13,6 @@ module.exports = {
     chronology: './src/javascript/pages/chrono.js',
     articles: './src/javascript/pages/articles.js',
     styleguide: './src/javascript/pages/styleguide.js',
-    // aboutus: './src/javascript/pages/aboutus.js',
     page_biblioteka: './src/javascript/pages/biblioteka_lenina.js',
     page_maykovskay: './src/javascript/pages/maykovskay.js',
     page_rimskay: './src/javascript/pages/rimskay.js',
@@ -27,7 +26,12 @@ module.exports = {
     secrets: './src/javascript/pages/secrets.js',
     swimmer: './src/javascript/pages/swimmer.js',
     troika: './src/javascript/pages/troika.js',
-    new_trains: './src/javascript/pages/new_trains.js'
+    new_trains: './src/javascript/pages/new_trains.js',
+    dela: './src/javascript/pages/dela.js',
+    new_look: './src/javascript/pages/new_look.js',
+    science: './src/javascript/pages/science.js',
+    test_troika: './src/javascript/pages/test_troika.js',
+    zapach: './src/javascript/pages/zapach.js'
   },
   output: {
     filename: '[name].js',
@@ -242,6 +246,41 @@ module.exports = {
       template: './src/pages/articles/troika.html',
       filename: './troika.html',
       chunks: ['troika']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/news/dela.html',
+      filename: './dela.html',
+      chunks: ['dela']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/news/new_look.html',
+      filename: './new_look.html',
+      chunks: ['new_look']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/science.html',
+      filename: './science.html',
+      chunks: ['science']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/news/test_troika.html',
+      filename: './test_troika.html',
+      chunks: ['test_troika']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/zapach.html',
+      filename: './zapach.html',
+      chunks: ['zapach']
     })
   ],
   optimization: {

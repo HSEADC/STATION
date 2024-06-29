@@ -635,24 +635,22 @@ function W_ImagesRow(_ref2) {
     url: url_3
   }));
 }
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img01.png
-const bibliotekaLenina_img01_namespaceObject = __webpack_require__.p + "images/b0c1af7f39be9662b3db.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img02.png
-const bibliotekaLenina_img02_namespaceObject = __webpack_require__.p + "images/f53c8d43525804c0f392.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img03.png
-const bibliotekaLenina_img03_namespaceObject = __webpack_require__.p + "images/6b85938fe62d2f411101.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img04.png
-const bibliotekaLenina_img04_namespaceObject = __webpack_require__.p + "images/eb3f5447097a45ba98c3.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img05.png
-const bibliotekaLenina_img05_namespaceObject = __webpack_require__.p + "images/6cd9184285f501258b93.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img06.png
-const bibliotekaLenina_img06_namespaceObject = __webpack_require__.p + "images/8eea58dbe1e022d45e90.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img07.png
-const bibliotekaLenina_img07_namespaceObject = __webpack_require__.p + "images/ca3d600f1484f64be108.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLeninaHeading.png
-const bibliotekaLeninaHeading_namespaceObject = __webpack_require__.p + "images/9077a6456864e0d47208.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLeninaLine.png
-const bibliotekaLeninaLine_namespaceObject = __webpack_require__.p + "images/80e998130732c35d51ea.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskay_img01.png
+const rimskay_img01_namespaceObject = __webpack_require__.p + "images/45b4bd1b80e92962b0bf.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskay_img02.png
+const rimskay_img02_namespaceObject = __webpack_require__.p + "images/f4b0477b371f0c3aad5c.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskay_img03.png
+const rimskay_img03_namespaceObject = __webpack_require__.p + "images/1ddb2902acc2c147b443.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskay_img04.png
+const rimskay_img04_namespaceObject = __webpack_require__.p + "images/01f4df0e1d18de3c06d1.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskay_img05.png
+const rimskay_img05_namespaceObject = __webpack_require__.p + "images/e8a34f6f1fc20bf383cb.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskay_img06.png
+const rimskay_img06_namespaceObject = __webpack_require__.p + "images/f3b06adaf23c457d4f54.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskayHeading.png
+const rimskayHeading_namespaceObject = __webpack_require__.p + "images/489264e0dfb433be46ed.png";
+;// CONCATENATED MODULE: ./src/images/stations/station_pages/rimskayLine.png
+const rimskayLine_namespaceObject = __webpack_require__.p + "images/897b4d510613b337f486.png";
 ;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
 var stations = [{
   id: 0,
@@ -674,24 +672,18 @@ var stations = [{
   link: '/rimskay.html'
 }, {
   id: 3,
-  name: 'Менделеевская',
-  line_1: 'Серпуховско-тимирязевская',
-  color: 'serpy',
-  link: '/mendeleevskay.html'
-}, {
-  id: 4,
   name: 'Рижская',
   line_1: 'Калужско-Рижская',
   color: 'kalug',
   link: '/rizchskay.html'
 }, {
-  id: 5,
+  id: 4,
   name: 'Пыхтино',
   line_1: 'Калининская',
   color: 'solnc',
   link: '/pychtino.html'
 }, {
-  id: 6,
+  id: 5,
   name: 'Сокольники',
   line_1: 'Сокольническая',
   color: 'sokol',
@@ -699,12 +691,12 @@ var stations = [{
 }];
 var data_articles = [{
   id: 0,
-  name: 'Подземные секреты ',
-  line_1: 'Искусство',
+  name: 'Подземные секреты',
+  line_1: 'Архитектура ',
   line_2: '',
   line_3: '',
-  color: 'art',
-  link: '/',
+  color: 'arch',
+  link: '/secrets.html',
   type: 'article'
 }, {
   id: 1,
@@ -713,34 +705,97 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/',
+  link: '/troika.html',
   type: 'article'
 }, {
   id: 2,
-  name: 'Древние находки в метро',
-  line_1: 'Архитектура',
+  name: 'Метро в кино ',
+  line_1: 'Искусство',
   line_2: 'История',
   line_3: '',
-  color: 'arch',
-  link: '/',
+  color: 'art',
+  link: '/cinema.html',
   type: 'article'
 }, {
   id: 3,
-  name: 'Метро в кино',
-  line_1: 'Искусство',
+  name: 'Лайфхаки при пересадках ',
+  line_1: 'Лайфхаки',
   line_2: '',
   line_3: '',
-  color: 'art',
-  link: '/',
+  color: 'life',
+  link: '/peresadki.html ',
   type: 'article'
 }, {
   id: 4,
-  name: 'Новые поезда Замоскворецкой',
+  name: 'Новые поезда Замоскво- рецкой',
   line_1: 'Инфоструктура',
   line_2: '',
   line_3: '',
   color: 'info',
-  link: '/',
+  link: '/new_trains.html',
+  type: 'news'
+}, {
+  id: 5,
+  name: 'Нина Алешина – мать мтерополитена ',
+  line_1: 'История',
+  line_2: '',
+  line_3: '',
+  color: 'hist',
+  link: '/nina.html ',
+  type: 'article'
+}, {
+  id: 6,
+  name: 'Что такое плывуны и чем они опасны для метро? ',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/swimmer.html ',
+  type: 'article'
+}, {
+  id: 7,
+  name: 'Нью Лук для салатовой ветки ',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/new_look.html',
+  type: 'news'
+}, {
+  id: 8,
+  name: 'Ваши дела закрыты!',
+  line_1: 'Инфоструктура',
+  line_2: '',
+  line_3: '',
+  color: 'info',
+  link: '/dela.html ',
+  type: 'news'
+}, {
+  id: 9,
+  name: 'Научная конференция в метро',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/science.html',
+  type: 'article'
+}, {
+  id: 10,
+  name: 'Новый запахи в метро',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/zapach.html',
+  type: 'article'
+}, {
+  id: 11,
+  name: 'Открыто тестирование новой тройки',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/test_troika.html',
   type: 'news'
 }];
 var chronology = [{
@@ -1189,7 +1244,6 @@ function Footer() {
 
 
 
-
 var rootElement = document.getElementById('root');
 var root = (0,client/* createRoot */.s)(rootElement);
 root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, {
@@ -1197,64 +1251,57 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
   activeTag2: '',
   activeTag3: ''
 }), /*#__PURE__*/react.createElement(StationHeading, {
-  BGUrl: bibliotekaLeninaHeading_namespaceObject,
-  station: 'Библиотека им.Ленина',
-  line: 'Сокольническая'
+  BGUrl: rimskayHeading_namespaceObject,
+  station: 'Римская',
+  line: 'Люблинско-Дмитровская'
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Когда станция открылась?',
-  text: 'Библиотека им.Ленина - станция первой очереди Московского метрополитена, открытая 15 мая 1935 году. Оформление станции посвящено Библиотеке им. Ленина (ныняшняя Российская государственная библиотека)'
+  heading: 'История появления',
+  text: 'Станция Римская была открыта 28 декабря 1995 года в составе Люблинско-Дмитровской линии, став 152 станцией Московского метро. Физически располагается в Таганском районе. Темой станции стали “Римские достопримечательности”, а в разработке дизайна станции приняли участие  Джампаоло Имбриги и Андреа Куатрокки - итальянские архитекторы. Такой решение поддержало отношения Италии и Российской Федерации,  а также стало ответом на уже существующую в Милане станцию “Moscova”.'
 }), /*#__PURE__*/react.createElement(Q_Image, {
   width: 9,
   height: 40,
   margin: 5,
-  url: bibliotekaLenina_img01_namespaceObject
+  url: rimskay_img01_namespaceObject
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'История станции',
-  text: 'Физически станция располагается прямо под Моховой улицей, что заметно усложнило процесс работы над ней. Так станция получила уникальную по тем времена конструкцию — односводчатую мелкого заложения. То есть для строительства станции не вырывали котлован, так как нельзя было перекрывать центральную улицу столицы, а работали под тонким слоем грунта, всего 3 метра от поверхности. Кроме того появилосбь еще и ограничение в ширину улицы, поэтому перед архитекторами и инженерами стояла сложная задача — сделать маленькую станцию — широкой и величественной.'
+  heading: 'Инженерное',
+  text: 'Станция - колонная трехсводчатая глубоко заложения, по конструкции напоминает Маяковскую, но у нее отсутсвуют подплатформенные помещение в среднем зале и конструкция опирается на сплошной монолит. Однако, нововведение не прижилось и такая конструктивная особенность не встречается больше ни на одной станции московского метро. '
 }), /*#__PURE__*/react.createElement(Q_Image, {
   width: 12,
   height: 40,
   margin: 4,
-  url: bibliotekaLenina_img02_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: "\u0410\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440\u043E\u043C \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0432\u044B\u0441\u0442\u0443\u043F\u0438\u043B\u0438 \u0410.\u0418. \u0413\u043E\u043D\u0446\u043A\u0435\u0432\u0438\u0447 \u0438\xA0\u0421.\xA0\u0421\u0443\u043B\u0438\u043D. \u041F\u043E\xA0\u0438\u0445\xA0\u0437\u0430\u0434\u0443\u043C\u043A\u0435, \u043E\u0434\u043D\u043E\u0441\u0432\u043E\u0434\u0447\u0430\u0442\u0430\u044F \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u044C \u0441\u0442\u0430\u043D\u0446\u0438\u044E, \u0430\xA0\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0432\u043E\u0430\u043D\u0438\u0435 \u0431\u0435\u043B\u044B\u0445 \u0438\xA0\u0442\u0435\u043F\u043B\u044B\u0445 \u0442\u043E\u043D\u043E\u0432 \u043F\u0440\u0438\u0437\u0432\u0430\u0442\u044C \u043A\xA0\u0447\u0443\u0432\u0441\u0442\u0432\u0443 \u0443\u044E\u0442\u0430 \u0438\xA0\u0441\u043F\u043E\u0441\u043E\u0439\u0441\u0442\u0432\u0438\u044F. \u0418\xA0\u043F\u0440\u0430\u0432\u0434\u0430, \u0435\u0441\u043B\u0438 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043D\u0430\xA0\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0438 1935 \u0433\u043E\u0434\u0430\xA0\u2014 \u0441\u0442\u0430\u043D\u0446\u0438\u044F \u043A\u0430\u0436\u0435\u0442\u0441\u044F \u043E\u0447\u0435\u043D\u044C \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0437\u0430\xA0\u0441\u0447\u0435\u0442 \u043E\u0442\u0441\u0443\u0442\u0441\u0432\u0438\u044F \u043A\u0430\u043A\u0438\u0445-\u043B\u0438\u0431\u043E \u043F\u0440\u0435\u0433\u0440\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0432\xA0\u0446\u0435\u043D\u0442\u0440\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B.\u041E\u0434\u043D\u0430\u043A\u043E \u0443\u0436\u0435 \u0432\xA01937 \u0433\u043E\u0434\u0443 \u0437\u0430\u0434\u0443\u043C\u043A\u0430 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u0440\u0430\u0437\u0440\u0443\u0448\u0438\u043B\u0430\u0441\u044C. \u0414\u043B\u044F \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u043F\u0435\u0440\u0435\u0441\u0430\u0434\u043E\u043A \u043D\u0430\xA0\u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0431\u044B\u043B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D \u043F\u0440\u044F\u043C\u043E\u0439 \u043F\u0435\u0440\u0435\u0445\u043E\u0434 \u043D\u0430\xA0\u0441\u0442\u0430\u043D\u0446\u0438\u044E \xAB\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430\xBB (\u043D\u044B\u043D\u0435\u0448\u043D\u0438\u0439 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u0441\u0430\u0434) \u043F\u0440\u044F\u043C\u043E \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B, \u0447\u0442\u043E \u0441\u0445\u043B\u043E\u043F\u043D\u0443\u043B\u043E \u0432\u0441\u0451 \u0432\u0435\u043B\u0438\u0447\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438. \u041A\xA0\u0442\u043E\u043C\u0443\xA0\u0436\u0435 \u043F\u0435\u0440\u0435\u0441\u0430\u0434\u043A\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u043B\u0430 \u043E\u0434\u0438\u043D\u043E\u0447\u043D\u044B\u0439 \u043A\u043E\u0440\u0438\u0434\u043E\u0440 \u0432\xA0\u043C\u0438\u0440 \u0437\u043D\u0430\u043D\u0438\u0439 \u0432\xA0\u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u044B\u0439 \u0443\u0437\u0435\u043B. \u0410\xA0\u0432\xA01953 \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F \u0442\u043E\u0442 \u0441\u0430\u043C\u044B\u0439 \u0437\u0430\u043F\u0443\u0442\u0430\u043D\u044B\u0439 \u0430\u0432\u0430\u043D\u0437\u0430\u043B, \u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0432\u0448\u0438\u0439 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438 \u0441\u0430\u0434, \u0410\u0440\u0431\u0442\u0430\u0441\u043A\u0443\u044E \u0438\xA0\u0411\u0438\u0431\u0438\u043B\u043E\u0438\u0442\u0435\u043A\u0443 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430."
+  url: rimskay_img02_namespaceObject
 }), /*#__PURE__*/react.createElement(StationAccentLine, {
-  BGUrl: bibliotekaLeninaLine_namespaceObject,
-  heading: 'Вам никогда не казалось странным, что у Библиотеки им. Ленина такое длинное название?'
+  BGUrl: rimskayLine_namespaceObject,
+  heading: 'В разработке дизайна станции принимали участия итальянские архитекторов, из-за чего станция стала натуральным порталом в Рим. '
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: 'При открытии у Билиотеки было два наземных вестибюля: восточный, выходящий к главному входу в здание Библиотеки имнеи Ленина, и западный, ближе к центру Моховой улицы и дому Пашкова.'
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Архитектура',
-  text: 'Архитектурой восточного вестибюля занимались П.П. Файдыш и С.П. Лавров. Их задачей было максимально аккуратно вписать здание в стилистику самой Библиотеки, что у них успешно получилось. Те же колонны, бетонное величие и грубая буква М. '
+  heading: 'Искусство',
+  text: 'В проектировании художественного оформления станции принимали участие итальянские архитекторы Джампаоло Имбриги  и Андреа Куатрокки. Для отделки пилонов и колонн использованы мраморы различных пород. Пилоны станции облицованы серым мрамором. Пол выложен чёрным, красным и серым гранитом. Во многом это отсылает к цветам оформления станции Moscova в Милане. '
 }), /*#__PURE__*/react.createElement(Q_Image, {
   width: 12,
   height: 40,
   margin: 4,
-  url: bibliotekaLenina_img03_namespaceObject
+  url: rimskay_img03_namespaceObject
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: 'От западного вестибюля ожидали совршенно другого настроение, ближе к чему-то элегантному и аккуратному. Эту задачу отдали архитекторам С.М. Кравецу и А.И. Соколову. Они также удачно справились с этим, сделав основной изюмникой вестибюля — окна. Рама окон выполнена из металла с интересной интерпретацией буквы М посередине. Изначально окна были выполнены из темного материала и затонированы, но после реконскции они преобрели светлый и более открытый вид.'
+  text: 'Основными акцентами на станции являются фигуры. Композиции “Фонтан” и 4 медальона, выполненные скульптором Л.Л.Берлин. Композиция с фонтаном и младенцами Ромулом и Ремом располагается при выходе в вестибюль( в сторону 2 выхода). Фонтан-водопад выполнен из черного гранита и работает ежедневно с открытия и до закрытия метрополитена. Скульптурная группа с основателями Рима выполнена из майолика, а если порассматривать колонну, то можно найти записи о перевозке композиции в Москву и подпись автора. 4 медальона размещаются в разных частях платформы'
 }), /*#__PURE__*/react.createElement(Q_Image, {
   width: 12,
   height: 40,
   margin: 4,
-  url: bibliotekaLenina_img04_namespaceObject
+  url: rimskay_img04_namespaceObject
 }), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Потерянные вестибюли',
-  text: 'Но и вестибюлями станцию начали обделять. В 1970-х восточный вестибюль снесли в угоду более удобного передвижение на площади перед Библиотекой. А в 1984 году западный вестибюль переделали во вход на станцию Боровицкая. Тем самым сейчас у Библиотеки нет ни наземного входа. '
+  text: 'Вариация на тему “Мадонна с младенцем”. Располагается над переходом на станцию “Площадь Ильича”. Также выполнена из майолика, а на рамке написаны слова из молитвы Пресвятой Богородице на латинском языке. '
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  text: '“Уста Истины”. Вольная интерпретация мраморной плиты располагаетс яна этой же стене, но с противоположной стороны. Лучше всего ее можно расмотреть при переходе с “Площади Ильича” на “Римскую”. По краям круглой окантовки также можно увидеть изречение на латинском языке. На русский оно переводится, как "Излишняя предосторожность никогда не повредит обществу'
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  text: 'Миниатюра с ангелами находится в конце перехода на “Площадь Ильича”'
+}), /*#__PURE__*/react.createElement(ArticleChapter, {
+  text: 'Капитолийская волчица располагается над входом на станцию со стороны подземного вестибюля. Сюжет все также отсылает к дегенде об остнователях Рима. '
 }), /*#__PURE__*/react.createElement(W_ImagesRow, {
   width_1: 8,
   width_2: 7,
   height: 30,
-  url_1: bibliotekaLenina_img05_namespaceObject,
-  url_2: bibliotekaLenina_img06_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Потерянные вестибюли',
-  text: 'Так с течением времени, изначальная задумка станции, как коридора в мир библиотеки полностью истощилась. Почему так произошло? Основной причиной можно назвать недальнозоркость инженеров при проектировке станции в 30-х годах. При проектировании рассчитывалось, что пассажиропоток на станции будет небольшим. Ведь это просто станция для библиотеки. Но удобство ее расположения сыграло против нее. Станция располагающая почти в центре Москвы не могла не стать важным транспортным узлом, особенно когда вокруг нее настроили еще станции. Сейчас транспортный узел Александровский сад — Боровицкая — Арбатская — Библиотека им.Ленина — самый сложный в Москве. Компановка станций не позволяет сделать удобные переходы, из-за чего приходится жертвовать даже станция первой очереди.'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 15,
-  height: 40,
-  margin: 2,
-  url: bibliotekaLenina_img07_namespaceObject
+  url_1: rimskay_img05_namespaceObject,
+  url_2: rimskay_img06_namespaceObject
 }), /*#__PURE__*/react.createElement(MaybeInterestingCards, {
   start_number: 2,
   end_number: 5

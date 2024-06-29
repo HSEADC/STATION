@@ -674,24 +674,18 @@ var stations = [{
   link: '/rimskay.html'
 }, {
   id: 3,
-  name: 'Менделеевская',
-  line_1: 'Серпуховско-тимирязевская',
-  color: 'serpy',
-  link: '/mendeleevskay.html'
-}, {
-  id: 4,
   name: 'Рижская',
   line_1: 'Калужско-Рижская',
   color: 'kalug',
   link: '/rizchskay.html'
 }, {
-  id: 5,
+  id: 4,
   name: 'Пыхтино',
   line_1: 'Калининская',
   color: 'solnc',
   link: '/pychtino.html'
 }, {
-  id: 6,
+  id: 5,
   name: 'Сокольники',
   line_1: 'Сокольническая',
   color: 'sokol',
@@ -699,12 +693,12 @@ var stations = [{
 }];
 var data_articles = [{
   id: 0,
-  name: 'Подземные секреты ',
-  line_1: 'Искусство',
+  name: 'Подземные секреты',
+  line_1: 'Архитектура ',
   line_2: '',
   line_3: '',
-  color: 'art',
-  link: '/',
+  color: 'arch',
+  link: '/secrets.html',
   type: 'article'
 }, {
   id: 1,
@@ -713,34 +707,97 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/',
+  link: '/troika.html',
   type: 'article'
 }, {
   id: 2,
-  name: 'Древние находки в метро',
-  line_1: 'Архитектура',
+  name: 'Метро в кино ',
+  line_1: 'Искусство',
   line_2: 'История',
   line_3: '',
-  color: 'arch',
-  link: '/',
+  color: 'art',
+  link: '/cinema.html',
   type: 'article'
 }, {
   id: 3,
-  name: 'Метро в кино',
-  line_1: 'Искусство',
+  name: 'Лайфхаки при пересадках ',
+  line_1: 'Лайфхаки',
   line_2: '',
   line_3: '',
-  color: 'art',
-  link: '/',
+  color: 'life',
+  link: '/peresadki.html ',
   type: 'article'
 }, {
   id: 4,
-  name: 'Новые поезда Замоскворецкой',
+  name: 'Новые поезда Замоскво- рецкой',
   line_1: 'Инфоструктура',
   line_2: '',
   line_3: '',
   color: 'info',
-  link: '/',
+  link: '/new_trains.html',
+  type: 'news'
+}, {
+  id: 5,
+  name: 'Нина Алешина – мать мтерополитена ',
+  line_1: 'История',
+  line_2: '',
+  line_3: '',
+  color: 'hist',
+  link: '/nina.html ',
+  type: 'article'
+}, {
+  id: 6,
+  name: 'Что такое плывуны и чем они опасны для метро? ',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/swimmer.html ',
+  type: 'article'
+}, {
+  id: 7,
+  name: 'Нью Лук для салатовой ветки ',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/new_look.html',
+  type: 'news'
+}, {
+  id: 8,
+  name: 'Ваши дела закрыты!',
+  line_1: 'Инфоструктура',
+  line_2: '',
+  line_3: '',
+  color: 'info',
+  link: '/dela.html ',
+  type: 'news'
+}, {
+  id: 9,
+  name: 'Научная конференция в метро',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/science.html',
+  type: 'article'
+}, {
+  id: 10,
+  name: 'Новый запахи в метро',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/zapach.html',
+  type: 'article'
+}, {
+  id: 11,
+  name: 'Открыто тестирование новой тройки',
+  line_1: 'Технологии',
+  line_2: '',
+  line_3: '',
+  color: 'tech',
+  link: '/test_troika.html',
   type: 'news'
 }];
 var chronology = [{
