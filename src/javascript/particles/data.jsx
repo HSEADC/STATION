@@ -4,42 +4,42 @@ export const stations = [
     name: 'Библиотека им.Ленина',
     line_1: 'Сокольническая',
     color: 'sokol',
-    link: './biblioteka_lenina.html'
+    link: '../biblioteka_lenina.html'
   },
   {
     id: 1,
     name: 'Маяковская',
     line_1: 'Замоскворецкая',
     color: 'zamos',
-    link: '/maykovskay.html'
+    link: './maykovskay.html'
   },
   {
     id: 2,
     name: 'Римская',
     line_1: 'Люблинско-дмитровская',
     color: 'lubli',
-    link: '/rimskay.html'
+    link: './rimskay.html'
   },
   {
     id: 3,
     name: 'Рижская',
     line_1: 'Калужско-Рижская',
     color: 'kalug',
-    link: '/rizchskay.html'
+    link: './rizchskay.html'
   },
   {
     id: 4,
     name: 'Пыхтино',
     line_1: 'Калининская',
     color: 'solnc',
-    link: '/pychtino.html'
+    link: './pychtino.html'
   },
   {
     id: 5,
     name: 'Сокольники',
     line_1: 'Сокольническая',
     color: 'sokol',
-    link: '/sokolniki.html'
+    link: './sokolniki.html'
   }
 ]
 
@@ -51,7 +51,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'arch',
-    link: '/secrets.html',
+    link: './secrets.html',
     type: 'article'
   },
   {
@@ -61,7 +61,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/troika.html',
+    link: './troika.html',
     type: 'article'
   },
   {
@@ -71,7 +71,7 @@ export const articles = [
     line_2: 'История',
     line_3: '',
     color: 'art',
-    link: '/cinema.html',
+    link: './cinema.html',
     type: 'article'
   },
   {
@@ -81,7 +81,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'life',
-    link: '/peresadki.html ',
+    link: './peresadki.html ',
     type: 'article'
   },
   {
@@ -91,7 +91,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'info',
-    link: '/new_trains.html',
+    link: './new_trains.html',
     type: 'news'
   },
   {
@@ -101,7 +101,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'hist',
-    link: '/nina.html ',
+    link: './nina.html ',
     type: 'article'
   },
   {
@@ -111,7 +111,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/swimmer.html ',
+    link: './swimmer.html ',
     type: 'article'
   },
   {
@@ -121,7 +121,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/new_look.html',
+    link: './new_look.html',
     type: 'news'
   },
   {
@@ -131,7 +131,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'info',
-    link: '/dela.html ',
+    link: './dela.html ',
     type: 'news'
   },
   {
@@ -141,7 +141,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/science.html',
+    link: './science.html',
     type: 'article'
   },
   {
@@ -151,7 +151,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/zapach.html',
+    link: './zapach.html',
     type: 'article'
   },
   {
@@ -161,7 +161,7 @@ export const articles = [
     line_2: '',
     line_3: '',
     color: 'tech',
-    link: '/test_troika.html',
+    link: './test_troika.html',
     type: 'news'
   }
 ]

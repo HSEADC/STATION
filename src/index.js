@@ -117,7 +117,11 @@ root.render(
               </p>
             </div>
           </div>
-          <Button text={'читать'} arrow={'up'} linking={''} />
+          <Button
+            text={'читать'}
+            arrow={'up'}
+            linking={'./biblioteka_lenina.html'}
+          />
         </div>
       </div>
     </div>

@@ -671,37 +671,37 @@ var data_stations = [{
   name: 'Библиотека им.Ленина',
   line_1: 'Сокольническая',
   color: 'sokol',
-  link: './biblioteka_lenina.html'
+  link: '../biblioteka_lenina.html'
 }, {
   id: 1,
   name: 'Маяковская',
   line_1: 'Замоскворецкая',
   color: 'zamos',
-  link: '/maykovskay.html'
+  link: './maykovskay.html'
 }, {
   id: 2,
   name: 'Римская',
   line_1: 'Люблинско-дмитровская',
   color: 'lubli',
-  link: '/rimskay.html'
+  link: './rimskay.html'
 }, {
   id: 3,
   name: 'Рижская',
   line_1: 'Калужско-Рижская',
   color: 'kalug',
-  link: '/rizchskay.html'
+  link: './rizchskay.html'
 }, {
   id: 4,
   name: 'Пыхтино',
   line_1: 'Калининская',
   color: 'solnc',
-  link: '/pychtino.html'
+  link: './pychtino.html'
 }, {
   id: 5,
   name: 'Сокольники',
   line_1: 'Сокольническая',
   color: 'sokol',
-  link: '/sokolniki.html'
+  link: './sokolniki.html'
 }];
 var data_articles = [{
   id: 0,
@@ -710,7 +710,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'arch',
-  link: '/secrets.html',
+  link: './secrets.html',
   type: 'article'
 }, {
   id: 1,
@@ -719,7 +719,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/troika.html',
+  link: './troika.html',
   type: 'article'
 }, {
   id: 2,
@@ -728,7 +728,7 @@ var data_articles = [{
   line_2: 'История',
   line_3: '',
   color: 'art',
-  link: '/cinema.html',
+  link: './cinema.html',
   type: 'article'
 }, {
   id: 3,
@@ -737,7 +737,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'life',
-  link: '/peresadki.html ',
+  link: './peresadki.html ',
   type: 'article'
 }, {
   id: 4,
@@ -746,7 +746,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'info',
-  link: '/new_trains.html',
+  link: './new_trains.html',
   type: 'news'
 }, {
   id: 5,
@@ -755,7 +755,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'hist',
-  link: '/nina.html ',
+  link: './nina.html ',
   type: 'article'
 }, {
   id: 6,
@@ -764,7 +764,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/swimmer.html ',
+  link: './swimmer.html ',
   type: 'article'
 }, {
   id: 7,
@@ -773,7 +773,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/new_look.html',
+  link: './new_look.html',
   type: 'news'
 }, {
   id: 8,
@@ -782,7 +782,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'info',
-  link: '/dela.html ',
+  link: './dela.html ',
   type: 'news'
 }, {
   id: 9,
@@ -791,7 +791,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/science.html',
+  link: './science.html',
   type: 'article'
 }, {
   id: 10,
@@ -800,7 +800,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/zapach.html',
+  link: './zapach.html',
   type: 'article'
 }, {
   id: 11,
@@ -809,7 +809,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: '/test_troika.html',
+  link: './test_troika.html',
   type: 'news'
 }];
 var chronology = [{
@@ -1329,7 +1329,7 @@ root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE_
 }, /*#__PURE__*/react.createElement("p", null, "C\u0442\u0430\u043D\u0446\u0438\u044F \u043F\u0435\u0440\u0432\u043E\u0439 \u043E\u0447\u0435\u0440\u0435\u0434\u0438 \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u0430\u044F 15 \u043C\u0430\u044F 1935 \u0433\u043E\u0434\u0443."), /*#__PURE__*/react.createElement("p", null, "\u041E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u043F\u043E\u0441\u0432\u044F\u0449\u0435\u043D\u043E \u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0435 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430 ( \u043D\u044B\u043D\u044F\u0448\u043D\u044F\u044F \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0430\u044F \u0433\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430)."))), /*#__PURE__*/react.createElement(Button, {
   text: 'читать',
   arrow: 'up',
-  linking: ''
+  linking: './biblioteka_lenina.html'
 })))), /*#__PURE__*/react.createElement("div", {
   "class": "Q_RunningLine"
 }, /*#__PURE__*/react.createElement("video", {
