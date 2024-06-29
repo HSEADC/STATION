@@ -532,6 +532,19 @@ var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(745);
 ;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -543,11 +556,22 @@ function Menu(_ref) {
       activeTag1 = _ref.activeTag1,
       activeTag2 = _ref.activeTag2,
       activeTag3 = _ref.activeTag3;
-  return /*#__PURE__*/react.createElement("div", {
+  var mainpage = './';
+
+  var _useState = (0,react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isBurgerMenuVisible = _useState2[0],
+      setIsBurgerMenuVisible = _useState2[1];
+
+  var toggleBurgerMenu = function toggleBurgerMenu() {
+    setIsBurgerMenuVisible(!isBurgerMenuVisible);
+  };
+
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
     className: "W_Menu"
   }, /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint",
-    href: "./"
+    href: mainpage
   }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Logo menu",
     id: "Q_Logo_Menu",
@@ -565,13 +589,22 @@ function Menu(_ref) {
     className: "A_Point".concat(activeTag3)
   }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))), /*#__PURE__*/react.createElement("div", {
     className: "Q_Burger",
+    onClick: toggleBurgerMenu,
     alt: ""
   }), /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint"
   }, /*#__PURE__*/react.createElement("div", {
     className: "Q_Search",
     alt: ""
-  })));
+  }))), isBurgerMenuVisible && /*#__PURE__*/react.createElement("div", {
+    className: "M_BurgerMenu"
+  }, /*#__PURE__*/react.createElement("a", {
+    href: "./CategoryChrono.html"
+  }, /*#__PURE__*/react.createElement("p", null, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F")), /*#__PURE__*/react.createElement("a", {
+    href: "./\u0421ategoryStations.html"
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438")), /*#__PURE__*/react.createElement("a", {
+    href: "./CategoryArticles.html"
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))));
 }
 
 /* harmony default export */ const menu = (Menu);
@@ -587,41 +620,41 @@ var data_stations = [{
   name: 'Маяковская',
   line_1: 'Замоскворецкая',
   color: 'zamos',
-  link: '/'
+  link: '/maykovskay.html'
 }, {
   id: 2,
   name: 'Римская',
   line_1: 'Люблинско-дмитровская',
   color: 'lubli',
-  link: '/'
+  link: '/rimskay.html'
 }, {
   id: 3,
-  name: 'Площадь Революции',
-  line_1: 'Арбатско-покровская',
-  color: 'arbat',
-  link: '/'
+  name: 'Менделеевская',
+  line_1: 'Серпуховско-тимирязевская',
+  color: 'serpy',
+  link: '/mendeleevskay.html'
 }, {
   id: 4,
-  name: 'Третьяковская',
+  name: 'Рижская',
   line_1: 'Калужско-Рижская',
   color: 'kalug',
-  link: '/'
+  link: '/rizchskay.html'
 }, {
   id: 5,
-  name: 'Павелецкая',
-  line_1: 'Кольцевая',
-  color: 'kolic',
-  link: '/'
+  name: 'Пыхтино',
+  line_1: 'Калининская',
+  color: 'solnc',
+  link: '/pychtino.html'
 }, {
   id: 6,
   name: 'Сокольники',
   line_1: 'Сокольническая',
   color: 'sokol',
-  link: '/'
+  link: '/sokolniki.html'
 }];
 var data_articles = [{
   id: 0,
-  name: 'Некрасовка и рыбки',
+  name: 'Подземные секреты ',
   line_1: 'Искусство',
   line_2: '',
   line_3: '',
@@ -733,6 +766,7 @@ var chronology = [{
 
 
 
+
 function Button(_ref) {
   var text = _ref.text,
       arrow = _ref.arrow,
@@ -773,6 +807,7 @@ function button_BackButton(_ref2) {
 ;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
 const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
 ;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
+
 
 
 
@@ -953,6 +988,7 @@ function MaybeInterestingCardsArticles(_ref8) {
 
 
 
+
 function SectionHeading(_ref) {
   var heading = _ref.heading,
       description = _ref.description,
@@ -995,6 +1031,7 @@ function StationAccentLine(_ref3) {
   }, /*#__PURE__*/React.createElement("h3", null, heading));
 }
 ;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
+
 
 
 function Q_Image(_ref) {
@@ -1057,6 +1094,7 @@ function W_ImagesRow(_ref2) {
 
 
 
+
 function Footer() {
   return /*#__PURE__*/react.createElement("div", {
     className: "O_Footer"
@@ -1105,6 +1143,7 @@ function Footer() {
 
 
 
+
 function StationList(_ref) {
   var ArticleCard_text = _ref.ArticleCard_text,
       ArticleCard_link = _ref.ArticleCard_link,
@@ -1137,17 +1176,18 @@ const StationOfTheDay_bg_namespaceObject = __webpack_require__.p + "images/4d2c8
 ;// CONCATENATED MODULE: ./src/images/stations/bg_big_card.jpg
 const bg_big_card_namespaceObject = __webpack_require__.p + "images/2408b1b44ed714fc4484.jpg";
 ;// CONCATENATED MODULE: ./src/javascript/pages/stations.js
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function stations_slicedToArray(arr, i) { return stations_arrayWithHoles(arr) || stations_iterableToArrayLimit(arr, i) || stations_unsupportedIterableToArray(arr, i) || stations_nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function stations_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function stations_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return stations_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return stations_arrayLikeToArray(o, minLen); }
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function stations_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function stations_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function stations_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -1165,12 +1205,12 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function FullPage() {
   var _useState = (0,react.useState)(undefined),
-      _useState2 = _slicedToArray(_useState, 2),
+      _useState2 = stations_slicedToArray(_useState, 2),
       typeOfFilter = _useState2[0],
       setTypeOfFilter = _useState2[1];
 
   var _useState3 = (0,react.useState)(''),
-      _useState4 = _slicedToArray(_useState3, 2),
+      _useState4 = stations_slicedToArray(_useState3, 2),
       activeFilter = _useState4[0],
       setActiveFilter = _useState4[1];
 
