@@ -29,8 +29,8 @@ root.render(
     <Menu activeTag1={''} activeTag2={''} activeTag3={''} />
     <StationHeading
       BGUrl={Heading}
-      station={'Рижская'}
-      line={'Калужско-Рижская'}
+      station={'Сокольники'}
+      line={'Сокольническая'}
     />
     <ArticleChapter
       heading={'Когда станция открылась?'}

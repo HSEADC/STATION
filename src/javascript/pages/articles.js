@@ -169,7 +169,7 @@ function FullPage() {
             size={'large'}
             text={'Новые поезда на Замоскворецкой'}
             bg_image={NewsCard_BG}
-            linking={''}
+            linking={'./new_trains.html'}
             text_color={'white'}
           />
           <ArticlesList type={'news'} filter={filter} />

@@ -35,7 +35,7 @@ function FullPage() {
         <SectionHeading heading={'Станции'} id="Station" />
       </div>
       <div>
-        <StOfTheDay station={'Люблино'} BGUrl={StOfTheDay_BG} />
+        <StOfTheDay station={'Библиотека им.Ленина'} BGUrl={StOfTheDay_BG} />
         <div className="M_FiltersPoints">
           <div className="M_FiltersPoints_inside" id="category_filter_scroll">
             <div

@@ -18,7 +18,16 @@ module.exports = {
     page_maykovskay: './src/javascript/pages/maykovskay.js',
     page_rimskay: './src/javascript/pages/rimskay.js',
     page_pychtino: './src/javascript/pages/pychtino.js',
-    peresadki: './src/javascript/pages/article_peresadki.js'
+    page_sokolniki: './src/javascript/pages/sokolniki.js',
+    page_mendeleevskay: './src/javascript/pages/mendeleevskay.js',
+    page_rizchskay: './src/javascript/pages/rizchskay.js',
+    peresadki: './src/javascript/pages/article_peresadki.js',
+    cinema: './src/javascript/pages/cinema.js',
+    nina: './src/javascript/pages/nina.js',
+    secrets: './src/javascript/pages/secrets.js',
+    swimmer: './src/javascript/pages/swimmer.js',
+    troika: './src/javascript/pages/troika.js',
+    new_trains: './src/javascript/pages/new_trains.js'
   },
   output: {
     filename: '[name].js',
@@ -160,9 +169,79 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/pages/news/new_trains.html',
+      filename: './new_trains.html',
+      chunks: ['new_trains']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/rizchskay.html',
+      filename: './rizchskay.html',
+      chunks: ['page_rizchskay']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/mendeleevskay.html',
+      filename: './mendeleevskay.html',
+      chunks: ['page_mendeleevskay']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/sokolniki.html',
+      filename: './sokolniki.html',
+      chunks: ['page_sokolniki']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/pages/articles/peresadki.html',
       filename: './peresadki.html',
       chunks: ['peresadki']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/cinema.html',
+      filename: './cinema.html',
+      chunks: ['cinema']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/nina.html',
+      filename: './nina.html',
+      chunks: ['nina']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/secrets.html',
+      filename: './secrets.html',
+      chunks: ['secrets']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/peresadki.html',
+      filename: './peresadki.html',
+      chunks: ['peresadki']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/swimmer.html',
+      filename: './swimmer.html',
+      chunks: ['swimmer']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/articles/troika.html',
+      filename: './troika.html',
+      chunks: ['troika']
     })
   ],
   optimization: {
