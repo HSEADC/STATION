@@ -12,7 +12,7 @@ module.exports = {
     stations: './src/javascript/pages/stations.js',
     chronology: './src/javascript/pages/chrono.js',
     articles: './src/javascript/pages/articles.js',
-    // styleguide: './src/javascript/pages/styleguide.js',
+    styleguide: './src/javascript/pages/styleguide.js',
     // aboutus: './src/javascript/pages/aboutus.js',
     page_biblioteka: './src/javascript/pages/biblioteka_lenina.js',
     page_maykovskay: './src/javascript/pages/maykovskay.js',
@@ -125,8 +125,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/Styleguide.html',
-      filename: './Styleguide.html',
+      template: './src/pages/styleguide.html',
+      filename: './styleguide.html',
       chunks: ['styleguide']
     }),
     new HtmlWebpackPlugin({

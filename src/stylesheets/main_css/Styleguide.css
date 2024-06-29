@@ -22,4 +22,15 @@
   font-weight: bolder;
   font-style: italic;
 }
+
+@import '../reset.scss';
+@import '../vars.scss';
+@import '../fonts.scss';
+@import '../basics.scss';
+@import '../components/quarks.scss';
+@import '../components/atoms.scss';
+@import '../components/molecules.scss';
+@import '../components/wrappers.scss';
+@import '../components/organism.scss';
 @import '../adaptives/adaptive.scss';
+@import '../pages/styleguide.scss';

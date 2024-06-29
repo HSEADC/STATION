@@ -331,21 +331,6 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!ol(c))throw Er
 
 /***/ }),
 
-/***/ 745:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-var __webpack_unused_export__;
-
-
-var m = __webpack_require__(3935);
-if (true) {
-  exports.s = m.createRoot;
-  __webpack_unused_export__ = m.hydrateRoot;
-} else { var i; }
-
-
-/***/ }),
-
 /***/ 3935:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -529,736 +514,328 @@ var __webpack_exports__ = {};
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(745);
-;// CONCATENATED MODULE: ./src/javascript/particles/text.jsx
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+var react_dom = __webpack_require__(3935);
+;// CONCATENATED MODULE: ./src/images/styleguide/bg_with_logo_main.svg
+const bg_with_logo_main_namespaceObject = __webpack_require__.p + "images/5eb1befb4cf5a37a7007.svg";
+;// CONCATENATED MODULE: ./src/images/styleguide/about_card.jpg
+const about_card_namespaceObject = __webpack_require__.p + "images/29c48c596df551f759a4.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_logo_02.png
+const logotype_logo_02_namespaceObject = __webpack_require__.p + "images/ba7129a4fad43f7f5384.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_logo_01.png
+const logotype_logo_01_namespaceObject = __webpack_require__.p + "images/3651bc5f99a66c14511b.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_logo_03.png
+const logotype_logo_03_namespaceObject = __webpack_require__.p + "images/5a583b62a6142a331b03.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logo_sem_img.png
+const logo_sem_img_namespaceObject = __webpack_require__.p + "images/e6ca81961f064c3b3a1d.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_usage.png
+const logotype_usage_namespaceObject = __webpack_require__.p + "images/3e40b72637d634a48f37.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_no_01.png
+const logotype_no_01_namespaceObject = __webpack_require__.p + "images/a6508a77a0009796cb39.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_no_02.png
+const logotype_no_02_namespaceObject = __webpack_require__.p + "images/c29fcafc3c5ea1d42bb1.png";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_no_201.svg
+const logotype_no_201_namespaceObject = __webpack_require__.p + "images/db4f6a9b17646d5f86b8.svg";
+;// CONCATENATED MODULE: ./src/images/styleguide/logotype_no_202.svg
+const logotype_no_202_namespaceObject = __webpack_require__.p + "images/a9281221dcbd011a8747.svg";
+;// CONCATENATED MODULE: ./src/images/styleguide/colors.svg
+const colors_namespaceObject = __webpack_require__.p + "images/4de5a26b6c7e9af4bbab.svg";
+;// CONCATENATED MODULE: ./src/images/styleguide/typo_card.svg
+const typo_card_namespaceObject = __webpack_require__.p + "images/1e9a4b2f4639cb4ca678.svg";
+;// CONCATENATED MODULE: ./src/images/styleguide/comp_1.jpg
+const comp_1_namespaceObject = __webpack_require__.p + "images/33f972a7aa0e3070567a.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/comp_2.jpg
+const comp_2_namespaceObject = __webpack_require__.p + "images/046fc462701f7f5e5f0f.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_01.jpg
+const merch_img_01_namespaceObject = __webpack_require__.p + "images/5bda390b3d457013eb56.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_02.jpg
+const merch_img_02_namespaceObject = __webpack_require__.p + "images/a2f8637b025593cc5069.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_03.jpg
+const merch_img_03_namespaceObject = __webpack_require__.p + "images/632cb0fe9a9d2d5c3ca9.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_04.jpg
+const merch_img_04_namespaceObject = __webpack_require__.p + "images/26c5cfb322084908285f.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_05.jpg
+const merch_img_05_namespaceObject = __webpack_require__.p + "images/429ace478ee8845a2460.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_06.jpg
+const merch_img_06_namespaceObject = __webpack_require__.p + "images/6ca01c07545eb475fb28.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_07.jpg
+const merch_img_07_namespaceObject = __webpack_require__.p + "images/7623c2bfd7557e356e8b.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_08.jpg
+const merch_img_08_namespaceObject = __webpack_require__.p + "images/481f787af4bfeefd722f.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_09.jpg
+const merch_img_09_namespaceObject = __webpack_require__.p + "images/2256384f69ec885ae511.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_10.jpg
+const merch_img_10_namespaceObject = __webpack_require__.p + "images/1246a72a8a80f4cf8cd8.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_11.jpg
+const merch_img_11_namespaceObject = __webpack_require__.p + "images/3a9581eda116bff63f64.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/merch_img_12.jpg
+const merch_img_12_namespaceObject = __webpack_require__.p + "images/f08055cca878f1ae201e.jpg";
+;// CONCATENATED MODULE: ./src/images/styleguide/logo_full.svg
+const logo_full_namespaceObject = __webpack_require__.p + "images/db4f6a9b17646d5f86b8.svg";
+;// CONCATENATED MODULE: ./src/javascript/pages/styleguide.js
 
 
 
 
 
 
-function SectionHeading(_ref) {
-  var heading = _ref.heading,
-      description = _ref.description,
-      unactive = _ref.unactive,
-      id = _ref.id,
-      onClick = _ref.onClick;
-  return /*#__PURE__*/React.createElement(React.Fragment, null, !unactive && /*#__PURE__*/React.createElement("div", {
-    "class": "A_SectionHeading",
-    id: id,
-    onClick: onClick
-  }, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("span", null, "\u043E!"), heading)), unactive && /*#__PURE__*/React.createElement("div", {
-    "class": "A_SectionHeading unactive",
-    id: id,
-    onClick: onClick
-  }, /*#__PURE__*/React.createElement("h1", null, /*#__PURE__*/React.createElement("span", null, "\u043E!"), heading)), description && /*#__PURE__*/React.createElement("div", {
-    "class": "A_SectionDescribe"
-  }, /*#__PURE__*/React.createElement("p", null, description)));
-}
-function ArticleChapter(_ref2) {
-  var heading = _ref2.heading,
-      text = _ref2.text;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var StyleGuide = function StyleGuide() {
   return /*#__PURE__*/react.createElement("div", {
-    className: "M_Text"
-  }, /*#__PURE__*/react.createElement("h2", {
-    className: "light"
-  }, heading), /*#__PURE__*/react.createElement("p", {
-    style: {
-      width: "40vw"
-    }
-  }, text));
-}
-function StationAccentLine(_ref3) {
-  var heading = _ref3.heading,
-      BGUrl = _ref3.BGUrl;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "A_StationAccentLine",
-    style: {
-      backgroundImage: "url(".concat(BGUrl, ")")
-    }
-  }, /*#__PURE__*/react.createElement("h3", null, heading));
-}
-;// CONCATENATED MODULE: ./src/javascript/particles/image.jsx
-
-
-
-function Q_Image(_ref) {
-  var width = _ref.width,
-      height = _ref.height,
-      margin = _ref.margin,
-      url = _ref.url;
-  var full_column = 4.7;
-  var gap = 1.2;
-  var width_I = width * full_column - gap;
-  var margin_I = margin * full_column;
-  return /*#__PURE__*/react.createElement("img", {
-    className: "Q_Image",
-    src: "".concat(url),
-    style: {
-      width: "".concat(width_I, "vw"),
-      height: "".concat(height, "vh"),
-      marginLeft: "".concat(margin_I, "vw")
-    }
-  });
-}
-function W_ImagesRow(_ref2) {
-  var width_1 = _ref2.width_1,
-      width_2 = _ref2.width_2,
-      width_3 = _ref2.width_3,
-      height = _ref2.height,
-      url_1 = _ref2.url_1,
-      url_2 = _ref2.url_2,
-      url_3 = _ref2.url_3;
-  var margin_actual;
-
-  if (!width_3) {
-    margin_actual = 2;
-  } else {
-    margin_actual = 0;
-  }
-
-  return /*#__PURE__*/react.createElement("div", {
-    className: "W_ImageRow"
-  }, width_1 && /*#__PURE__*/react.createElement(Q_Image, {
-    width: width_1,
-    height: height,
-    url: url_1,
-    margin: margin_actual
-  }), width_2 && /*#__PURE__*/react.createElement(Q_Image, {
-    width: width_2,
-    height: height,
-    url: url_2
-  }), width_3 && /*#__PURE__*/react.createElement(Q_Image, {
-    width: width_3,
-    height: height,
-    url: url_3
-  }));
-}
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img01.png
-const bibliotekaLenina_img01_namespaceObject = __webpack_require__.p + "images/b0c1af7f39be9662b3db.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img02.png
-const bibliotekaLenina_img02_namespaceObject = __webpack_require__.p + "images/f53c8d43525804c0f392.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img03.png
-const bibliotekaLenina_img03_namespaceObject = __webpack_require__.p + "images/6b85938fe62d2f411101.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img04.png
-const bibliotekaLenina_img04_namespaceObject = __webpack_require__.p + "images/eb3f5447097a45ba98c3.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img05.png
-const bibliotekaLenina_img05_namespaceObject = __webpack_require__.p + "images/6cd9184285f501258b93.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img06.png
-const bibliotekaLenina_img06_namespaceObject = __webpack_require__.p + "images/8eea58dbe1e022d45e90.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLenina_img07.png
-const bibliotekaLenina_img07_namespaceObject = __webpack_require__.p + "images/ca3d600f1484f64be108.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLeninaHeading.png
-const bibliotekaLeninaHeading_namespaceObject = __webpack_require__.p + "images/9077a6456864e0d47208.png";
-;// CONCATENATED MODULE: ./src/images/stations/station_pages/bibliotekaLeninaLine.png
-const bibliotekaLeninaLine_namespaceObject = __webpack_require__.p + "images/80e998130732c35d51ea.png";
-;// CONCATENATED MODULE: ./src/javascript/particles/data.jsx
-var stations = [{
-  id: 0,
-  name: 'Библиотека им.Ленина',
-  line_1: 'Сокольническая',
-  color: 'sokol',
-  link: './biblioteka_lenina.html'
-}, {
-  id: 1,
-  name: 'Маяковская',
-  line_1: 'Замоскворецкая',
-  color: 'zamos',
-  link: '/maykovskay.html'
-}, {
-  id: 2,
-  name: 'Римская',
-  line_1: 'Люблинско-дмитровская',
-  color: 'lubli',
-  link: '/rimskay.html'
-}, {
-  id: 3,
-  name: 'Менделеевская',
-  line_1: 'Серпуховско-тимирязевская',
-  color: 'serpy',
-  link: '/mendeleevskay.html'
-}, {
-  id: 4,
-  name: 'Рижская',
-  line_1: 'Калужско-Рижская',
-  color: 'kalug',
-  link: '/rizchskay.html'
-}, {
-  id: 5,
-  name: 'Пыхтино',
-  line_1: 'Калининская',
-  color: 'solnc',
-  link: '/pychtino.html'
-}, {
-  id: 6,
-  name: 'Сокольники',
-  line_1: 'Сокольническая',
-  color: 'sokol',
-  link: '/sokolniki.html'
-}];
-var data_articles = [{
-  id: 0,
-  name: 'Подземные секреты ',
-  line_1: 'Искусство',
-  line_2: '',
-  line_3: '',
-  color: 'art',
-  link: '/',
-  type: 'article'
-}, {
-  id: 1,
-  name: 'Просто Тройка или что-то поинтереснее?',
-  line_1: 'Технологии',
-  line_2: '',
-  line_3: '',
-  color: 'tech',
-  link: '/',
-  type: 'article'
-}, {
-  id: 2,
-  name: 'Древние находки в метро',
-  line_1: 'Архитектура',
-  line_2: 'История',
-  line_3: '',
-  color: 'arch',
-  link: '/',
-  type: 'article'
-}, {
-  id: 3,
-  name: 'Метро в кино',
-  line_1: 'Искусство',
-  line_2: '',
-  line_3: '',
-  color: 'art',
-  link: '/',
-  type: 'article'
-}, {
-  id: 4,
-  name: 'Новые поезда Замоскворецкой',
-  line_1: 'Инфоструктура',
-  line_2: '',
-  line_3: '',
-  color: 'info',
-  link: '/',
-  type: 'news'
-}];
-var chronology = [{
-  id: 1,
-  date: '1933',
-  heading: 'Проект первоочередных линий',
-  text_1: '13 августа 1933 года в президиум Моссовета был представлен технический проект первоочередных линий метрополитена. К концу года проект был утверждён, и подготовка к строительству начала набирать обороты. Этот документ определял маршруты и основные станции, которые будут построены в первую очередь.',
-  text_2: 'Работа над проектом велась быстро, чтобы как можно скорее начать строительство. Это требовало координации множества специалистов и значительных ресурсов. Несмотря на сложность задач, проект развивался по плану.',
-  text_3: 'Утверждение проекта было важным шагом к созданию метро. Оно позволило перейти от планирования к реальным строительным работам, которые должны были изменить облик Москвы.'
-}, {
-  id: 2,
-  date: '1934',
-  heading: 'Первый пробный поезд',
-  text_1: '15 октября 1934 года на пусковом участке появился первый пробный поезд из двух вагонов. Испытания проводились на участке «Комсомольская» — «Сокольники». Это было важное событие, которое подтвердило готовность метрополитена к дальнейшему строительству.',
-  text_2: 'Испытания прошли успешно, что стало важным шагом к скорому запуску метро. Первый пробный поезд показал, что система работает и готова к эксплуатации. Этот этап был ключевым для дальнейшего развития проекта.',
-  text_3: 'Появление первого поезда стало символом прогресса и уверенности в успешной реализации проекта. Москвичи с нетерпением ждали, когда смогут воспользоваться новым видом транспорта.'
-}, {
-  id: 3,
-  date: '1935',
-  heading: 'Торжественное открытие',
-  text_1: '14 мая 1935 года в Колонном зале Дома Союзов состоялось торжественное заседание, посвящённое пуску метрополитена. Это мероприятие собрало множество людей и стало символом нового этапа в жизни Москвы. Горожане с нетерпением ждали открытия первой линии метро.',
-  text_2: 'Заседание подчеркнуло значимость этого события для всей страны. Руководители города и страны выступили с речами, подчеркивая важность метро для Москвы. Это событие было широко освещено в прессе и вызвало большой интерес у общественности.',
-  text_3: 'Метро стало символом технического прогресса и модернизации города. Его открытие ожидали с большим нетерпением, и это событие стало важной вехой в истории Москвы.'
-}, {
-  id: 4,
-  date: '1935',
-  heading: 'Открытие первого участка',
-  text_1: '15 мая 1935 года открылся первый участок Московского метрополитена для всеобщего пользования. В состав пускового участка длиной 11,2 км вошли 13 станций: «Сокольники», «Красносельская», «Комсомольская», «Красные Ворота», «Кировская» (ныне — «Чистые пруды»), «Дзержинская» (ныне — «Лубянка»), «Охотный Ряд», «Библиотека имени Ленина», «Дворец Советов» (ныне — «Кропоткинская»), «Парк культуры», «Улица Коминтерна» (ныне — «Александровский сад»), «Арбатская» и «Смоленская».',
-  text_2: 'Этот день стал важной вехой в истории города. Открытие метро значительно облегчило передвижение по Москве и улучшило транспортную инфраструктуру. Новые станции быстро стали популярными среди жителей города.',
-  text_3: ''
-}, {
-  id: 5,
-  date: '1935',
-  heading: 'Проезд в метро',
-  text_1: 'В 1935 году стоимость проезда в метро устанавливалась в 50 копеек. Это была доступная цена, позволяющая многим москвичам воспользоваться новым видом транспорта. Стоимость проезда позволяла поддерживать метро в хорошем состоянии и развивать его дальше.',
-  text_2: 'Московское метро стало важной частью городской инфраструктуры. Низкая стоимость проезда сделала его доступным для большинства жителей города. Это способствовало быстрому росту популярности метро.',
-  text_3: 'Благодаря этому метро быстро стало основным видом транспорта для многих москвичей. Его удобство и доступность сделали его незаменимым в повседневной жизни горожан.'
-}, {
-  id: 6,
-  date: '1935',
-  heading: 'Первые поезда',
-  text_1: 'На первом участке Московского метрополитена в 1935 году работали поезда типа А из четырёх вагонов. Это были современные на тот момент поезда, обеспечивающие комфортное и быстрое передвижение по городу. Введение поездов типа А стало первым шагом к развитию обширной сети метро.',
-  text_2: 'Эти поезда стали основой для дальнейшего роста транспортной системы Москвы. Они были оснащены новейшими технологиями и обеспечивали высокий уровень комфорта для пассажиров. Появление таких поездов стало важным этапом в истории метрополитена.',
-  text_3: 'Поезда типа А быстро стали символом надежности и комфорта московского метро. Они обеспечили удобные и быстрые поездки для тысяч москвичей каждый день.'
-}, {
-  id: 7,
-  date: '1936',
-  heading: 'Увеличение состава поездов',
-  text_1: 'В 1936 году составы Московского метрополитена стали шестивагонными. Это позволило увеличить пассажиропоток и повысить удобство для горожан. Увеличение количества вагонов было важным шагом в развитии метро.',
-  text_2: 'Это решение улучшило качество обслуживания пассажиров и ускорило их передвижение по городу. Шестивагонные поезда стали новым стандартом для московского метро. Они обеспечивали большую вместимость и комфорт для пассажиров.',
-  text_3: 'Увеличение числа вагонов в поездах позволило лучше справляться с растущим потоком пассажиров. Это стало важным шагом к улучшению транспортной системы города и повышению её эффективности.'
-}, {
-  id: 8,
-  date: '1937',
-  heading: 'Открытие станции «Киевская»',
-  text_1: '20 марта 1937 года открылась следующая за «Смоленской» станция Московского метрополитена — «Киевская». Перегон «Смоленская» — «Киевская» (ныне относящийся к Филёвской линии) имеет длину 1,3 км и пересекает реку Москву по мосту.',
-  text_2: '«Киевская» стала первой станцией второй очереди метрополитена. Это открытие расширило возможности для пассажиров и улучшило транспортное сообщение в городе. Станция быстро стала одной из важных транспортных узлов Москвы.',
-  text_3: 'Перегон через реку Москву по мосту стал важным инженерным достижением. Он улучшил связь между разными частями города и сделал передвижение по Москве ещё более удобным.'
-}, {
-  id: 9,
-  date: '1938',
-  heading: 'Новые станции и линии',
-  text_1: '13 марта 1938 года открылось движение по участку от «Улицы Коминтерна» до станции «Курская» длиной 2,3 км. Это позволило ликвидировать вилочное движение и организовать раздельное движение по двум радиусам — Кировско-Фрунзенскому и Арбатско-Покровскому.',
-  text_2: 'В этот же день открылась станция «Площадь Революции». Новые станции и линии значительно улучшили транспортную систему Москвы и сделали поездки по городу ещё удобнее. Открытие этих станций стало важным событием для жителей города.',
-  text_3: 'Раздельное движение по двум радиусам улучшило организацию транспортного потока. Это повысило эффективность метро и сделало его ещё более удобным для пассажиров. Новые станции быстро стали популярными и активно использовались москвичами.'
-}];
-;// CONCATENATED MODULE: ./src/javascript/particles/button.jsx
-
-
-
-
-function button_Button(_ref) {
-  var text = _ref.text,
-      arrow = _ref.arrow,
-      linking = _ref.linking;
-  var actual_arrow = "Q_Arrow ".concat(arrow);
-  var linkLong = linking;
-
-  var handleClick = function handleClick() {
-    window.location.href = linkLong;
-  };
-
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
-    className: "A_Button",
-    onClick: handleClick
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "button"
-  }, text), /*#__PURE__*/React.createElement("div", {
-    className: actual_arrow
-  })));
-}
-function button_BackButton(_ref2) {
-  var text = _ref2.text,
-      color = _ref2.color;
-
-  var handleClick = function handleClick() {
-    window.history.back();
-  };
-
-  return /*#__PURE__*/react.createElement("div", {
-    className: "A_SecondaryButton",
-    onClick: handleClick
+    className: "styleguide"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Arrow backDef ".concat(color)
-  }), /*#__PURE__*/react.createElement("p", {
-    className: "button ".concat(color)
-  }, text));
-}
-;// CONCATENATED MODULE: ./src/images/components/wrapped/ChronoCardBg.png
-const ChronoCardBg_namespaceObject = __webpack_require__.p + "images/498ad40775fb1432768a.png";
-;// CONCATENATED MODULE: ./src/javascript/particles/card.jsx
-
-
-
-
-
-
-
-
-
-
-function StationCard(_ref) {
-  var station = _ref.station,
-      color = _ref.color,
-      tag_1_text = _ref.tag_1_text,
-      tag_2_text = _ref.tag_2_text,
-      tag_3_text = _ref.tag_3_text,
-      Station_link = _ref.Station_link;
-  var classForDiv = 'M_Card ' + color;
-
-  var handleClick = function handleClick() {
-    window.location.href = "".concat(Station_link);
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: classForDiv,
-    onClick: handleClick
-  }, /*#__PURE__*/react.createElement("h3", null, station), /*#__PURE__*/react.createElement("div", {
-    className: "W_TagsCollection"
-  }, tag_1_text && /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags secondary"
+    className: "menu"
   }, /*#__PURE__*/react.createElement("p", {
-    className: "mini"
-  }, tag_1_text)))));
-}
-function ArticleCard(_ref2) {
-  var text = _ref2.text,
-      bg_image = _ref2.bg_image,
-      linking = _ref2.linking,
-      size = _ref2.size,
-      text_color = _ref2.text_color;
-  var linkLong = linking;
-  var Card_size = "W_ArticleCard ".concat(size);
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
-    className: Card_size,
-    style: {
-      backgroundImage: "url(".concat(bg_image, ")")
-    }
-  }, /*#__PURE__*/React.createElement("h2", {
-    style: {
-      color: "var(--".concat(text_color, ")")
-    }
-  }, text), /*#__PURE__*/React.createElement(Button, {
-    text: 'читать',
-    arrow: 'up',
-    linking: linkLong
-  })));
-}
-function ChronoCard(_ref3) {
-  var text = _ref3.text,
-      year = _ref3.year,
-      image_URL = _ref3.image_URL,
-      isWhite = _ref3.isWhite;
-  var actual_tag_class = "A_Tags ".concat(isWhite);
-  return /*#__PURE__*/React.createElement("div", {
-    className: "W_ChronoCard",
-    style: {
-      backgroundImage: "url(".concat(BgChrono, ")")
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "Q_Arrow orange"
-  }), /*#__PURE__*/React.createElement("h3", null, text), /*#__PURE__*/React.createElement("div", {
-    className: "W_ChronoCardImage",
-    style: {
-      backgroundImage: "url(".concat(image_URL, ")")
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: actual_tag_class
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "mini"
-  }, year))));
-}
-function StOfTheDay(_ref4) {
-  var station = _ref4.station,
-      BGUrl = _ref4.BGUrl;
-  return /*#__PURE__*/React.createElement("div", {
-    "class": "M_CardStationOfTheDay",
-    style: {
-      backgroundImage: "url(".concat(BGUrl, ")")
-    }
-  }, /*#__PURE__*/React.createElement("h2", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u044F \u0434\u043D\u044F \u2014 ", station));
-}
-function StationHeading(_ref5) {
-  var station = _ref5.station,
-      BGUrl = _ref5.BGUrl,
-      line = _ref5.line;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "O_StationHeading"
+    className: "big"
+  }, "\u043E \u0431\u0440\u0435\u043D\u0434\u0435"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u043B\u043E\u0433\u043E\u0442\u0438\u043F"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0446\u0432\u0435\u0442\u0430"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0442\u0438\u043F\u043E\u0433\u0440\u0430\u0444\u0438\u043A\u0430"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0446\u0438\u044F"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0444\u043E\u0442\u043E"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0433\u0440\u0430\u0444\u0438\u043A\u0430"), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u043C\u0435\u0440\u0447")), /*#__PURE__*/react.createElement("div", {
+    className: "content"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "W_StationHeadingImage",
     style: {
-      backgroundImage: "url(".concat(BGUrl, ")")
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-end'
     }
-  }, /*#__PURE__*/react.createElement(button_BackButton, {
-    text: 'назад',
-    color: 'white'
-  })), /*#__PURE__*/react.createElement("h1", {
+  }, /*#__PURE__*/react.createElement("img", {
+    src: bg_with_logo_main_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("h1", {
     style: {
-      color: "var(--white)"
+      fontSize: '170px'
     }
-  }, station), /*#__PURE__*/react.createElement("div", {
-    className: "A_Tags white"
-  }, line));
-}
-function ArticleHeading(_ref6) {
-  var station = _ref6.station,
-      BGUrl = _ref6.BGUrl,
-      description = _ref6.description;
-  return /*#__PURE__*/React.createElement("div", {
-    className: "O_ArticleHeading"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "W_StationHeadingImage",
+  }, "\u0421\u0442\u0430\u0439\u043B\u0433\u0430\u0439\u0434"), /*#__PURE__*/react.createElement("button", {
     style: {
-      backgroundImage: "url(".concat(BGUrl, ")")
+      backgroundColor: 'var(--black)'
     }
-  }, /*#__PURE__*/React.createElement(BackButton, {
-    text: 'назад',
-    color: 'black'
-  })), /*#__PURE__*/React.createElement("h2", {
-    style: {
-      color: "var(--black)"
-    }
-  }, station), /*#__PURE__*/React.createElement("p", null, description));
-}
-function MaybeInterestingCards(_ref7) {
-  var start_number = _ref7.start_number,
-      end_number = _ref7.end_number;
-  var listItems = stations.filter(function (station) {
-    return station.id >= start_number && station.id <= end_number;
-  }).map(function (station) {
-    return /*#__PURE__*/react.createElement(StationCard, {
-      key: station.id // добавление ключа для каждого элемента
-      ,
-      station: station.name,
-      color: station.color,
-      tag_1_text: station.line_1,
-      Station_link: station.link
-    });
-  });
-  return /*#__PURE__*/react.createElement("div", {
-    className: "W_AlsoLook"
-  }, /*#__PURE__*/react.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/react.createElement("div", {
-    className: "W_CardsCollection"
-  }, listItems));
-}
-function MaybeInterestingCardsArticles(_ref8) {
-  var start_number = _ref8.start_number,
-      end_number = _ref8.end_number;
-  var listItems = articles.filter(function (station) {
-    return station.id >= start_number && station.id <= end_number;
-  }).map(function (station) {
-    return /*#__PURE__*/React.createElement(StationCard, {
-      key: station.id // добавление ключа для каждого элемента
-      ,
-      station: station.name,
-      color: station.color,
-      tag_1_text: station.line_1,
-      Station_link: station.link
-    });
-  });
-  return /*#__PURE__*/React.createElement("div", {
-    className: "W_AlsoLook"
-  }, /*#__PURE__*/React.createElement("h2", null, "\u0412\u043E\u0442 \u043E \u0447\u0435\u043C \u0435\u0449\u0435 \u043C\u043E\u0436\u043D\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C"), /*#__PURE__*/React.createElement("div", {
-    className: "W_CardsCollection"
-  }, listItems));
-}
-;// CONCATENATED MODULE: ./src/images/components/quarks/Q_BurgerMenu_black.svg
-const Q_BurgerMenu_black_namespaceObject = __webpack_require__.p + "images/fae3ec70635ccdde0b49.svg";
-;// CONCATENATED MODULE: ./src/images/components/quarks/Q_BurgerClose.svg
-const Q_BurgerClose_namespaceObject = __webpack_require__.p + "images/927308d7fc1a747589e6.svg";
-;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-function Menu(_ref) {
-  var state = _ref.state,
-      activeTag1 = _ref.activeTag1,
-      activeTag2 = _ref.activeTag2,
-      activeTag3 = _ref.activeTag3;
-  var mainpage = './';
-
-  var _useState = (0,react.useState)(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      isBurgerMenuVisible = _useState2[0],
-      setIsBurgerMenuVisible = _useState2[1];
-
-  var _useState3 = (0,react.useState)("url(".concat(Q_BurgerMenu_black_namespaceObject, ")")),
-      _useState4 = _slicedToArray(_useState3, 2),
-      burgerBackground = _useState4[0],
-      setBurgerBackground = _useState4[1];
-
-  var toggleBurgerMenu = function toggleBurgerMenu() {
-    setIsBurgerMenuVisible(!isBurgerMenuVisible);
-    setBurgerBackground(isBurgerMenuVisible ? "url(".concat(Q_BurgerMenu_black_namespaceObject, ")") : "url(".concat(Q_BurgerClose_namespaceObject, ")"));
-  };
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "W_Menu"
-  }, /*#__PURE__*/react.createElement("a", {
-    className: "A_MenuPoint",
-    href: mainpage
+  }, "\u0447\u0438\u0442\u0430\u0442\u044C")), /*#__PURE__*/react.createElement("div", {
+    className: "about"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Logo menu",
-    id: "Q_Logo_Menu",
+    className: "div1"
+  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u0431\u0440\u0435\u043D\u0434"), /*#__PURE__*/react.createElement("p", null, "\u041C\u044B \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u043B\u0438\u043D\u0438\u0438 \u043C\u0435\u0442\u0440\u043E \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043F\u0440\u0438\u0435\u043C\u0430 \u0434\u043B\u044F \u0440\u0430\u0441\u043A\u0440\u044B\u0442\u0438\u044F \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D\u0430")), /*#__PURE__*/react.createElement("img", {
+    className: "div2",
+    src: about_card_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "div3"
+  }, /*#__PURE__*/react.createElement("h3", null, "\u043C\u0438\u0441\u0441\u0438\u044F"), /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C, \u0447\u0442\u043E \u043C\u0435\u0442\u0440\u043E \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043E \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F, ", /*#__PURE__*/react.createElement("br", null), "\u043D\u043E \u0438 \u0441\u0432\u043E\u0434\u043A\u0430 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u044B")), /*#__PURE__*/react.createElement("div", {
+    className: "div4"
+  }, /*#__PURE__*/react.createElement("h3", null, "\u0446\u0435\u043D\u043D\u043E\u0441\u0442\u0438"), /*#__PURE__*/react.createElement("p", null, "\u041B\u044E\u0431\u043E\u0432\u044C \u043A \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0435 \u0438 \u0438\u0441\u0442\u043E\u0440\u0438\u0438, \u0435\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u044B\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0438 \u2014 ", /*#__PURE__*/react.createElement("br", null), "\u044D\u0442\u043E \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435 \u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435")), /*#__PURE__*/react.createElement("div", {
+    className: "div5"
+  }, /*#__PURE__*/react.createElement("h3", null, "tone of voice"), /*#__PURE__*/react.createElement("p", null, "\u041C\u044B \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u044B \u0438 \u043F\u0440\u0438\u0432\u0435\u0442\u043B\u0438\u0432\u044B. \u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432 \u044F\u0440\u043A\u043E \u0438 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E, \u043D\u043E \u043D\u0435 \u043D\u0430\u0432\u044F\u0437\u0447\u0438\u0432\u043E, \u0447\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043B\u0435\u0433\u043A\u043E \u0443\u0441\u0432\u0430\u0438\u0432\u0430\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E."))), /*#__PURE__*/react.createElement("div", {
+    className: "line_sem"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "logotype"
+  }, /*#__PURE__*/react.createElement("h1", {
+    className: "div1"
+  }, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u043B\u043E\u0433\u043E\u0442\u0438\u043F"), /*#__PURE__*/react.createElement("div", {
+    className: "div2"
+  }, /*#__PURE__*/react.createElement("p", null, "\u041F\u043E\u043B\u043D\u044B\u0439"), /*#__PURE__*/react.createElement("img", {
+    src: logotype_logo_02_namespaceObject,
     alt: ""
   })), /*#__PURE__*/react.createElement("div", {
-    className: "M_MenuPoints"
-  }, /*#__PURE__*/react.createElement("a", {
-    href: "./CategoryChrono.html",
-    className: "A_Point".concat(activeTag1)
-  }, /*#__PURE__*/react.createElement("p", null, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F")), /*#__PURE__*/react.createElement("a", {
-    href: "./\u0421ategoryStations.html",
-    className: "A_Point".concat(activeTag2)
-  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438")), /*#__PURE__*/react.createElement("a", {
-    href: "./CategoryArticles.html",
-    className: "A_Point".concat(activeTag3)
-  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))), /*#__PURE__*/react.createElement("div", {
-    className: "Q_Burger",
-    onClick: toggleBurgerMenu,
-    alt: "",
-    style: {
-      backgroundImage: burgerBackground
-    }
-  }), /*#__PURE__*/react.createElement("a", {
-    className: "A_MenuPoint"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Search",
+    className: "div3"
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u043E\u043A\u0440\u0430\u0449\u0435\u043D\u043D\u044B\u0439"), /*#__PURE__*/react.createElement("img", {
+    src: logotype_logo_01_namespaceObject,
     alt: ""
-  }))), isBurgerMenuVisible && /*#__PURE__*/react.createElement("div", {
-    className: "M_BurgerMenu"
-  }, /*#__PURE__*/react.createElement("a", {
-    href: "./CategoryChrono.html"
-  }, /*#__PURE__*/react.createElement("p", null, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F")), /*#__PURE__*/react.createElement("a", {
-    href: "./\u0421ategoryStations.html"
-  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438")), /*#__PURE__*/react.createElement("a", {
-    href: "./CategoryArticles.html"
-  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))));
-}
-
-/* harmony default export */ const menu = (Menu);
-;// CONCATENATED MODULE: ./src/javascript/particles/footer.jsx
-
-
-
-
-
-
-
-
-function Footer() {
-  return /*#__PURE__*/react.createElement("div", {
-    className: "O_Footer"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "ProjectLinks"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Content"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_Logo white"
-  }), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0425\u0440\u043E\u043D\u043E\u043B\u043E\u0433\u0438\u044F"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0425\u0440\u043E\u043D\u043E")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u041D\u043E\u0432\u043E\u0441\u0442\u0438")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
-    className: "big"
-  }, "\u0421\u0442\u0430\u043D\u0446\u0438\u0438"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u0421\u043F\u0438\u0441\u043E\u043A"), /*#__PURE__*/react.createElement("a", {
-    href: ""
-  }, "\u041A\u0430\u0440\u0442\u0430"))), /*#__PURE__*/react.createElement("div", {
-    className: "Icons"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia tg"
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "div4"
+  }, /*#__PURE__*/react.createElement("p", null, "\u0413\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043A\u0438\u0439"), /*#__PURE__*/react.createElement("img", {
+    src: logotype_logo_03_namespaceObject,
+    alt: ""
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "div5"
+  }, /*#__PURE__*/react.createElement("h3", null, "\u0441\u0435\u043C\u0430\u043D\u0442\u0438\u043A\u0430"), /*#__PURE__*/react.createElement("p", null, "\xAB\u043E!\xBB - \u0432\u043E\u0441\u043A\u043B\u0438\u0446\u0430\u043D\u0438\u0435, \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u043E\u0442\u0440\u0430\u0436\u0430\u0435\u0442 \u043F\u043E\u043B\u043E\u0436\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u044D\u043C\u043E\u0446\u0438\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u043E\u0437\u043D\u0438\u043A\u0430\u044E\u0442 \u0443 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u0440\u0438 \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0439 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438:\u0443\u0434\u0438\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\u0442 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u044B \u0441\u0442\u0430\u043D\u0446\u0438\u0439, \u0432\u043E\u0441\u0442\u043E\u0440\u0433 \u043E\u0442 \u0438\u0441\u0442\u043E\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u0432\u043E\u0434\u043E\u043A \u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043C\u0435\u0442\u0440\u043E.")), /*#__PURE__*/react.createElement("img", {
+    src: logo_sem_img_namespaceObject,
+    alt: "",
+    className: "div6"
   }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia vk"
+    className: "div7"
+  }, /*#__PURE__*/react.createElement("h3", null, "\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435"), /*#__PURE__*/react.createElement("p", null, "\u041B\u043E\u0433\u043E\u0442\u0438\u043F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0432 \u043F\u0440\u0430\u0432\u043E\u043C \u0432\u0435\u0440\u0445\u043D\u0435\u043C \u0443\u0433\u043B\u0443 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u0438\u043B\u0438 \u043F\u043B\u0430\u043A\u0430\u0442\u0430.")), /*#__PURE__*/react.createElement("img", {
+    src: logotype_usage_namespaceObject,
+    className: "div8",
+    alt: ""
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "logotype_2"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "div1"
+  }, /*#__PURE__*/react.createElement("h3", null, "\u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F"), /*#__PURE__*/react.createElement("p", null, "\u0426\u0432\u0435\u0442 \u043B\u043E\u0433\u043E \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u0435\u043D ", /*#__PURE__*/react.createElement("br", null), "\u043D\u0430 \u0444\u043E\u043D\u0435 \u0438 \u043E\u0434\u043D\u043E\u0433\u043E \u0446\u0432\u0435\u0442\u0430.")), /*#__PURE__*/react.createElement("div", {
+    className: "div2"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: logotype_no_01_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "small"
+  }, "\u0442\u0430\u043A \u043C\u043E\u0436\u043D\u043E")), /*#__PURE__*/react.createElement("div", {
+    className: "div3"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: logotype_no_02_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "small"
+  }, "\u0442\u0430\u043A \u043D\u0435\u043B\u044C\u0437\u044F")), /*#__PURE__*/react.createElement("p", {
+    className: "div4"
+  }, "\u041B\u043E\u0433\u043E\u0442\u0438\u043F \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u043D\u0430\u0447\u0435\u0440\u0442\u0430\u043D\u0438\u044F"), /*#__PURE__*/react.createElement("div", {
+    className: "div5"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: logotype_no_201_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "small"
+  }, "\u0442\u0430\u043A \u043C\u043E\u0436\u043D\u043E")), /*#__PURE__*/react.createElement("div", {
+    className: "div6"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: logotype_no_202_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "small"
+  }, "\u0442\u0430\u043A \u043D\u0435\u043B\u044C\u0437\u044F"))), /*#__PURE__*/react.createElement("div", {
+    className: "colors"
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u0446\u0432\u0435\u0442\u0430"), /*#__PURE__*/react.createElement("p", null, "\u0412 \u043E\u0441\u043D\u043E\u0432\u0435 \u0446\u0432\u0435\u0442\u043E\u0432\u043E\u0433\u043E \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u043B\u0435\u0436\u0438\u0442 \u043C\u043E\u043D\u043E\u0445\u0440\u043E\u043C, \u0440\u0430\u0437\u0431\u0430\u0432\u043B\u0435\u043D\u043D\u044B\u0439 \u0434\u0432\u0443\u043C\u044F \u0446\u0432\u0435\u0442\u0430\u043C\u0438: \u043E\u0440\u0430\u043D\u0436\u0435\u0432\u044B\u043C, \u043E\u043B\u0438\u0446\u0435\u0442\u0432\u043E\u0440\u044F\u044E\u0449\u0438\u043C \u0441\u0442\u0430\u0440\u044B\u0435 \u0432\u0435\u0442\u043A\u0438 \u0438 \u0438\u0441\u0442\u043E\u0440\u0438\u044E, \u0438 \u0431\u0438\u0440\u044E\u0437\u043E\u0432\u044B\u043C, \u043E\u0442\u0441\u044B\u043B\u0430\u044E\u0449\u0438\u043C \u043D\u0430 \u0411\u041A\u041B \u0438 \u0432\u0441\u0435 \u043D\u043E\u0432\u043E\u0435"))), /*#__PURE__*/react.createElement("img", {
+    src: colors_namespaceObject,
+    alt: ""
   }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_SocialMedia dzen"
-  }))), /*#__PURE__*/react.createElement("div", {
-    className: "UniversityInfo"
-  }, /*#__PURE__*/react.createElement("p", {
-    style: {
-      fontSize: '24px'
-    }
-  }, "HSE ADC"), /*#__PURE__*/react.createElement("p", null, "\u0410\u0442\u043B\u0430\u0441\u043E\u0432\u0430 \u041D\u0430\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u0413\u0430\u043B\u0438\u0435\u0432\u0430 \u042D\u043B\u044C\u0432\u0438\u0440\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u043E\u043C\u043A\u043E\u0432\u0430 \u0410\u043D\u043D\u0430 ", /*#__PURE__*/react.createElement("br", null), " \u041A\u0430\u0435\u043C \u0421\u043E\u0444\u044C\u044F")));
-}
+    className: "typography"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "div1"
+  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u0442\u0438\u043F\u043E\u0433\u0440\u0430\u0444\u0438\u043A\u0430"), /*#__PURE__*/react.createElement("p", null, "\u0421\u0430\u043C\u043E\u0435 \u0432\u0430\u0436\u043D\u043E\u0435 \u0432 \u043D\u0430\u0448\u0435\u043C \u043F\u0440\u043E\u0435\u043A\u0442\u0435 - \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u0438 \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u043E \u0434\u043B\u044F \u0447\u0442\u0435\u043D\u0438\u044F. \u041F\u043E\u044D\u0442\u043E\u043C\u0443 \u043C\u044B \u043D\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u0430\u043A\u0446\u0435\u043D\u0442\u043D\u044B\u0435 \u0448\u0440\u0438\u0444\u0442\u044B, \u0447\u0442\u043E\u0431\u044B \u043D\u0435 \u043E\u0442\u0432\u043B\u0435\u043A\u0430\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043E\u0442 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0435\u0433\u043E")), /*#__PURE__*/react.createElement("img", {
+    src: typo_card_namespaceObject,
+    alt: "",
+    className: "div2"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "div3"
+  }, /*#__PURE__*/react.createElement("h3", null, "\u0440\u0430\u0437\u043C\u0435\u0440\u044B"), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "COFO +"), "Pragmatica"), /*#__PURE__*/react.createElement("p", null, "header 4.4x")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h2", null, "PRAGMATICA medium"), /*#__PURE__*/react.createElement("p", null, "header 2.2x")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("h3", null, "Pragmatica regular"), /*#__PURE__*/react.createElement("p", null, "header 2.2x")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "Pragmatica regular"), /*#__PURE__*/react.createElement("p", null, "body 1.3x")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", null, "Pragmatica regular"), /*#__PURE__*/react.createElement("p", null, "body 1x")), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("p", null, "Pragmatica medium"), /*#__PURE__*/react.createElement("p", null, "annotation 0.8x")))), /*#__PURE__*/react.createElement("div", {
+    className: "compo"
+  }, /*#__PURE__*/react.createElement("h1", {
+    className: "div1"
+  }, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0446\u0438\u044F"), /*#__PURE__*/react.createElement("div", {
+    className: "div2"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: comp_1_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "small"
+  }, "\u043F\u0440\u0438\u043C\u0435\u0440 \u0432\u0435\u0440\u0441\u0442\u043A\u0438 20 \u043A\u043E\u043B\u043E\u043D\u043E\u043A ", /*#__PURE__*/react.createElement("br", null), "9/5/6")), /*#__PURE__*/react.createElement("div", {
+    className: "div3"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: comp_2_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "small"
+  }, "\u043F\u0440\u0438\u043C\u0435\u0440 \u0432\u0435\u0440\u0441\u0442\u043A\u0438 20 \u043A\u043E\u043B\u043E\u043D\u043E\u043A ", /*#__PURE__*/react.createElement("br", null), "5/5/5/5"))), /*#__PURE__*/react.createElement("div", {
+    className: "graphic"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "div1"
+  }, /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u0433\u0440\u0430\u0444\u0438\u043A\u0430"), /*#__PURE__*/react.createElement("p", null, "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u043F\u0440\u0438\u0435\u043C - \u0437\u0430\u043F\u0443\u0442\u0430\u043D\u043D\u044B\u0435 \u0432\u0435\u0442\u043A\u0438 \u043C\u0435\u0442\u0440\u043E. \u041E\u043D\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u0432 3D \u0438 2D \u0444\u043E\u0440\u043C\u0430\u0442\u0435")), /*#__PURE__*/react.createElement("div", {
+    className: "div2"
+  }, /*#__PURE__*/react.createElement("h3", null, "2D \u0444\u043E\u0440\u043C\u0430\u0442"), /*#__PURE__*/react.createElement("p", null, "\u0414\u043B\u044F \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432, \u0441\u0432\u044F\u0437\u0430\u043D\u043D\u044B\u0445 \u0441 \u043F\u0440\u043E\u0448\u043B\u044B\u043C. \u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0432 \u043E\u0440\u0430\u043D\u0436\u0435\u0432\u043E\u043C \u0446\u0432\u0435\u0442\u0435")), /*#__PURE__*/react.createElement("div", {
+    className: "div3"
+  }, /*#__PURE__*/react.createElement("h3", null, "3D \u0444\u043E\u0440\u043C\u0430\u0442"), /*#__PURE__*/react.createElement("p", null, "\u0414\u043B\u044F \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432, \u0441\u0432\u044F\u0437\u0430\u043D\u043D\u044B\u0445 \u0441 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u043C \u0438 \u0431\u0443\u0434\u0443\u0449\u0438\u043C.")), /*#__PURE__*/react.createElement("div", {
+    className: "div4"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "div5"
+  })), /*#__PURE__*/react.createElement("h1", null, /*#__PURE__*/react.createElement("span", null, "\u043E!"), " \u043C\u0435\u0440\u0447"), /*#__PURE__*/react.createElement("div", {
+    className: "merch"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: merch_img_01_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_02_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_03_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_04_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_05_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_06_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_07_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_08_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_09_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_10_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_11_namespaceObject,
+    alt: "",
+    className: "div"
+  }), /*#__PURE__*/react.createElement("img", {
+    src: merch_img_12_namespaceObject,
+    alt: "",
+    className: "div"
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "dno"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: logo_full_namespaceObject,
+    alt: ""
+  }), /*#__PURE__*/react.createElement("p", {
+    className: "big"
+  }, "\u0413\u0430\u043B\u0438\u0435\u0432\u0430 \u042D\u043B\u044C\u0432\u0438\u0440\u0430 ", /*#__PURE__*/react.createElement("br", null), "\u0410\u0442\u043B\u0430\u0441\u043E\u0432\u0430 \u041D\u0430\u043D\u0430"))));
+};
 
-/* harmony default export */ const footer = (Footer);
-;// CONCATENATED MODULE: ./src/javascript/pages/biblioteka_lenina.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var rootElement = document.getElementById('root');
-var root = (0,client/* createRoot */.s)(rootElement);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(menu, {
-  activeTag1: '',
-  activeTag2: '',
-  activeTag3: ''
-}), /*#__PURE__*/react.createElement(StationHeading, {
-  BGUrl: bibliotekaLeninaHeading_namespaceObject,
-  station: 'Библиотека им.Ленина',
-  line: 'Сокольническая'
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Когда станция открылась?',
-  text: 'Библиотека им.Ленина - станция первой очереди Московского метрополитена, открытая 15 мая 1935 году. Оформление станции посвящено Библиотеке им. Ленина (ныняшняя Российская государственная библиотека)'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 9,
-  height: 40,
-  margin: 5,
-  url: bibliotekaLenina_img01_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'История станции',
-  text: 'Физически станция располагается прямо под Моховой улицей, что заметно усложнило процесс работы над ней. Так станция получила уникальную по тем времена конструкцию — односводчатую мелкого заложения. То есть для строительства станции не вырывали котлован, так как нельзя было перекрывать центральную улицу столицы, а работали под тонким слоем грунта, всего 3 метра от поверхности. Кроме того появилосбь еще и ограничение в ширину улицы, поэтому перед архитекторами и инженерами стояла сложная задача — сделать маленькую станцию — широкой и величественной.'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 12,
-  height: 40,
-  margin: 4,
-  url: bibliotekaLenina_img02_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: "\u0410\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440\u043E\u043C \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0432\u044B\u0441\u0442\u0443\u043F\u0438\u043B\u0438 \u0410.\u0418. \u0413\u043E\u043D\u0446\u043A\u0435\u0432\u0438\u0447 \u0438\xA0\u0421.\xA0\u0421\u0443\u043B\u0438\u043D. \u041F\u043E\xA0\u0438\u0445\xA0\u0437\u0430\u0434\u0443\u043C\u043A\u0435, \u043E\u0434\u043D\u043E\u0441\u0432\u043E\u0434\u0447\u0430\u0442\u0430\u044F \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u044C \u0441\u0442\u0430\u043D\u0446\u0438\u044E, \u0430\xA0\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0432\u043E\u0430\u043D\u0438\u0435 \u0431\u0435\u043B\u044B\u0445 \u0438\xA0\u0442\u0435\u043F\u043B\u044B\u0445 \u0442\u043E\u043D\u043E\u0432 \u043F\u0440\u0438\u0437\u0432\u0430\u0442\u044C \u043A\xA0\u0447\u0443\u0432\u0441\u0442\u0432\u0443 \u0443\u044E\u0442\u0430 \u0438\xA0\u0441\u043F\u043E\u0441\u043E\u0439\u0441\u0442\u0432\u0438\u044F. \u0418\xA0\u043F\u0440\u0430\u0432\u0434\u0430, \u0435\u0441\u043B\u0438 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u043D\u0430\xA0\u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0438 1935 \u0433\u043E\u0434\u0430\xA0\u2014 \u0441\u0442\u0430\u043D\u0446\u0438\u044F \u043A\u0430\u0436\u0435\u0442\u0441\u044F \u043E\u0447\u0435\u043D\u044C \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0437\u0430\xA0\u0441\u0447\u0435\u0442 \u043E\u0442\u0441\u0443\u0442\u0441\u0432\u0438\u044F \u043A\u0430\u043A\u0438\u0445-\u043B\u0438\u0431\u043E \u043F\u0440\u0435\u0433\u0440\u0430\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0432\xA0\u0446\u0435\u043D\u0442\u0440\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B.\u041E\u0434\u043D\u0430\u043A\u043E \u0443\u0436\u0435 \u0432\xA01937 \u0433\u043E\u0434\u0443 \u0437\u0430\u0434\u0443\u043C\u043A\u0430 \u0430\u0432\u0442\u043E\u0440\u043E\u0432 \u0440\u0430\u0437\u0440\u0443\u0448\u0438\u043B\u0430\u0441\u044C. \u0414\u043B\u044F \u0443\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u043F\u0435\u0440\u0435\u0441\u0430\u0434\u043E\u043A \u043D\u0430\xA0\u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0431\u044B\u043B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D \u043F\u0440\u044F\u043C\u043E\u0439 \u043F\u0435\u0440\u0435\u0445\u043E\u0434 \u043D\u0430\xA0\u0441\u0442\u0430\u043D\u0446\u0438\u044E \xAB\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430\xBB (\u043D\u044B\u043D\u0435\u0448\u043D\u0438\u0439 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u0441\u0430\u0434) \u043F\u0440\u044F\u043C\u043E \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B, \u0447\u0442\u043E \u0441\u0445\u043B\u043E\u043F\u043D\u0443\u043B\u043E \u0432\u0441\u0451 \u0432\u0435\u043B\u0438\u0447\u0438\u0435 \u0441\u0442\u0430\u043D\u0446\u0438\u0438. \u041A\xA0\u0442\u043E\u043C\u0443\xA0\u0436\u0435 \u043F\u0435\u0440\u0435\u0441\u0430\u0434\u043A\u0430 \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u043B\u0430 \u043E\u0434\u0438\u043D\u043E\u0447\u043D\u044B\u0439 \u043A\u043E\u0440\u0438\u0434\u043E\u0440 \u0432\xA0\u043C\u0438\u0440 \u0437\u043D\u0430\u043D\u0438\u0439 \u0432\xA0\u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u044B\u0439 \u0443\u0437\u0435\u043B. \u0410\xA0\u0432\xA01953 \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F \u0442\u043E\u0442 \u0441\u0430\u043C\u044B\u0439 \u0437\u0430\u043F\u0443\u0442\u0430\u043D\u044B\u0439 \u0430\u0432\u0430\u043D\u0437\u0430\u043B, \u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0432\u0448\u0438\u0439 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438 \u0441\u0430\u0434, \u0410\u0440\u0431\u0442\u0430\u0441\u043A\u0443\u044E \u0438\xA0\u0411\u0438\u0431\u0438\u043B\u043E\u0438\u0442\u0435\u043A\u0443 \u0438\u043C.\u041B\u0435\u043D\u0438\u043D\u0430."
-}), /*#__PURE__*/react.createElement(StationAccentLine, {
-  BGUrl: bibliotekaLeninaLine_namespaceObject,
-  heading: 'Вам никогда не казалось странным, что у Библиотеки им. Ленина такое длинное название?'
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: 'При открытии у Билиотеки было два наземных вестибюля: восточный, выходящий к главному входу в здание Библиотеки имнеи Ленина, и западный, ближе к центру Моховой улицы и дому Пашкова.'
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Архитектура',
-  text: 'Архитектурой восточного вестибюля занимались П.П. Файдыш и С.П. Лавров. Их задачей было максимально аккуратно вписать здание в стилистику самой Библиотеки, что у них успешно получилось. Те же колонны, бетонное величие и грубая буква М. '
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 12,
-  height: 40,
-  margin: 4,
-  url: bibliotekaLenina_img03_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  text: 'От западного вестибюля ожидали совршенно другого настроение, ближе к чему-то элегантному и аккуратному. Эту задачу отдали архитекторам С.М. Кравецу и А.И. Соколову. Они также удачно справились с этим, сделав основной изюмникой вестибюля — окна. Рама окон выполнена из металла с интересной интерпретацией буквы М посередине. Изначально окна были выполнены из темного материала и затонированы, но после реконскции они преобрели светлый и более открытый вид.'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 12,
-  height: 40,
-  margin: 4,
-  url: bibliotekaLenina_img04_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Потерянные вестибюли',
-  text: 'Но и вестибюлями станцию начали обделять. В 1970-х восточный вестибюль снесли в угоду более удобного передвижение на площади перед Библиотекой. А в 1984 году западный вестибюль переделали во вход на станцию Боровицкая. Тем самым сейчас у Библиотеки нет ни наземного входа. '
-}), /*#__PURE__*/react.createElement(W_ImagesRow, {
-  width_1: 8,
-  width_2: 7,
-  height: 30,
-  url_1: bibliotekaLenina_img05_namespaceObject,
-  url_2: bibliotekaLenina_img06_namespaceObject
-}), /*#__PURE__*/react.createElement(ArticleChapter, {
-  heading: 'Потерянные вестибюли',
-  text: 'Так с течением времени, изначальная задумка станции, как коридора в мир библиотеки полностью истощилась. Почему так произошло? Основной причиной можно назвать недальнозоркость инженеров при проектировке станции в 30-х годах. При проектировании рассчитывалось, что пассажиропоток на станции будет небольшим. Ведь это просто станция для библиотеки. Но удобство ее расположения сыграло против нее. Станция располагающая почти в центре Москвы не могла не стать важным транспортным узлом, особенно когда вокруг нее настроили еще станции. Сейчас транспортный узел Александровский сад — Боровицкая — Арбатская — Библиотека им.Ленина — самый сложный в Москве. Компановка станций не позволяет сделать удобные переходы, из-за чего приходится жертвовать даже станция первой очереди.'
-}), /*#__PURE__*/react.createElement(Q_Image, {
-  width: 15,
-  height: 40,
-  margin: 2,
-  url: bibliotekaLenina_img07_namespaceObject
-}), /*#__PURE__*/react.createElement(MaybeInterestingCards, {
-  start_number: 2,
-  end_number: 5
-}), /*#__PURE__*/react.createElement(footer, null)));
+var root = react_dom.createRoot(document.getElementById('root'));
+root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(StyleGuide, null)));
 })();
 
 /******/ })()
