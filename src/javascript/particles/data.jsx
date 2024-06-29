@@ -11,49 +11,49 @@ export const stations = [
     name: 'Маяковская',
     line_1: 'Замоскворецкая',
     color: 'zamos',
-    link: '/'
+    link: '/maykovskay.html'
   },
   {
     id: 2,
     name: 'Римская',
     line_1: 'Люблинско-дмитровская',
     color: 'lubli',
-    link: '/'
+    link: '/rimskay.html'
   },
   {
     id: 3,
-    name: 'Площадь Революции',
-    line_1: 'Арбатско-покровская',
-    color: 'arbat',
-    link: '/'
+    name: 'Менделеевская',
+    line_1: 'Серпуховско-тимирязевская',
+    color: 'serpy',
+    link: '/mendeleevskay.html'
   },
   {
     id: 4,
-    name: 'Третьяковская',
+    name: 'Рижская',
     line_1: 'Калужско-Рижская',
     color: 'kalug',
-    link: '/'
+    link: '/rizchskay.html'
   },
   {
     id: 5,
-    name: 'Павелецкая',
-    line_1: 'Кольцевая',
-    color: 'kolic',
-    link: '/'
+    name: 'Пыхтино',
+    line_1: 'Калининская',
+    color: 'solnc',
+    link: '/pychtino.html'
   },
   {
     id: 6,
     name: 'Сокольники',
     line_1: 'Сокольническая',
     color: 'sokol',
-    link: '/'
+    link: '/sokolniki.html'
   }
 ]
 
 export const articles = [
   {
     id: 0,
-    name: 'Некрасовка и рыбки',
+    name: 'Подземные секреты ',
     line_1: 'Искусство',
     line_2: '',
     line_3: '',

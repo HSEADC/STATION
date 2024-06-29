@@ -12,11 +12,17 @@ const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 
 function Page() {
-  const [displayDate, setDisplayDate] = useState('2023')
+  const [displayDate, setDisplayDate] = useState('2024')
   const [displayHeading, setDisplayHeading] = useState('Метро Москвы')
-  const [displayText1, setDisplayText1] = useState('Текст по умолчанию')
-  const [displayText2, setDisplayText2] = useState('Текст по умолчанию')
-  const [displayText3, setDisplayText3] = useState('Текст по умолчанию')
+  const [displayText1, setDisplayText1] = useState(
+    'Московский метрополитен включает 17 линий общей протяженностью более 450 км, ежедневно обслуживая свыше 9 миллионов пассажиров. Более 260 станций, из которых 45 имеют пересадочные узлы, обеспечивают удобное и быстрое перемещение по всему городу.'
+  )
+  const [displayText2, setDisplayText2] = useState(
+    'За последний год введено в эксплуатацию 15 новых станций и 2 электродепо, а парк подвижного состава обновлен на 30%.'
+  )
+  const [displayText3, setDisplayText3] = useState(
+    'Каждый день около 10 тысяч поездов совершают свои рейсы, обеспечивая бесперебойную работу этой сложной транспортной системы. 🚇📈✨'
+  )
 
   const handleDivMouseEnter = (number) => {
     setDisplayDate(chronology[number].date)

@@ -13,7 +13,7 @@ export function ArticlesList({ type, filter }) {
     )
     .map((article) => (
       <StationCard
-        key={article.id} // добавление ключа для каждого элемента
+        key={article.id}
         station={article.name}
         color={article.color}
         tag_1_text={article.line_1}

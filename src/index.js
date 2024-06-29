@@ -15,6 +15,7 @@ import { SectionHeading } from './javascript/particles/text.jsx'
 import { Q_Image, W_ImagesRow } from './javascript/particles/image.jsx'
 import Footer from './javascript/particles/footer.jsx'
 //* Импорт картинок
+import MainImage from './images/main_page/Main.jpg'
 import Image_Station1 from './images/main_page/Station1.png'
 import Image_Article1 from './images/main_page/Article1.png'
 import Image_Article2 from './images/main_page/Article2.jpeg'
@@ -36,7 +37,7 @@ root.render(
       <SectionHeading heading={'Мосметро'} />
       <div
         className="Q_TitleImage"
-        style={{ backgroundColor: 'var(--sokol)' }}
+        style={{ backgroundImage: `url(${MainImage})` }}
       ></div>
     </div>
     <div>
@@ -51,19 +52,20 @@ root.render(
           station={'Маяковская'}
           color={'zamos'}
           tag_1_text={'Замоскворецкая'}
-          Station_link={'/'}
+          Station_link={'/maykovskay.html'}
         />
         <StationCard
           station={'Римская'}
           color={'lubli'}
           tag_1_text={'Люблинско-Дмитровская'}
-          Station_link={'/'}
+          Station_link={'/rimskay.html'}
         />
         <ArticleCard
           text={'Пыхтино – метро в аэропорт'}
           size={'medium'}
           bg_image={Image_Station1}
           text_color={'white'}
+          linking={'./pychtino.html'}
         />
       </div>
     </div>

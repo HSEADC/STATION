@@ -142,12 +142,12 @@
 .Q_Point {
   width: 1.5vw;
   height: 1.5vw;
-  background-color: var(--serpy);
+  background-color: var(--butov);
   border-radius: 100%;
   transition: all ease 0.3s;
 }
 .Q_Point:hover {
-  background-color: var(--black);
+  background-color: var(--arbat);
 }
 
 //* Images
@@ -161,7 +161,8 @@
   border-radius: 20px;
 }
 .Q_ImageArticleCover {
-  width: 96%;
+  width: 45vw;
+  height: 63vh;
   border-radius: 20px;
   background-position: top;
   background-repeat: no-repeat;

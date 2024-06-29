@@ -15,6 +15,9 @@ module.exports = {
     // styleguide: './src/javascript/pages/styleguide.js',
     // aboutus: './src/javascript/pages/aboutus.js',
     page_biblioteka: './src/javascript/pages/biblioteka_lenina.js',
+    page_maykovskay: './src/javascript/pages/maykovskay.js',
+    page_rimskay: './src/javascript/pages/rimskay.js',
+    page_pychtino: './src/javascript/pages/pychtino.js',
     peresadki: './src/javascript/pages/article_peresadki.js'
   },
   output: {
@@ -132,6 +135,27 @@ module.exports = {
       template: './src/pages/stations/biblioteka_lenina.html',
       filename: './biblioteka_lenina.html',
       chunks: ['page_biblioteka']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/maykovskay.html',
+      filename: './maykovskay.html',
+      chunks: ['page_maykovskay']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/rimskay.html',
+      filename: './rimskay.html',
+      chunks: ['page_rimskay']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/stations/pychtino.html',
+      filename: './pychtino.html',
+      chunks: ['page_pychtino']
     }),
     new HtmlWebpackPlugin({
       hash: true,

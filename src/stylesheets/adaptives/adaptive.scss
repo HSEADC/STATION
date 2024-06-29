@@ -45,7 +45,7 @@
   }
 }
 
-@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-device-width: 1024px) and (min-device-width: 428px) and (orientation: portrait) {
   body {
     padding: 7vh 3vw;
   }
@@ -86,7 +86,8 @@
       font-size: 2.5vw;
     }
   }
-
+}
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
   .Q_TitleImage {
     height: 50vh;
   }
@@ -259,5 +260,139 @@
   .Q_Search {
     width: 3vw;
     height: 3vw;
+  }
+}
+
+@media screen and (max-device-width: 425px) and (min-device-width: 320px) {
+  p {
+    font-size: 3.5vw;
+    line-height: 3.7vw;
+    &.mini {
+      font-size: 2.25vw;
+    }
+    &.button {
+      font-size: 4vw;
+      line-height: 5vw;
+    }
+  }
+  .W_Menu {
+    .A_MenuPoint {
+      display: none !important;
+    }
+    .A_MenuPoint:nth-child(1) {
+      display: flex !important;
+    }
+    .M_MenuPoints {
+      display: none !important;
+    }
+    .Q_Burger {
+      display: block !important;
+      width: 5vw !important;
+      height: 5vw !important;
+      margin-right: 4vw;
+    }
+    .Q_Logo {
+      width: 31vw;
+      height: 5vw;
+    }
+  }
+  h1 {
+    font-size: 10vw;
+    line-height: 105%;
+  }
+  span {
+    font-size: 10vw;
+    line-height: 105%;
+  }
+  h2 {
+    font-size: 6.5vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+
+  .A_Button {
+    .Q_Arrow {
+      width: 6vw;
+      height: 6vw;
+    }
+  }
+  .A_SectionDescribe p {
+    width: 80vw;
+  }
+  .O_FullArticleSection {
+    gap: 4vh !important;
+  }
+  .A_ArticleBody p:nth-child(1) {
+    width: 40vw;
+  }
+  .W_ChronoCard .Q_Arrow {
+    width: 8vw !important;
+    height: 8vw !important;
+  }
+  .O_Footer {
+    .Q_SocialMedia {
+      width: 10vw;
+      height: 10vw;
+    }
+    .Q_Logo {
+      width: 33vw !important;
+    }
+    .ProjectLinks {
+      .Content {
+        div:not(:first-child) {
+          display: none !important;
+        }
+      }
+    }
+    .UniversityInfo {
+      p:nth-child(1) {
+        font-size: 40px !important;
+      }
+    }
+  }
+  .W_Menu + * {
+    margin-top: 9vh !important;
+    margin-bottom: 4vh;
+  }
+  .W_Menu + .M_BurgerMenu {
+    margin-top: -10vh !important;
+    margin-bottom: 4vh;
+  }
+  .M_BurgerMenu + * {
+    margin-top: 9vh !important;
+    margin-bottom: 4vh;
+  }
+  .W_ArticleCard {
+    border-radius: 20px !important;
+  }
+  .M_BurgerMenu {
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 88vw;
+    background-color: var(--light-gray);
+    gap: 4vh;
+    padding: 10vh 0vw;
+    border: 2px solid var(--black);
+    border-top: none;
+    border-radius: 0px 0px 30px 30px;
+    p {
+      font-size: 6vw;
+    }
+  }
+  .CategoryMain {
+    .W_Menu + .M_BurgerMenu {
+      margin-top: 0vh !important;
+      margin-bottom: 4vh;
+    }
+    .M_BurgerMenu {
+      border: 4px solid var(--black);
+    }
+    .W_Menu {
+      border: 4px solid var(--black);
+    }
   }
 }

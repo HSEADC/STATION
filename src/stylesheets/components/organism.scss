@@ -6,6 +6,7 @@
 .O_FullArticleSection {
   display: flex;
   margin-bottom: 10vh;
+  gap: 2vw;
 }
 .O_SectionNews {
   margin-bottom: 10vh;
@@ -81,7 +82,7 @@
   margin-top: 5vh;
   display: flex;
   gap: 6vw;
-  height: 65vh;
+  height: 75vh;
 }
 .O_StationHeading {
   background-color: var(--black);
