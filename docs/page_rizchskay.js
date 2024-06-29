@@ -651,37 +651,37 @@ var stations = [{
   name: 'Библиотека им.Ленина',
   line_1: 'Сокольническая',
   color: 'sokol',
-  link: '../biblioteka_lenina.html'
+  link: './STATION./biblioteka_lenina.html'
 }, {
   id: 1,
   name: 'Маяковская',
   line_1: 'Замоскворецкая',
   color: 'zamos',
-  link: './maykovskay.html'
+  link: '/STATION./maykovskay.html'
 }, {
   id: 2,
   name: 'Римская',
   line_1: 'Люблинско-дмитровская',
   color: 'lubli',
-  link: './rimskay.html'
+  link: '/STATION./rimskay.html'
 }, {
   id: 3,
   name: 'Рижская',
   line_1: 'Калужско-Рижская',
   color: 'kalug',
-  link: './rizchskay.html'
+  link: '/STATION./rizchskay.html'
 }, {
   id: 4,
   name: 'Пыхтино',
   line_1: 'Калининская',
   color: 'solnc',
-  link: './pychtino.html'
+  link: '/STATION./pychtino.html'
 }, {
   id: 5,
   name: 'Сокольники',
   line_1: 'Сокольническая',
   color: 'sokol',
-  link: './sokolniki.html'
+  link: '/STATION./sokolniki.html'
 }];
 var data_articles = [{
   id: 0,
@@ -690,7 +690,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'arch',
-  link: './secrets.html',
+  link: '/STATION./secrets.html',
   type: 'article'
 }, {
   id: 1,
@@ -699,7 +699,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: './troika.html',
+  link: '/STATION./troika.html',
   type: 'article'
 }, {
   id: 2,
@@ -708,7 +708,7 @@ var data_articles = [{
   line_2: 'История',
   line_3: '',
   color: 'art',
-  link: './cinema.html',
+  link: '/STATION./cinema.html',
   type: 'article'
 }, {
   id: 3,
@@ -717,7 +717,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'life',
-  link: './peresadki.html ',
+  link: '/STATION./peresadki.html ',
   type: 'article'
 }, {
   id: 4,
@@ -726,7 +726,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'info',
-  link: './new_trains.html',
+  link: '/STATION./new_trains.html',
   type: 'news'
 }, {
   id: 5,
@@ -735,7 +735,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'hist',
-  link: './nina.html ',
+  link: '/STATION./nina.html ',
   type: 'article'
 }, {
   id: 6,
@@ -744,7 +744,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: './swimmer.html ',
+  link: '/STATION./swimmer.html ',
   type: 'article'
 }, {
   id: 7,
@@ -753,7 +753,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: './new_look.html',
+  link: '/STATION./new_look.html',
   type: 'news'
 }, {
   id: 8,
@@ -762,7 +762,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'info',
-  link: './dela.html ',
+  link: '/STATION./dela.html ',
   type: 'news'
 }, {
   id: 9,
@@ -771,7 +771,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: './science.html',
+  link: '/STATION./science.html',
   type: 'article'
 }, {
   id: 10,
@@ -780,7 +780,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: './zapach.html',
+  link: '/STATION./zapach.html',
   type: 'article'
 }, {
   id: 11,
@@ -789,7 +789,7 @@ var data_articles = [{
   line_2: '',
   line_3: '',
   color: 'tech',
-  link: './test_troika.html',
+  link: '/STATION./test_troika.html',
   type: 'news'
 }];
 var chronology = [{
