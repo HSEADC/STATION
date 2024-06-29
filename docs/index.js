@@ -573,6 +573,10 @@ function button_BackButton(_ref2) {
     className: "button ".concat(color)
   }, text));
 }
+;// CONCATENATED MODULE: ./src/images/components/quarks/Q_BurgerMenu_black.svg
+const Q_BurgerMenu_black_namespaceObject = __webpack_require__.p + "images/fae3ec70635ccdde0b49.svg";
+;// CONCATENATED MODULE: ./src/images/components/quarks/Q_BurgerClose.svg
+const Q_BurgerClose_namespaceObject = __webpack_require__.p + "images/927308d7fc1a747589e6.svg";
 ;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -593,6 +597,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function Menu(_ref) {
   var state = _ref.state,
       activeTag1 = _ref.activeTag1,
@@ -605,8 +611,14 @@ function Menu(_ref) {
       isBurgerMenuVisible = _useState2[0],
       setIsBurgerMenuVisible = _useState2[1];
 
+  var _useState3 = (0,react.useState)("url(".concat(Q_BurgerMenu_black_namespaceObject, ")")),
+      _useState4 = _slicedToArray(_useState3, 2),
+      burgerBackground = _useState4[0],
+      setBurgerBackground = _useState4[1];
+
   var toggleBurgerMenu = function toggleBurgerMenu() {
     setIsBurgerMenuVisible(!isBurgerMenuVisible);
+    setBurgerBackground(isBurgerMenuVisible ? "url(".concat(Q_BurgerMenu_black_namespaceObject, ")") : "url(".concat(Q_BurgerClose_namespaceObject, ")"));
   };
 
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
@@ -632,7 +644,10 @@ function Menu(_ref) {
   }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))), /*#__PURE__*/react.createElement("div", {
     className: "Q_Burger",
     onClick: toggleBurgerMenu,
-    alt: ""
+    alt: "",
+    style: {
+      backgroundImage: burgerBackground
+    }
   }), /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint"
   }, /*#__PURE__*/react.createElement("div", {

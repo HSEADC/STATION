@@ -490,6 +490,39 @@ if (true) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
@@ -700,6 +733,10 @@ function StationAccentLine(_ref3) {
     }
   }, /*#__PURE__*/React.createElement("h3", null, heading));
 }
+;// CONCATENATED MODULE: ./src/images/components/quarks/Q_BurgerMenu_black.svg
+const Q_BurgerMenu_black_namespaceObject = __webpack_require__.p + "images/fae3ec70635ccdde0b49.svg";
+;// CONCATENATED MODULE: ./src/images/components/quarks/Q_BurgerClose.svg
+const Q_BurgerClose_namespaceObject = __webpack_require__.p + "images/927308d7fc1a747589e6.svg";
 ;// CONCATENATED MODULE: ./src/javascript/particles/menu.jsx
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -720,6 +757,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 function Menu(_ref) {
   var state = _ref.state,
       activeTag1 = _ref.activeTag1,
@@ -732,8 +771,14 @@ function Menu(_ref) {
       isBurgerMenuVisible = _useState2[0],
       setIsBurgerMenuVisible = _useState2[1];
 
+  var _useState3 = (0,react.useState)("url(".concat(Q_BurgerMenu_black_namespaceObject, ")")),
+      _useState4 = _slicedToArray(_useState3, 2),
+      burgerBackground = _useState4[0],
+      setBurgerBackground = _useState4[1];
+
   var toggleBurgerMenu = function toggleBurgerMenu() {
     setIsBurgerMenuVisible(!isBurgerMenuVisible);
+    setBurgerBackground(isBurgerMenuVisible ? "url(".concat(Q_BurgerMenu_black_namespaceObject, ")") : "url(".concat(Q_BurgerClose_namespaceObject, ")"));
   };
 
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
@@ -759,7 +804,10 @@ function Menu(_ref) {
   }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0442\u0430\u0442\u044C\u0438"))), /*#__PURE__*/react.createElement("div", {
     className: "Q_Burger",
     onClick: toggleBurgerMenu,
-    alt: ""
+    alt: "",
+    style: {
+      backgroundImage: burgerBackground
+    }
   }), /*#__PURE__*/react.createElement("a", {
     className: "A_MenuPoint"
   }, /*#__PURE__*/react.createElement("div", {
@@ -976,16 +1024,6 @@ function Page() {
     className: "Q_Point",
     onMouseEnter: function onMouseEnter() {
       return handleDivMouseEnter(15);
-    }
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_Point",
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(16);
-    }
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "Q_Point",
-    onMouseEnter: function onMouseEnter() {
-      return handleDivMouseEnter(17);
     }
   }))), /*#__PURE__*/react.createElement("div", {
     "class": "W_ChronoLine"

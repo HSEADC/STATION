@@ -103,14 +103,6 @@ function Page() {
               className="Q_Point"
               onMouseEnter={() => handleDivMouseEnter(15)}
             ></div>
-            <div
-              className="Q_Point"
-              onMouseEnter={() => handleDivMouseEnter(16)}
-            ></div>
-            <div
-              className="Q_Point"
-              onMouseEnter={() => handleDivMouseEnter(17)}
-            ></div>
           </div>
         </div>
         <div class="W_ChronoLine">

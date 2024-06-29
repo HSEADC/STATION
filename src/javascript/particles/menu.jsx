@@ -4,13 +4,19 @@ import '../../stylesheets/components/atoms.scss'
 import '../../stylesheets/components/molecules.scss'
 import '../../stylesheets/components/wrappers.scss'
 import '../../stylesheets/adaptives/adaptive.scss'
+import Burger from './../../images/components/quarks/Q_BurgerMenu_black.svg'
+import BurgerClose from './../../images/components/quarks/Q_BurgerClose.svg'
 
 function Menu({ state, activeTag1, activeTag2, activeTag3 }) {
   const mainpage = './'
   const [isBurgerMenuVisible, setIsBurgerMenuVisible] = useState(false)
+  const [burgerBackground, setBurgerBackground] = useState(`url(${Burger})`)
 
   const toggleBurgerMenu = () => {
     setIsBurgerMenuVisible(!isBurgerMenuVisible)
+    setBurgerBackground(
+      isBurgerMenuVisible ? `url(${Burger})` : `url(${BurgerClose})`
+    )
   }
 
   return (
@@ -31,7 +37,12 @@ function Menu({ state, activeTag1, activeTag2, activeTag3 }) {
             <p>Статьи</p>
           </a>
         </div>
-        <div className="Q_Burger" onClick={toggleBurgerMenu} alt=""></div>
+        <div
+          className="Q_Burger"
+          onClick={toggleBurgerMenu}
+          alt=""
+          style={{ backgroundImage: burgerBackground }}
+        ></div>
         <a className="A_MenuPoint">
           <div className="Q_Search" alt=""></div>
         </a>
